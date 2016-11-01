@@ -1,0 +1,26 @@
+body { 
+	background: white;
+	color: black;
+/*	font-weight: bold;*/
+	font-family: 'Droid Sans', sans-serif;
+
+
+	h1{
+	font-size: 30pt; 
+	}
+
+	h1{
+	padding-left: 20px;
+	font-size: 16pt;
+	background-color: red;
+	}
+
+
+	@media screen and (max-width: 480px) {
+	
+@media screen and (max-width: 350px){
+		/*IPHONESCREEN SIZE */
+
+
+	.mainphoto {
+	}

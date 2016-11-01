@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cinekid</title>
+</head>
+
+<body>
+<script type="text/javascript">
+
+function getMouseCoords(e) {
+  var e = e || window.event;
+  document.getElementById('msg').innerHTML = e.clientX + ', ' + 
+           e.clientY + '<br>' + e.screenX + ', ' + e.screenY;
+}
+
+
+var followCursor = (function() {
+  var s = document.createElement('div');
+  s.style.position = 'absolute';
+  s.style.margin = '0px';
+  s.style.padding = '0px';
+  s.style.border = '100px solid red';
+  s.style.color ='solid red';
+
+
+  return {
+    init: function() {
+      document.body.appendChild(s);
+    },
+
+    run: function(e) {
+      var e = e || window.event;
+      s.style.left  = (e.clientX - 10) + 'px';
+      s.style.top = (e.clientY - 10) + 'px';
+      getMouseCoords(e);
+    }
+  };
+}());
+
+window.onload = function() {
+  followCursor.init();
+  document.body.onmousemove = followCursor.run;
+}
+
+</script>
+
+
+<div class="maintop"> 
+    <body>
+      <p> <h2> Cinekid</h></p>
+     <!--  <p> <br>  <a href="index.html" target="_self">  <img src="images/02943.jpg" width="1000px" /> </br> -->
+  </div>
+</body>
+
+</html>
