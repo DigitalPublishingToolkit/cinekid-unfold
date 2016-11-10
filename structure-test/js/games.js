@@ -89,7 +89,7 @@ $(document).ready(function(){
       $('#content').animate({
           'margin-left': 0
         }, 1200);
-    }//end if animation #right-left
+    }//end if animation #left-right
 
   }else{
     //no matching animation, show the hidden content
