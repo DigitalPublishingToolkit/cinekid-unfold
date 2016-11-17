@@ -14,21 +14,29 @@
 </head>
 <body>
 
+  <div id="sidebar">
+    <a href="index.html"><img id="logo" alt="Cinekid logo" src=""> </a>
+    <div id="info">
+      <p>Info goes here, lorem ipsum.</p>
+      <p>This definitely needs some styling. :)</p>
+    </div><!-- end #info -->
 
-<nav id="gameNav">
-  <ul>
-    <li><a href="8.html" data-anim="top-bottom"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> top</a></li>
-    <li><a href="3.html" data-anim="right-left"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> right</a></li>
-    <li><a href="5.html" data-anim="bottom-top"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i> bottom</a></li>
-    <li><a href="1.html" data-anim="left-right"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> left</a></li>
-  </ul>
-  <a href="index.html"><i class="fa fa-home" aria-hidden="true"> home</i></a>
+  </div><!-- end sideBar -->
 
-</nav>
+  <div id="mainFrame">
 
-<div id="content">
-  <h1>This is game 02</h1>
-</div>
+    <div id="gameNav">
+      <a id="aTop" class="gameNav" href="8.html" data-anim="top-bottom"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+      <a id="aRight" class="gameNav" href="3.html" data-anim="right-left"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+      <a id="aBottom" class="gameNav" href="5.html" data-anim="bottom-top"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
+      <a id="aLeft" class="gameNav" href="1.html" data-anim="left-right"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>
+    </div>
+
+    <div id="content" class="plain">
+      <h1>This is game 02</h1>
+    </div>
+
+  </div><!-- end #mainFrame -->
 
 <script src="js/games.js"></script>
 </body>

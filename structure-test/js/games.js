@@ -24,7 +24,8 @@ $(document).ready(function(){
   setAnimDirection = window.location.hash;
 
   //read window width (will be used in positioning content offscreen)
-  var wWidth = $(window).width();
+  // var wWidth = $(window).width();
+  var wWidth = $('#content').width();
   var wHeight = $(window).height();
 
   //if hash is one of the items inside animations array, go ahead and animate the content!
@@ -98,13 +99,13 @@ $(document).ready(function(){
   }
 
   //SEND animation to next page
-  $('#gameNav a').on('click', function(){
+  $('a.gameNav').on('click', function(){
 
     //add hash to the end of the URL
     var link = $(this).attr('href') + '#' + $(this).data('anim');
     $(this).attr('href', link);
 
-  });//end gameNav a click
+  });//end .gameNav a click
 
 
 });//end document.ready()
