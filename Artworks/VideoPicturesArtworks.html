@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="VideoPicturesArtworksStyle.css">
+
+<title>Mockup Pictures+Videos fo the artworks</title>
+
+</head>
+
+<body>
+	
+<button id="animaBtn">ANIMAiki</button>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">Back to the Map</span>
+    <img src="ANIMAiki.jpg">
+    <img src="ANIMAiki2.jpg">
+    <video width="250" height="300" controls>
+    	<source src="ANIMAiki.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+<!--<button id="animaBtn">ANIMAiki</button>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">Back to the Map</span>
+    <img src="ANIMAiki.jpg">
+    <img src="ANIMAiki2.jpg">
+    <video width="250" height="300" controls>
+    	<source src="ANIMAiki.mp4" type="video/mp4">
+    </video>
+  </div>
+</div> Teoricamente, posso creare quanti bottoni voglio, e conseguenti modal, con questo sistema ma poi come me lo gestisco il css?
+		C'e' il rischio che mi incasino con gli "id" perche' palese che gli devo dare un diverso id a ognuno. 
+		Come posso gestire nel css il fatto di avere 5 bottoni a cui sono collegati 5 diversi model?-->
+
+<script>
+	// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("animaBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
