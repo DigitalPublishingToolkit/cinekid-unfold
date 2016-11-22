@@ -3,172 +3,26 @@
   <head>
       <title>Cinekid Unfold</title>
     <meta charset="utf-8" />
-    <style type="text/css"> </style>
     <link rel="stylesheet" type="text/css" href="style/style.css" >
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" >
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-</head>
-<body> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  	<!-- Anything Slider optional plugins, but needed so the embeded video controls will work in IE -->
+  	<!-- http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js -->
+  	<script src="js/swfobject.js"></script>
 
-<div class="header">
-<h4> Interviews - Children </h4>
-</div>
+  	<!-- Anything Slider -->
+  	<link rel="stylesheet" href="css/anythingslider.css">
+  	<script src="js/jquery.anythingslider.js"></script>
 
-</body>
-	<!-- <link rel="shortcut icon" href="demos/images/favicon.ico" type="image/x-icon"> -->
-	<link rel="apple-touch-icon" href="demos/images/arrows-minimalist.png">
-
-	<!-- jQuery (required) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-
-	<!-- Demo stuff -->
-	<!-- <link rel="stylesheet" href="demos/css/page.css"> -->
-
-	<!-- Anything Slider optional plugins, but needed so the embeded video controls will work in IE -->
-	<!-- http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js -->
-	<script src="js/swfobject.js"></script>
-
-	<!-- Anything Slider -->
-	<link rel="stylesheet" href="css/anythingslider.css">
-	<script src="js/jquery.anythingslider.js"></script>
-
-	<!-- AnythingSlider video extension; optional, but needed to control video pause/play -->
-	<script src="js/jquery.anythingslider.video.js"></script>
-
-	<script>
-		// DOM Ready
-		$(function(){
-			$('#slider')
-				.anythingSlider({
-					resizeContents      : true,
-					addWmodeToObject    : 'opaque',
-					navigationFormatter : function(index, panel){ // Format navigation labels with text
-						return ['Internet Of Things', 'Artifical Intelligence ', 'Virtual Reality', 'Sensory Technology'][index - 1];
-					}
-				})
-				// Initialize video extension
-				// see https://developers.google.com/youtube/player_parameters?hl=en#Parameters for a list of parameters
-				.anythingSliderVideo({
-					// video id prefix; suffix from $.fn.anythingSliderVideo.videoIndex
-					videoId : 'asvideo',
-					// auto load YouTube api script
-					youtubeAutoLoad : true,
-					// see: https://developers.google.com/youtube/player_parameters#Parameters
-					youtubeParams: {
-						modestbranding : 1,
-						iv_load_policy : 3,
-						fs : 1
-					}
-				});
-
-				//Update demo
-			$("#slider1, #slider2").anythingSlider({
-				expand: false,
-				resizeContents: false,
-				mode: "fade",
-				autoPlay: false,
-				// delay: 500,
-				infiniteSlides: false,
-				buildArrows         : true,     // If true, builds the forwards and backwards buttons
-				buildNavigation     : false,    // If true, builds a list of anchor links to link to each panel
-				buildStartStop      : false,    // If true, builds the start/stop button
-				// Longer number the shorter deplay 
-				resumeDelay         : 10,     // Resume slideshow after user interaction, only if autoplayLocked is true (in milliseconds).
-				animationTime       : 10,      // How long the slideshow transition takes (in milliseconds)
-			})	//AnythingSlider
-			.anythingSliderVideo({
-				// video id prefix; suffix from $.fn.anythingSliderVideo.videoIndex
-				videoId         : 'asvideo',
-				// this option replaces the `addWmodeToObject` option in the main plugin
-				wmode           : "opaque",
-				// auto load YouTube api script
-				youtubeAutoLoad : true,
-				// YouTube iframe parameters, for a full list see:
-				// https://developers.google.com/youtube/player_parameters#Parameters
-				youtubeParams   : {
-					modestbranding : 1,
-					autohide : 1,
-					color: 'white',
-					fs: 0,
-					controls: 1,
-					showinfo: 0,
-					rel: 0,
-					wmode: 'opaque' // this is set by the wmode option above, so no need to include it here
-				}
-			});
-			//add Video
-			$(document).on('click', '#sliderOneAdd', function(){
-				var html = '<div class="videoContainer"><iframe height="100%" width="100%" src="'+ $('#sliderOneInput').val() +'" frameborder="0"></iframe></div>';
-				//append
-				$(html).appendTo('#slider1');
-				//update
-				$('#slider1').anythingSlider().anythingSliderVideo();
-				//alert
-				alert('Video added successfully!');
-			});
-
-			//add Video
-			$(document).on('click', '#sliderTwoAdd', function(){
-				var html = '<div class="videoContainer"><iframe height="100%" width="100%" src="'+ $('#sliderTwoInput').val() +'" frameborder="0"></iframe></div>';
-				//append
-				$(html).appendTo('#slider2');
-				//update
-				$('#slider2').anythingSlider().anythingSliderVideo();
-				//alert
-				alert('Video added successfully!');
-			});
-
-			//delete Video
-			$(document).on('click', '#sliderOneRemove', function(){
-				var api = $('#slider1').data('AnythingSlider');
-				if (api){
-					var page = api.$currentPage;
-					page.remove();
-					//update
-					$('#slider1').anythingSlider().anythingSliderVideo();
-					//alert
-					alert('Video removed!');
-				}
-			});
-
-			//delete Video
-			$(document).on('click', '#sliderTwoRemove', function(){
-				var api = $('#slider2').data('AnythingSlider');
-				if (api){
-					var page = api.$currentPage;
-					page.remove();
-					//update
-					$('#slider2').anythingSlider().anythingSliderVideo();
-					//alert
-					alert('Video removed');
-				}
-			});
-
-				//delete Video
-			$(document).on('click', '#sliderTwoRemove', function(){
-				var api = $('#slider2').data('AnythingSlider');
-				if (api){
-					var page = api.$currentPage;
-					page.remove();
-					//update
-					$('#slider2').anythingSlider().anythingSliderVideo();
-					//alert
-					alert('Video removed');
-				}
-			});
-		});
-	</script>
+  	<!-- AnythingSlider video extension; optional, but needed to control video pause/play -->
+  	<script src="js/jquery.anythingslider.video.js"></script>
 
 </head>
 
 <body>
-
-	<br>
-	<div id="nav">
-		
-	</div>
-	<br><br>
+  <div class="header">
+  <h4> Interviews - Children </h4>
+  </div>
 
 	<!-- START AnythingSlider -->
 	<ul id="slider">
@@ -180,21 +34,53 @@
 		<li class="panel3"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/OkTHIW0nj4Q"  frameborder="0" allowfullscreen></iframe></li>
 
 		<li class="panel4"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/9jxVka2Dzkw" frameborder="0" allowfullscreen></iframe></li>
-		
-		<li class="panel5"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/R4WuJzTfvig" frameborder="0" allowfullscreen></iframe></li>
-			</video>
 
-		<li class="panel6"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/8CX-hNed2vw"  frameborder="0" allowfullscreen></iframe></li>
-			</video>
-		</li>
+		<!--<li class="panel5"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/R4WuJzTfvig" frameborder="0" allowfullscreen></iframe></li>
+
+
+		<li class="panel6"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/8CX-hNed2vw"  frameborder="0" allowfullscreen></iframe></li>-->
+
 
 	</ul> <!-- END AnythingSlider -->
 
-	<br>
 
-	
+
 	</div>
 
+
+  	<script>
+  		// DOM Ready
+  		$(function(){
+
+
+  			$('#slider')
+  				.anythingSlider({
+            autoplay            : true,
+            buildArrows         : false,
+  					resizeContents      : true,
+  					addWmodeToObject    : 'opaque',
+  					navigationFormatter : function(index, panel){ // Format navigation labels with text
+  						return ['Internet Of Things', 'Artifical Intelligence ', 'Virtual Reality', 'Sensory Technology'][index - 1];
+  					}
+  				})
+  				// Initialize video extension
+  				// see https://developers.google.com/youtube/player_parameters?hl=en#Parameters for a list of parameters
+  				.anythingSliderVideo({
+  					// video id prefix; suffix from $.fn.anythingSliderVideo.videoIndex
+  					videoId : 'asvideo',
+  					// auto load YouTube api script
+  					youtubeAutoLoad : true,
+  					// see: https://developers.google.com/youtube/player_parameters#Parameters
+  					youtubeParams: {
+  						modestbranding : 1,
+  						iv_load_policy : 3,
+  						fs : 1
+  					}
+  				});
+
+
+  		});
+  	</script>
 </body>
 
 </html>
