@@ -1,0 +1,27 @@
+#box {
+	position: absolute;
+	text-align: center;
+}
+
+#bar {
+	background-color: white;
+	height: 100px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
+
+#pause {
+	position: absolute;
+	border: 1px solid red;
+	background-color: yellow;
+	left: 10px;
+	
+}
+
+#restart {
+	position: absolute;
+	border: 1px solid red;
+	background-color: yellow;
+	left: 100px;
+}

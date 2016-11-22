@@ -1,0 +1,56 @@
+h1{
+font-size: 20px;
+font-family: bold;
+font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif
+}
+
+
+h2{
+font-size: 18px;
+font-variant: bold;
+font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif
+}
+
+h3{
+font-size: 1px;
+font-variant: bold;
+font-family: "Open Sans",sans-serif;
+}
+
+h4{
+font-size: 25px;
+font-variant: bold;
+font-family: "Open Sans",sans-serif;
+}
+
+
+
+p{
+font-size: 10px;
+font-variant: normal;
+font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif
+}
+
+q{
+
+
+}
+
+
+
+Colors
+
+Red
+RGB: 228/35/19
+#cc3300;
+
+Green
+RGB: 58/170/53
+#339933;
+
+Blue
+RGB: 0/165/223
+#0099cc;
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
