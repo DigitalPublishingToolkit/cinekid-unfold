@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+    <link href="keywordsStyle.css" rel="stylesheet"></link>
+
+    <title>Interviews with Writers</title>
+    
+</head>
+
+<body>
+
+<div id="container"></div>
+
+<script>
+
+var chars = 'Which technology are you interested in?'.split('');
+var container = document.getElementById("container");
+
+var i = 0;
+setInterval(function () {
+    if (i < chars.length) {
+        container.innerHTML += chars[i++];
+    } else {
+        i = 0;
+        container.innerHTML = "";
+    }
+}, 100);  
+
+</script>
+
+    <p>Virtual Reality</p></br>
+    <p>Body Scanning</p></br>
+    <p>Artificial Intelligence</p></br>
+    <p><span><a href="interviewWriters.html">Internet of Things</a></span></p></br>
+
+</body>
+</html>
