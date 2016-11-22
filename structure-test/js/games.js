@@ -3,8 +3,8 @@ $(document).ready(function(){
   //hides content first
   $('#content').hide();
 
-  var setAnimDirection; //will be used to SEND the animation direction according with the link clicked (animates NEXT page content)
-  var getAnimationDirection; //will be used to READ the animation direction according with the link clicked on previous page (animates THIS page content)
+  var setAnimDirection; //will SEND the animation direction according with the link clicked (animates NEXT page content)
+  var getAnimationDirection; //will READ the animation direction according with the link clicked on previous page (animates THIS page content)
 
   /* Aimation directions can be:
   top-bottom
@@ -24,12 +24,11 @@ $(document).ready(function(){
   setAnimDirection = window.location.hash;
 
   //read window width (will be used in positioning content offscreen)
-  // var wWidth = $(window).width();
-  var wWidth = $('#content').width();
+  var wWidth = $(window).width();
   var wHeight = $(window).height();
 
-  //if hash is one of the items inside animations array, go ahead and animate the content!
   if(animations.indexOf(setAnimDirection) != -1){
+    //hash is one of the items inside animations array, go ahead and animate the content!
 
     //CASE1: TOP TO BOTTOM
     if(setAnimDirection == "#top-bottom"){
@@ -90,22 +89,22 @@ $(document).ready(function(){
       $('#content').animate({
           'margin-left': 0
         }, 1200);
-    }//end if animation #left-right
+    }//end if animation #right-left
+
 
   }else{
-    //no matching animation, show the hidden content
+    //no matching animation
+    //show the hidden content
     $('#content').fadeIn();
 
   }
 
   //SEND animation to next page
-  $('a.gameNav').on('click', function(){
-
+  $('#gameNav a').on('click', function(){
     //add hash to the end of the URL
     var link = $(this).attr('href') + '#' + $(this).data('anim');
     $(this).attr('href', link);
+  });
 
-  });//end .gameNav a click
 
-
-});//end document.ready()
+});
