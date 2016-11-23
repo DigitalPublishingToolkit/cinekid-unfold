@@ -8,7 +8,7 @@
 }
 @font-face {
     font-family:'test';
-    src: url("font/Almendra-Bold.otf") format("opentype");
+    src: url("fonts/Almendra-Bold.otf") format("opentype");
 }
 
 #box {

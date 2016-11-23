@@ -80,7 +80,7 @@ I am most interested in the functioning of Internet of Things, than having a fut
 </div>
 
 <script type="text/javascript">
-	$(document).ready(function(){
+	$(document).ready(function textScrollStop(){
 		var windowHeight = $( window ).height();
 		// var marginTop = -100;
 		// var divHeight ;
@@ -93,7 +93,6 @@ I am most interested in the functioning of Internet of Things, than having a fut
 		$('#pause').mouseover(function() {
 			$('#box').stop();
 		});
-
 		$('#restart').mouseover(function() {
 			//var boxMarginTop = $('#box').css('margin-top').replace(/[^-\d\.]/g, '');
 			//var speed = (10000 * boxMarginTop) / windowHeight;
@@ -105,7 +104,14 @@ I am most interested in the functioning of Internet of Things, than having a fut
 		$('#box').css('top', windowHeight - 112);
 		$('#box').animate({"top":- amountToScroll}, 100000);
 
-	}); //end doc ready
+		});
+
+	function textScrollStop(){
+			if {
+				('#box').outerHeight() - windowHeight + 100;
+			};
+		};
+
 </script>
 
 </body>

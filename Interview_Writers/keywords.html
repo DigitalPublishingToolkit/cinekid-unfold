@@ -2,38 +2,66 @@
 <html>
 <head>
 	<meta charset="utf-8">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
-    <link href="keywordsStyle.css" rel="stylesheet"></link>
+	<!-- structure files -->
+	<link href="../css/reset.css" rel="stylesheet" />
+	<link href="../css/games.css" rel="stylesheet" />
+	<link href="../css/font-awesome.min.css" rel="stylesheet" />
 
-    <title>Interviews with Writers</title>
-    
+  <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script> -->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link href="keywordsStyle.css" rel="stylesheet"></link>
+
+  <title>Interviews with Writers</title>
 </head>
-
 <body>
+<!-- structure -->
+<div id="sidebar">
+  <a href="../index.html"><img id="logo" alt="Cinekid logo" src="../img/cinekid-logo.svg"> </a>
+  <div id="info">
+    <p>Info goes here, lorem ipsum.</p>
+    <p>This definitely needs some styling. :)</p>
+  </div><!-- end #info -->
 
-<div id="container"></div>
+</div><!-- end sideBar -->
 
+<div id="mainFrame">
+	<div id="content">
+		<div id="container"></div>
+
+    <p class="pageLinks"><span>Virtual Reality</p></span></p>
+    <p class="pageLinks"><span>Body Scanning</p></span></p>
+    <p class="pageLinks"><span>Artificial Intelligence</span></p>
+    <p class="pageLinks"><span><a href="interviewWriters.html">Internet of Things</a></span></p>
+
+	</div><!-- #content -->
+	<a id="aTop" class="gameNav" href="../What_If/whatif.html" data-anim="top-bottom"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+	<a id="aRight" class="gameNav" href="../Intro/intro.html" data-anim="right-left"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+	<a id="aBottom" class="gameNav" href="../What_If/whatif.html" data-anim="bottom-top"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
+	<a id="aLeft" class="gameNav" href="../Enter_The_Writers/enterthewriters.html" data-anim="left-right"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>
+
+</div><!-- #mainFrame -->
 <script>
+$(document).ready(function(){
 
-var chars = 'Which technology are you interested in?'.split('');
-var container = document.getElementById("container");
+		var chars = 'Which technology are you interested in?'.split('');
+		var container = document.getElementById("container");
 
-var i = 0;
-setInterval(function () {
-    if (i < chars.length) {
-        container.innerHTML += chars[i++];
-    } else {
-        i = 0;
-        container.innerHTML = "";
-    }
-}, 100);  
+		var i = 0;
+		var fn = setInterval(function () {
+		    if (i < chars.length) {
+		        container.innerHTML += chars[i++];
+		    } else {
+					//stop the function
+					clearInterval(fn);
+					//to go back to previous version, comment the line above and uncomment the lines below
+		        //  i = 0;
+		        // container.innerHTML = "";
+		    }
+		}, 100);
 
+});//end document ready
 </script>
-
-    <p>Virtual Reality</p></br>
-    <p>Body Scanning</p></br>
-    <p>Artificial Intelligence</p></br>
-    <p><span><a href="interviewWriters.html">Internet of Things</a></span></p></br>
-
+<!-- structure -->
+<script src="../js/games.js"></script>
 </body>
 </html>
