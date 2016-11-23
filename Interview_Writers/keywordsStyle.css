@@ -29,14 +29,30 @@ p {
 }
 
 span {
+    position: relative;
+    left: 394.99;
+}
+
+#virtualReality, #bodyScanning {
     border: 2px solid #a1a1a1;
     padding: 10px 40px;
     background: #dddddd;
     width: 100px;
     border-radius: 25px;
-<<<<<<< HEAD
 }
-=======
 
+#artIntel {
+    border: 2px solid #a1a1a1;
+    padding: 10px 22px;
+    background: #dddddd;
+    width: 100px;
+    border-radius: 25px;
 }
->>>>>>> 1769824882d695ecc55a947e1295fa3bd107d569
+
+#intThings {
+    border: 2px solid #a1a1a1;
+    padding: 10px 32px;
+    background: #dddddd;
+    width: 100px;
+    border-radius: 25px;
+}
