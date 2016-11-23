@@ -35,11 +35,13 @@
 
 		<li class="panel4"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/9jxVka2Dzkw" frameborder="0" allowfullscreen></iframe></li>
 
-		<!--<li class="panel5"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/R4WuJzTfvig" frameborder="0" allowfullscreen></iframe></li>
+		<li class="panel5"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/R4WuJzTfvig" frameborder="0" allowfullscreen></iframe></li>
 
+		<li class="panel6"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/8CX-hNed2vw"  frameborder="0" allowfullscreen></iframe></li>
 
-		<li class="panel6"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/8CX-hNed2vw"  frameborder="0" allowfullscreen></iframe></li>-->
+    <li class="panel7"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/8CX-hNed2vw"  frameborder="0" allowfullscreen></iframe></li>
 
+    <li class="panel8"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/8CX-hNed2vw"  frameborder="0" allowfullscreen></iframe></li>
 
 	</ul> <!-- END AnythingSlider -->
 
@@ -55,19 +57,22 @@
 
   			$('#slider')
   				.anythingSlider({
-            autoplay            : true,
+            autoplay            : false,
+            // modestbranding      :1,
+            showinfo            :0,
+            // controls            :0,
             buildArrows         : false,
   					resizeContents      : true,
   					addWmodeToObject    : 'opaque',
   					navigationFormatter : function(index, panel){ // Format navigation labels with text
-  						return ['Internet Of Things', 'Artifical Intelligence ', 'Virtual Reality', 'Sensory Technology'][index - 1];
+  						return ['Question 1', 'Question 2', 'Question 3', 'Question 4','Question 5', 'Question 6', 'Question 7', 'Question 8'][index - 1];
   					}
   				})
   				// Initialize video extension
   				// see https://developers.google.com/youtube/player_parameters?hl=en#Parameters for a list of parameters
   				.anythingSliderVideo({
   					// video id prefix; suffix from $.fn.anythingSliderVideo.videoIndex
-  					videoId : 'asvideo',
+  					videoId : 'asvidea.o',
   					// auto load YouTube api script
   					youtubeAutoLoad : true,
   					// see: https://developers.google.com/youtube/player_parameters#Parameters

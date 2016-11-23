@@ -119,7 +119,7 @@ font-family: "Open Sans",sans-serif;
 .anythingSlider-default {
 	margin: 0 auto;
 	/* 45px right & left padding for the arrows, 28px @ bottom for navigation */
-	padding: 0 45px 28px 45px;
+	/*padding: 0 45px 28px 45px;*/
 	/*float: left;*/
   margin-left:  30px;
 }
@@ -138,9 +138,10 @@ font-family: "Open Sans",sans-serif;
 	-webkit-border-radius: 0 0 5px 5px;
 }
 /* Make sure navigation text is visible */
+/*CONTROL MENU*/
 .anythingSlider-default .anythingControls a span {
 	visibility: visible;
-	font-size: 14px;
+	font-size: 13px;
 font-variant: bold;
 font-family: "Open Sans",sans-serif;
 
@@ -149,17 +150,18 @@ font-family: "Open Sans",sans-serif;
 }
 /* Navigation current button, default state */
 .anythingSlider-default .anythingControls a.cur {
-	/*background: #cc3300;*/
-	background: pink;
-	background-color: yellow;
+	background: #cc3300;
+	/*background: pink;*/
+	/*background-color: yellow;*/
 
 	color: #FFF;
 }
 
 /* start-stop button, stopped, default state */
 .anythingSlider-default .anythingControls a.start-stop {
-	background-color: yellow;
-	color: #ddd;
+	background-color: blue;
+	color: ß;
+
 }
 /* start-stop button, playing, default state */
 .anythingSlider-default .anythingControls a.start-stop.playing {
@@ -200,6 +202,7 @@ font-family: "Open Sans",sans-serif;
 .anythingSlider-default.activeSlider .anythingControls a.start-stop {
 	background: #cc3300;
 	color: white;
+	display: none !important;
 }
 /* start-stop button, playing, active state */
 .anythingSlider-default.activeSlider .anythingControls a.start-stop.playing {
@@ -264,15 +267,16 @@ font-family: "Open Sans",sans-serif;
 	float: left;
 }
 
+/*START PLAYLIST BUTTON*/
 /* Autoplay Start/Stop button */
-.anythingSlider-default .anythingControls .start-stop {
+./*anythingSlider-default .anythingControls .start-stop {
 	padding: 2px 5px;
 	width: 40px;
 	text-align: center;
 	text-decoration: none;
 	float: right;
 	z-index: 100;
-	outline: 0;
+	outline: 0;*/
 }
 
 /***********************
