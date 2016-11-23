@@ -16,10 +16,16 @@
     font-family: 'prater_sans_onebold', helvetica, serif;
     font-size: 50px;
     text-align: center;
+    height: 2em;
 }
 
 p {
 	text-align: center;
+}
+
+.pageLinks{
+  line-height: 2em;
+  margin: 2em 0;
 }
 
 span {
@@ -28,4 +34,9 @@ span {
     background: #dddddd;
     width: 100px;
     border-radius: 25px;
+<<<<<<< HEAD
 }
+=======
+
+}
+>>>>>>> 1769824882d695ecc55a947e1295fa3bd107d569

@@ -10,7 +10,7 @@
 }
 
 
-body { 
+body {
 	background: white;
 /*	font-family: 'Droid Sans', sans-serif;
 */	position: relative;
@@ -80,7 +80,7 @@ font-family: "Open Sans",sans-serif;
 	/*width: 600px;*/
 	height: 300px:;
 	position: absolute;
-	float:right;   
+	float:right;
     left: 500px;
     background-color: #0099cc;
     color: white;
@@ -122,9 +122,12 @@ font-family: "Open Sans",sans-serif;
 	border-color: #0099cc;
 	}
 
+
+
+
 	/*@media screen and (max-width: 480px) {
 	h1{
-	font-size: 30pt; 
+	font-size: 30pt;
 	}
 	h2{
 	font-size: 30pt;
@@ -135,11 +138,11 @@ font-family: "Open Sans",sans-serif;
 	}
 
 	p{
-	font-size: 20pt;	
+	font-size: 20pt;
 	padding-left: 20px;
 	color: white;
 
-	}  
+	}
 
 	.header {
 	width: 600px;
@@ -165,7 +168,7 @@ font-family: "Open Sans",sans-serif;
 	}*/*/
 
 /*@media screen and (max-width: 350px){
-		IPHONESCREEN SIZE 
+		IPHONESCREEN SIZE
 
 
 	.mainphoto {

@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'prater_sans_oneregular';
-    src: url(font/PraterSansOne-Reg.otf) format("opentype");
+    src: url("font/PraterSansOne-Reg.otf") format("opentype");
     }
 @font-face {
     font-family:' prater_sans_onebold';
@@ -10,7 +10,7 @@
 }
 
 
-body { 
+body {
 	background: white;
 /*	font-family: 'Droid Sans', sans-serif;
 */	position: relative;
@@ -51,7 +51,7 @@ font-variant: bold;
 font-family: "Open Sans",sans-serif;
 }
 
-	div {
+	div:not('#mainFrame') {
 	padding-left: 20px;
 	/*position: relative;*/
 
@@ -67,6 +67,7 @@ font-family: "Open Sans",sans-serif;
 	position: relative;
 	width: 100px;
 	height: 100px;
+  cursor: pointer;
 	}
 
 	.main1 {
@@ -79,25 +80,27 @@ font-family: "Open Sans",sans-serif;
 	.button {
 	/*width: 600px;*/
 	height: 300px:;
-	position: absolute;
-	float:right;   
-    left: 500px;
+  margin-bottom: 20px;
+	/*position: absolute;
+	float:right;
+    left: 500px;*/
     background-color: #0099cc;
     color: white;
+    display: block;
     /*top: 1px;*/
 	}
 
 	.info{
 	width: 300px;
 	height: 390px;
-	position: absolute;
+	/*position: absolute;
 	top: 200px;
-	left: 500px;
+	left: 500px;*/
 	padding-left: 10px;
 	/*	width: 100px;*/
 	clear:both;
 	/*height: 100px;*/
-	position: left;
+	/*position: left;*/
 	border: solid;
 	border-color: #0099cc;
 
@@ -111,62 +114,36 @@ font-family: "Open Sans",sans-serif;
 	/*padding-top: 1px;*/
 	/*background: white;*/
 	}
+#content-wrapper{
+  display: flex;
+  padding-top: 20px;
+}
+
+#randImage{
+  /*position: absolute;
+  left: 0;
+  margin-left: 30px;*/
+	width: 400px;
+	height: 500px;
+	background-color: white;
+	border-style: solid;
+	border-color: #0099cc;
+}
+
+#randImage img{
+  width: 100%;
+}
+
+#rightContent{
+  margin-left: 60px;
+}
 
 	/*Controles the size of the image*/
-	.randomimage{
+	/*.randomimage{
 	margin-left: 30px;
 	width: 400px;
 	height: 500px;
 	background-color: white;
 	border-style: solid;
 	border-color: #0099cc;
-	}
-
-	/*@media screen and (max-width: 480px) {
-	h1{
-	font-size: 30pt; 
-	}
-	h2{
-	font-size: 30pt;
-	}
-
-	h3{
-	font-size: 30pt;
-	}
-
-	p{
-	font-size: 20pt;	
-	padding-left: 20px;
-	color: white;
-
-	}  
-
-	.header {
-	width: 600px;
-	}
-
-	.mainphoto {
-	/*float: left;*/
-	/*width: 80%;
-	height:   80%;
-	}
-
-	img.logo{
-	width: 100px;*/
-	}
-
-	/*img.main{
-		width: 90%;*/
-	/*height:  500px;*/
-	}
-
-	/*img.aboutphoto {
-	width: 300px;
-	}*/*/
-
-/*@media screen and (max-width: 350px){
-		IPHONESCREEN SIZE 
-
-
-	.mainphoto {
 	}*/
