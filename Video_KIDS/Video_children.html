@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <title>Cinekid Unfold</title>
+    <title>Cinekid Unfold</title>
     <meta charset="utf-8" />
+
+    <!-- structure files -->
+    <link href="../css/reset.css" rel="stylesheet" />
+    <link href="../css/games.css" rel="stylesheet" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
+
     <link rel="stylesheet" type="text/css" href="style/style.css" >
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" >
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -20,35 +26,52 @@
 </head>
 
 <body>
-  <div class="header">
-  <h4> Interviews - Children </h4>
-  </div>
 
-	<!-- START AnythingSlider -->
-	<ul id="slider">
+  <!-- structure -->
+  <div id="sidebar">
+    <a href="../index.html"><img id="logo" alt="Cinekid logo" src="../img/cinekid-logo.svg"> </a>
+    <div id="info">
+      <p>Info goes here, lorem ipsum.</p>
+      <p>This definitely needs some styling. :)</p>
+    </div><!-- end #info -->
 
-		<li class="panel1"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/emRALwNltYA" frameborder="0" allowfullscreen></iframe></li>
+  </div><!-- end sideBar -->
+  <div id="mainFrame">
+    <div id="content">
 
-		<li class="panel2"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/xWfM3wgrLH0" frameborder="0" allowfullscreen></iframe></li>
+      <div class="header">
+      <h4> Interviews - Children </h4>
+      </div>
 
-		<li class="panel3"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/OkTHIW0nj4Q"  frameborder="0" allowfullscreen></iframe></li>
+    	<!-- START AnythingSlider -->
+    	<ul id="slider">
 
-		<li class="panel4"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/9jxVka2Dzkw" frameborder="0" allowfullscreen></iframe></li>
+    		<li class="panel1"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/emRALwNltYA" frameborder="0" allowfullscreen></iframe></li>
 
-		<li class="panel5"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/R4WuJzTfvig" frameborder="0" allowfullscreen></iframe></li>
+    		<li class="panel2"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/xWfM3wgrLH0" frameborder="0" allowfullscreen></iframe></li>
 
-		<li class="panel6"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/8CX-hNed2vw"  frameborder="0" allowfullscreen></iframe></li>
+    		<li class="panel3"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/OkTHIW0nj4Q"  frameborder="0" allowfullscreen></iframe></li>
 
-    <li class="panel7"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/8CX-hNed2vw"  frameborder="0" allowfullscreen></iframe></li>
+    		<li class="panel4"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/9jxVka2Dzkw" frameborder="0" allowfullscreen></iframe></li>
 
-    <li class="panel8"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/8CX-hNed2vw"  frameborder="0" allowfullscreen></iframe></li>
+    		<li class="panel5"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/R4WuJzTfvig" frameborder="0" allowfullscreen></iframe></li>
 
-	</ul> <!-- END AnythingSlider -->
+    		<li class="panel6"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/8CX-hNed2vw"  frameborder="0" allowfullscreen></iframe></li>
 
+        <li class="panel7"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/8CX-hNed2vw"  frameborder="0" allowfullscreen></iframe></li>
 
+        <li class="panel8"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/8CX-hNed2vw"  frameborder="0" allowfullscreen></iframe></li>
 
-	</div>
+    	</ul> <!-- END AnythingSlider -->
 
+    </div><!-- #content -->
+
+  <a id="aTop" class="gameNav" href="../Intro/intro.html" data-anim="top-bottom"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+  <a id="aRight" class="gameNav" href="../Artworks/VideoPicturesArtworks.html" data-anim="right-left"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+  <a id="aBottom" class="gameNav" href="../Intro/intro.html" data-anim="bottom-top"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
+  <a id="aLeft" class="gameNav" href="../What_If/whatif.html" data-anim="left-right"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>
+
+  </div><!-- #mainFrame -->
 
   	<script>
   		// DOM Ready
@@ -86,6 +109,9 @@
 
   		});
   	</script>
+
+    <!-- structure -->
+    <script src="../js/games.js"></script>
 </body>
 
 </html>
