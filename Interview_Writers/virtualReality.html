@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 	<link href="DearDeerStyleS.css" rel="stylesheet"> -->
-
-	  <link rel="stylesheet" type="text/css" href="virtualRealityStyle.css">
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -16,6 +12,7 @@
 
   <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script> -->
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="virtualRealityStyle.css">
   <link href="keywordsStyle.css" rel="stylesheet"></link>
 
   <title>Q&A Virtual Reality</title>
@@ -31,15 +28,12 @@
 
 </div><!-- end sideBar -->
 
-</head>
-<body>
+<div id="mainFrame">
+	<div id="content">
 
 <div id="box">
 
 <h1> Marloeke van der Vlught </h1>
-
-
-
 
 <h2>We read your essays in the “Enter the Writers”, and we noticed you are interested in the Internet of Things. What was your first experience with Internet of Things?</h2>
 <p>It was a long time ago, when the concept got known in Holland. I read this Internet of Things booklet by Rob van Kranenburg, which really triggered my mind because it was the first time that you could really think about the environment communicating information about ourselves. Of course, we knew that the environment was seeing us. Reading the booklet made me think about the environment communicating data about us or through objects, which was really mindblowing. So how can you implement that, in the way that is interesting and kind of empowering? My first practical experience with the Internet of Things was with the thermostat, which you can access using your mobile phone. It is not much different from doing it on the machine itself, but now you could access it from a distance and even connect it to other devices. It was interesting to see what Waag Society was doing, giving devices to citizens to measure their environment. So, you would have a little system hanging in your balcony to measure temperature, sound and pollution, which will be connected to some other device, to convey the data. It was interesting to see the whole environment doing something by itself without us interacting  much with it.</p>
@@ -71,38 +65,50 @@ I am most interested in the functioning of Internet of Things, than having a fut
 <p id="pause"> PAUSE</p> <p id="restart">RESTART</p>
 </div>
 
+</div><!-- #content -->
+<a id="aTop" class="gameNav" href="../What_If/whatif.html" data-anim="top-bottom"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+<a id="aRight" class="gameNav" href="../Intro/intro.html" data-anim="right-left"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+<a id="aBottom" class="gameNav" href="../What_If/whatif.html" data-anim="bottom-top"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
+<a id="aLeft" class="gameNav" href="../Enter_The_Writers/enterthewriters.html" data-anim="left-right"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>
+
+</div><!-- #mainFrame -->
 <script type="text/javascript">
 	$(document).ready(function textScrollStop(){
 		var windowHeight = $( window ).height();
 		// var marginTop = -100;
 		// var divHeight ;
 		var amountToScroll =  $('#box').outerHeight() - windowHeight + 100;
-		//console.log(amountToScroll);
+		console.log('amountToScroll ' +amountToScroll);
 
-		// $('#box').css('margin-top', windowHeight);
-		// $('#box').animate({"margin-top":marginTop}, 10000);
-		
 		$('#pause').mouseover(function() {
 			$('#box').stop();
 		});
+
 		$('#restart').mouseover(function() {
-			//var boxMarginTop = $('#box').css('margin-top').replace(/[^-\d\.]/g, '');
-			//var speed = (10000 * boxMarginTop) / windowHeight;
-			//$('#box').animate({"margin-top": marginTop}, speed);
 			//console.log($('#box').css('top'));
-			$('#box').animate({"top":- amountToScroll}, 100000);
+			//offset().top
+			$('#box').animate({"top":- amountToScroll}, 50000);
 		});
 
 		$('#box').css('top', windowHeight - 112);
-		$('#box').animate({"top":- amountToScroll}, 100000);
+		$('#box').animate({"top":- amountToScroll}, 50000);
+
+		var interv = setInterval(function(){
+			console.log(	- parseInt($('#box').css('top')) );
+			//stops the scrolling at the end
+			if (- parseInt($('#box').css('top')) >= amountToScroll){
+				//stops current animation. see https://api.jquery.com/stop/ for more info
+				$('#box').stop();
+				console.log('animation finished');
+				clearInterval(interv);
+				//$('#box').css('position', 'static');
+			}
+		}, 3000);
+
+
 
 		});
 
-	function textScrollStop(){
-			if {
-				('#box').outerHeight() - windowHeight + 100;
-			};
-		};
 
 </script>
 
