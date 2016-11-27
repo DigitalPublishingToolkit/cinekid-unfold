@@ -6,53 +6,41 @@
     font-family:'prater_sans_onebold';
     src: url("fonts/PraterSansOne-Bd.otf") format("opentype");
 }
-@font-face {
-    font-family:'test';
-    src: url("fonts/Almendra-Bold.otf") format("opentype");
-}
 
-
-/*#content{
+/* main structure CSS needs to be different IN THIS PAGE ONLY */
+#sidebar{
   position: fixed;
-  overflow: auto;
-  width: 70%;
 }
 
-#box {
-  background-color: blue;
-  overflow: scroll;
-	text-align: left;
-	margin-bottom: 100px; */ /* bar height */
-  /*padding-right: 3em;
-}*/
+#mainFrame{
+  position: static;
+  margin-left: calc(15% + .9em);
+}
 
 #content{
-  position: static;
-  overflow: auto;
-  width: 70%;
+  width: calc(100% - 6em);
+  height: auto;
+  overflow: visible;
+  background-color: white;
+  padding: 0 3em;
 }
-
-#box {
-  position: absolute;
-  overflow: scroll;
-  text-align: left;
-  margin-bottom: 100px; /* bar height */
-  padding-right: 3em;
-}
-
-#box p{
-  text-align: left;
+#content p{
+   text-align: left !important;
 }
 
 #bar {
-	background-color: white;
+	background-color: rgba(255, 255, 255, 1);
 	height: 100px;
 	width: 100%;
 	position: fixed;
-	margin-left:  -3em;
 	bottom: 0;
 	font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
 }
+
+.gameNav {position: fixed !important;}
+#aLeft{left: calc(15% + .9em);}
+#aTop, #aBottom{left: calc(57.5% - 0.5em);}
+/* end structure elements */
 
 #pause {
 	position: absolute;
@@ -76,7 +64,9 @@
   top: 2em;
 }
 
-h1, h2, h3, h4{margin: 0.5em 0;}
+h1, h2, h3, h4{margin: 2em 0 1em 0;}
+
+
 h1{
 font-size: 25px;
 font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
@@ -84,7 +74,7 @@ font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
 
 h2{
 font-size: 18px;
-font-variant: bold;
+/*font-variant: bold;*/
 font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
 }
 
@@ -94,12 +84,12 @@ font-variant: bold;
 font-family: "Open Sans",sans-serif;
 }
 
-q{
+/*q{
   font-style: italic;
-}
+}*/
 
 h4{
 font-size: 35px;
 /*font-variant: bold;
-  font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
-}*/
+  font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;*/
+}
