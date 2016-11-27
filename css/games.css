@@ -7,7 +7,7 @@ body{display: flex;}
   width: 15%;
   height: 100%;
   z-index: 12;
-  background-color: #000;
+  background-color: #cc3300;
   color: #fff;
   padding: .45em;
 }
@@ -16,9 +16,14 @@ body{display: flex;}
 #logo{ }
 #info{
   padding-top: 1em;
-  font-size: .8em;
 }
-
+#info p{
+  font-size: 13px;
+  font-variant: normal;
+  font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: left;
+}
 /*main content frame */
 #mainFrame{position: relative;width: 85%;}
 
