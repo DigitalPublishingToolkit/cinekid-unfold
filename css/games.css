@@ -10,6 +10,9 @@ body{display: flex;}
   background-color: #cc3300;
   color: #fff;
   padding: .45em;
+  text-shadow: 1px 1px 0 #000;
+  /* to display all text, if needed */
+  overflow-y: auto;
 }
 #sidebar a{color: #fff;}
 
