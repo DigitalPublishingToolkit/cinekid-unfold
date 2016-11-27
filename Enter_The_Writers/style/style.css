@@ -78,11 +78,6 @@ font-size: 35px;
 }
 
 
-body{
-	/*width: 90%*/
-	/*background-color: red;*/
-}
-
 p{
 font-size: 13px;
 font-variant: normal;
@@ -96,15 +91,3 @@ div.header {
 	width: 100%;
 	height: 10px;
 }
-/*div.nav {
-	margin-left:  10px;
-	margin-bottom: 5px;
-	margin-top: 10px;
-	width: 100%;
-	height: 30px;*/
-}
-
-
-/*HTML*/
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-

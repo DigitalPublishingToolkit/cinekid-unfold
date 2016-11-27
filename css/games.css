@@ -32,10 +32,12 @@ body{display: flex;}
   z-index: 999; /* all arrows on top of everything */
 }
 
-#aTop{position: absolute; top: 0.5em; left: calc(50% - 0.5em);}
-#aBottom{position: absolute; bottom: 0.5em; left: calc(50% - 0.5em);}
-#aLeft{position: absolute; left: 0.5em; top: calc(50% - 0.5em);}
-#aRight{position: absolute; right: 0.5em; top: calc(50% - 0.5em);}
+#aTop{position: absolute; top: 0.5em; left: calc(50% - 0.5em); width: 30px;}
+#aBottom{position: absolute; bottom: 0.5em; left: calc(50% - 0.5em); width: 30px;}
+#aLeft{position: absolute; left: 0.5em; top: calc(50% - 0.5em); width: 30px;}
+#aRight{position: absolute; right: 0.5em; top: calc(50% - 0.5em); width: 30px;}
+
+.gameNav img{width: 100%;}
 
 /* content */
 #content{

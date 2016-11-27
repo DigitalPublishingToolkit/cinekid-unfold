@@ -4,43 +4,24 @@
   <meta charset="utf-8">
   <title>Index</title>
   <link href="css/reset.css" rel="stylesheet" />
-  <style>
-  /* only relevant to the main page */
-  #grid{
-    width: 100vw;
-    height: 100vh;
-  }
-  .grid-row{
-    display: flex;
-    align-items: stretch;
-  }
-  .grid-cell{
-    width: 33.3vw;
-    height: calc(50vh - 1px);
-    background-color: #ccc;
-    border-top: 1px solid #bbb;
-    border-right: 1px solid #bbb;
-    cursor: pointer;
-    text-align: center;
-    line-height: 1em;
-  }
-  .grid-cell:hover{
-   background-color: #aaa;
-  }
-  </style>
+  <link href="css/grid.css" rel="stylesheet" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
 <div id="grid">
-  <div class="grid-row">
-    <a href="Interview_Writers/keywords.html"><div class="grid-cell">1</div></a>
-    <a href="Intro/intro.html"><div class="grid-cell">2</div></a>
-    <a href="Enter_The_Writers/enterthewriters.html"><div class="grid-cell">3</div></a>
+  <div class="grid-column">
+    <a href="Interview_Writers/keywords.html"><div class="grid-cell" id="c1"></div></a>
+    <a href="What_If/whatif.html"><div class="grid-cell" id="c4"></div></a>
   </div>
-  <div class="grid-row">
-    <a href="What_If/whatif.html"><div class="grid-cell">4</div></a>
-    <a href="Video_KIDS/Video_children.html"><div class="grid-cell">5</div></a>
-    <a href="Artworks/artworks.html"><div class="grid-cell">6</div></a>
+  <div class="grid-column">
+    <a href="Intro/intro.html"><div class="grid-cell small-cell" id="c2"></div></a>
+    <div class="grid-cell small-cell logo"></div>
+    <a href="Video_KIDS/Video_children.html"><div class="grid-cell small-cell" id="c5"></div></a>
+
+  </div>
+  <div class="grid-column">
+    <a href="Enter_The_Writers/enterthewriters.html"><div class="grid-cell" id="c3"></div></a>
+      <a href="Artworks/artworks.html"><div class="grid-cell" id="c6"></div></a>
   </div>
 </div>
 <script>
