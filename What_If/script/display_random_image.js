@@ -3,54 +3,255 @@ $(document).ready(function(){
   /* variables */
 
 var theImages = [{
-     src: "./images/02850.png",
+     src: "./images/whatif000.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif001.png",
+     width: "350",
+     height: "450"
+ }, {
+        src: "./images/whatif002.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif003.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif004.png",
+     width: "350",
+     height: "450/"
+ }, {
+         src: "./images/whatif005.png",
+     width: "350",
+     height: "450"
+ }, {
+  src: "./images/whatif006.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif007.png",
+     width: "350",
+     height: "450"
+ }, {
+        src: "./images/whatif008.png",
+     width: "350",
+     height: "450"
+ }, {
+        src: "./images/whatif009.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif010.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif011.png",
+     width: "350",
+     height: "450"
+ }, {
+        src: "./images/whatif012.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif013.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif014.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif015.png",
+     width: "350",
+     height: "450"
+ }, {
+   src: "./images/whatif016.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif017.png",
+     width: "350",
+     height: "450"
+ }, {
+        src: "./images/whatif018.png",
+     width: "350",
+     height: "450"
+ }, {
+        src: "./images/whatif019.png",
+     width: "350",
+     height: "450"
+ }, {
+       src: "./images/whatif020.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif021.png",
+     width: "350",
+     height: "450"
+ }, {
+        src: "./images/whatif022.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif023.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif024.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif025.png",
+     width: "350",
+     height: "450"
+ }, {
+     src: "./images/whatif026.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif027.png",
+     width: "350",
+     height: "450"
+ }, {
+        src: "./images/whatif028.png",
+     width: "350",
+     height: "450"
+ }, {
+        src: "./images/whatif029.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif030.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif031.png",
+     width: "350",
+     height: "450"
+ }, {
+        src: "./images/whatif032.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif033.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif034.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif035.png",
+     width: "350",
+     height: "450"
+ }, {
+   src: "./images/whatif036.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif037.png",
+     width: "350",
+     height: "450"
+ }, {
+        src: "./images/whatif038.png",
+     width: "350",
+     height: "450"
+ }, {
+        src: "./images/whatif039.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif040.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif041.png",
+     width: "350",
+     height: "450"
+ }, {
+        src: "./images/whatif042.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif043.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif044.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif045.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif046.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif047.png",
+     width: "350",
+     height: "450"
+ }, {
+        src: "./images/whatif048.png",
+     width: "350",
+     height: "450"
+ }, {
+        src: "./images/whatif049.png",
+     width: "350",
+     height: "450"
+ }, {
+       src: "./images/whatif050.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif051.png",
+     width: "350",
+     height: "450"
+ }, {
+        src: "./images/whatif052.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif053.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif054.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif055.png",
+     width: "350",
+     height: "450"
+  }, {   src: "./images/whatif056.png",
+     width: "350",
+     height: "450"
+ }, {
+         src: "./images/whatif057.png",
+     width: "350",
+     height: "450"
+ }, {
+        src: "./images/whatif058.png",
+     width: "350",
+     height: "450"
+ }, {
+        src: "./images/whatif059.png",
+     width: "350",
+     height: "450"
+ }, {
+       src: "./images/whatif060.png",
      // width: "350",
      // height: "450"
- }, {
-      src: "./images/02891.png",
-     // width: "350",
-     // height: "450"
- }, {
-     src: "./images/02905.png",
-     //  width: "350",
-     // height: "450"
- }, {
-     src: "./images/02911.png",
-     // width: "350",
-     // height: "450"
- }, {
-     src: "./images/02913.png",
-    // width: "350",
-    //  height: "450"
- }, {
-     src: "./images/02930.png",
-    // width: "350",
-    //  height: "450"
- }, {
-     src: "./images/02988.png",
-     // width: "350",
-     // height: "450"
- }, {
-     src: "./images/03574.png",
-     // width: "350",
-     // height: "450"
- }, {
-     src: "./images/03594.png",
-    // width: "350",
-    //  height: "450"
- }, {
-     src: "./images/03595.png",
-    // width: "350",
-    //  height: "450"
- }, {
-     // src: "http://www.mediasmarties.nl/media/uploads/dsc04764.jpg",
-     // width: "600",
-     // height: "350"
+
+
  }];
 
  var numImages = theImages.length;
 
- /* functions */
+ / functions */
 
  // generates a random number between 0 and the number of images in the array (theImages)
  function randomNumberFromRange(min,max){

@@ -80,12 +80,14 @@ font-family: "Open Sans",sans-serif;
 	.button {
 	/*width: 600px;*/
 	height: 300px:;
-  margin-bottom: 20px;
-	/*position: absolute;
+  	margin-bottom: 20px;
+	position: absolute;
 	float:right;
-    left: 500px;*/
-    background-color: #0099cc;
+    left: 580px;
+    top: 95px;
+    background-color: Transparent;
     color: white;
+    border: Transparent;
     display: block;
     /*top: 1px;*/
 	}
