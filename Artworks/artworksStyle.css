@@ -11,14 +11,6 @@
     src: url("../fonts/Almendra-Bold.otf") format("opentype");
 }
 
-#info p{
-  font-size: 13px;
-  font-variant: normal;
-  font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
-  color: white;
-  text-align: left;
-}
-
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
