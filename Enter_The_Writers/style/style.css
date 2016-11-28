@@ -51,20 +51,20 @@ margin-left:1px;
 }
 
 h1{
-font-size: 25px;
-font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif !important;
+font-size: 18px;
+font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
 }
 
 h2{
 font-size: 18px;
 font-variant: bold;
-font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif !important;
+font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif ;
 }
 
 h3{
 font-size: 14px;
-font-variant: bold;
-font-family: "Open Sans",sans-serif !important;
+font-style: bold;
+font-family: "Open Sans",sans-serif ;
 }
 
 q{
@@ -72,16 +72,16 @@ q{
 }
 
 h4{
-font-size: 35px;
+font-size: 50px;
 /*font-variant: bold;*/
-  font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif !important;
+  font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif ;
 }
 
 
 p{
 font-size: 13px;
 font-variant: normal;
-font-family: "Open Sans",sans-serif !important;
+font-family: "Open Sans",sans-serif;
 
 }
 

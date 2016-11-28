@@ -6,10 +6,6 @@
     font-family:'prater_sans_onebold';
     src: url("fonts/PraterSansOne-Bd.otf") format("opentype");
 }
-@font-face {
-    font-family:'test';
-    src: url("fonts/Almendra-Bold.otf") format("opentype");
-}
 
 
 #content{
@@ -17,26 +13,46 @@
 	width: auto;
 }
 
-h1 {
-	font-size: 40px;
-	font-variant: bold;
-	font-family: 'Almendra-Bold', helvetica, serif;
-    /*font-family: bold;*/
-	/*font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;*/
-	text-align: center;
+
+h1{
+font-size: 50px;
+font-family: bold;
+font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
 }
 
-p {
-	font-size: 20px;
-	font-variant: normal;
-	font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
 
+h2{
+font-size: 25px;
+font-variant: bold;
+font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
+font-color: #cc3300;
+}
+
+h3{
+font-size: 1px;
+font-variant: bold;
+font-family: "Open Sans",sans-serif;
+font-color: #cc3300;
+}
+
+h4{
+font-size: 25px;
+font-variant: bold;
+font-family: "Open Sans",sans-serif;
+}
+
+
+
+p{
+font-size: 18px;
+font-variant: normal;
+font-family: "Open Sans",sans-serif;
 }
 
 #teamMembers {
-	font-size: 15px;
+	font-size: 13px;
 	font-variant: normal;
-	font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
+	font-family: "Open Sans",sans-serif;
 }
 
 /*@font-face {*/
