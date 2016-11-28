@@ -52,19 +52,19 @@ margin-left:1px;
 
 h1{
 font-size: 25px;
-font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
+font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif !important;
 }
 
 h2{
 font-size: 18px;
 font-variant: bold;
-font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
+font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif !important;
 }
 
 h3{
 font-size: 14px;
 font-variant: bold;
-font-family: "Open Sans",sans-serif;
+font-family: "Open Sans",sans-serif !important;
 }
 
 q{
@@ -74,14 +74,14 @@ q{
 h4{
 font-size: 35px;
 /*font-variant: bold;*/
-  font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
+  font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif !important;
 }
 
 
 p{
 font-size: 13px;
 font-variant: normal;
-font-family: "Open Sans",sans-serif;
+font-family: "Open Sans",sans-serif !important;
 
 }
 

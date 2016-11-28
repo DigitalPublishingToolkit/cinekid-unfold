@@ -7,10 +7,10 @@ body{display: flex;}
   width: 15%;
   height: 100%;
   z-index: 12;
-  background-color: #cc3300;
-  color: #fff;
+  background-color: white;
+  font-color: black;
   padding: .45em;
-  text-shadow: 1px 1px 0 #000;
+/*  text-shadow: 1px 1px 0 #000;*/
   /* to display all text, if needed */
   overflow-y: auto;
 }
@@ -23,9 +23,10 @@ body{display: flex;}
 #info p{
   font-size: 13px;
   font-variant: normal;
-  font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
-  color: white;
+  font-family: "Open Sans",sans-serif !important;
+  color: black;
   text-align: left;
+  padding: 5px;
 }
 /*main content frame */
 #mainFrame{position: relative;width: 85%;}
