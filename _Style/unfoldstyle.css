@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'prater_sans_oneregular';
+    src: url("fonts/PraterSansOne-Reg.otf") format("opentype");
+    }
+@font-face {
+    font-family:'prater_sans_onebold';
+    src: url("fonts/PraterSansOne-Bd.otf") format("opentype");
+}
+@font-face {
+    font-family:'test';
+    src: url("fonts/Almendra-Bold.otf") format("opentype");
+}
+
 h1{
 font-size: 20px;
 font-family: bold;
