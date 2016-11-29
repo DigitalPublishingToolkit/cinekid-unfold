@@ -13,21 +13,12 @@
 	width: auto;
 }
 
-<<<<<<< HEAD
+
 
 h1{
 font-size: 50px;
 font-family: bold;
 font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
-=======
-h1 {
-	font-size: 40px;
-	font-variant: bold;
-	font-family: 'prater_sans_onebold', helvetica, serif;
-    /*font-family: bold;*/
-	/*font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;*/
-	text-align: center;
->>>>>>> b1e87fa49170529cf3243ac94f3927baf9c9227f
 }
 
 
