@@ -24,31 +24,38 @@
 	<div id="mainFrame">
 		<div id="content">
 
-			<button id="animaBtn">ANIMAiki</button>
+			<button id="btn0" data-modal="modal0">ANIMAiki</button>
+
+			<button id="btn1" data-modal="modal1">ANIMAiki 2</button>
 			<!-- The Modal -->
 			<div id="myModal" class="modal">
 			  <!-- Modal content -->
 			  <div class="modal-content">
-			    <span class="close">Back to the Map</span>
-			    <img src="ANIMAiki.jpg">
-			    <img src="ANIMAiki2.jpg">
-			    <video width="250" height="300" controls>
-			    	<source src="ANIMAiki.mp4" type="video/mp4">
-			    </video>
-			  </div>
-			</div>
 
-			<!--<button id="animaBtn">ANIMAiki</button>
-			<div id="myModal" class="modal">
-			  <div class="modal-content">
-			    <span class="close">Back to the Map</span>
-			    <img src="ANIMAiki.jpg">
-			    <img src="ANIMAiki2.jpg">
-			    <video width="250" height="300" controls>
-			    	<source src="ANIMAiki.mp4" type="video/mp4">
-			    </video>
-			  </div>
-			</div> -->
+					<div class="media">
+						 <ul>
+							<!--<li>
+				    		<img src="ANIMAiki.jpg">
+							</li>
+							<li>
+				    		<img src="ANIMAiki2.jpg">
+							</li>
+							<li>
+						    <video width="250" height="300" controls>
+						    	<source src="ANIMAiki.mp4" type="video/mp4">
+						    </video>
+							</li>-->
+						</ul>
+					</div><!-- .media -->
+					<div class="mediaNav">
+						<span class="prev">Prev</span> <span class="next">Next</span>
+					</div>
+
+					<span class="close">x</span>
+			  </div><!-- .modal-content -->
+			</div><!-- #myModal -->
+
+
 
 	</div><!-- #content -->
 
@@ -60,31 +67,139 @@
 	</div><!-- #mainFrame -->
 
 <script>
+$(document).ready(function(){
+
 	// Get the modal
-var modal = document.getElementById('myModal');
+	//var modal = document.getElementById('myModal');
 
-// Get the button that opens the modal
-var btn = document.getElementById("animaBtn");
+	// Get the button that opens the modal
+	//var btn = document.getElementById("btn1");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+	// Get the <span> element that closes the modal
+	//var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-}
+	// When the user clicks on the button, open the modal
+	// btn.onclick = function() {
+	// 	modal.style.display = "block";
+	// }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
+	// When the user clicks on <span> (x), close the modal
+	// span.onclick = function() {
+	// 	modal.style.display = "none";
+	// }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+	// When the user clicks anywhere outside of the modal, close it
+	// window.onclick = function(event) {
+	// 	if (event.target == modal) {
+	// 			modal.style.display = "none";
+	// 	}
+	// }
+
+	//media
+	var content = [
+		//modal0
+		[
+			'../img/ANIMAiki.jpg',
+			'../img/ANIMAiki2.jpg',
+			'https://www.youtube.com/embed/emRALwNltYA'
+		],
+		//modal1
+		[
+			'../img/ANIMAiki.jpg',
+			'../img/ANIMAiki2.jpg',
+			'../img/ANIMAiki.jpg',
+			'../img/ANIMAiki2.jpg',
+			'https://www.youtube.com/embed/emRALwNltYA'
+		]
+	];
+
+  var selModal;
+	var totalMedia;
+	var curMedia;
+
+	$('button').on('click', function(){
+		  $('#myModal').css('display', 'block');
+			selModal = $(this).index(); //0, 1, etc
+			selectModal(selModal);
+	});
+
+	$('.close').on('click', function(){
+		$('#myModal').css('display', 'none');
+		$('.media ul li').eq(curMedia).removeClass('curMedia');
+		//delete existing li items
+		$('.media ul').children().remove();
+	});
+
+	$(window).on('click', function(ev){
+		if (ev.target.id == 'myModal') {
+				$('#myModal').css('display', 'none');
+				$('.media ul li').eq(curMedia).removeClass('curMedia');
+				//delete existing li items
+				$('.media ul').children().remove();
+		}
+	});
+
+	$('.media ul li').css({
+		'display': 'none'
+	});
+
+
+
+	function selectModal(selModal){
+
+		totalMedia = content[selModal].length;
+		curMedia = 0;
+
+		//loop through the content array and add media files to ul li
+		//$('.media').append('<ul>');
+		for(var m = 0; m < totalMedia; m++){
+			//alert(m);
+			var i = content[selModal][m].indexOf('http');
+			if(i != -1){
+			  //video
+				//https://www.youtube.com/embed/emRALwNltYA
+				$('.media ul').append('<li><iframe title="YouTube video player" width="100%" height="auto" src="'+content[selModal][m]+'" frameborder="0" allowfullscreen></iframe></li>');
+				//$('.media ul').append('<li><video controls><source src="'+content[selModal][m]+'" type="video/mp4"/></video></li>');
+			}else{
+				//img
+				//console.log('img');
+				$('.media ul').append('<li><img src="'+content[selModal][m]+'" /></li>');
+			}
+
+		}
+
+		//display first media item
+		$('.media ul li').eq(curMedia).addClass('curMedia');
+
+		$('.next').on('click', function(){
+			//remove curMedia from original item
+			$('.media ul li').eq(curMedia).removeClass('curMedia');
+			if(curMedia < totalMedia - 1){
+				curMedia++;
+			}else{
+				curMedia = 0;
+			}
+			//add class to new curMedia item
+			$('.media ul li').eq(curMedia).addClass('curMedia');
+		});
+
+		$('.prev').on('click', function(){
+			//remove curMedia from original item
+			$('.media ul li').eq(curMedia).removeClass('curMedia');
+			if(curMedia > 0){
+				curMedia--;
+			}else{
+				curMedia = totalMedia - 1;
+			}
+			//add class to new curMedia item
+			$('.media ul li').eq(curMedia).addClass('curMedia');
+		});
+
+	}
+
+
+});
+
 </script>
 
 <!-- structure -->
