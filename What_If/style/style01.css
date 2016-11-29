@@ -10,16 +10,14 @@
 }
 
 
-body {
+/*body {
 	background: white;
-/*	font-family: 'Droid Sans', sans-serif;
-*/	position: relative;
+	position: relative;
+	}*/
 
-	}
-
-h1{
+h1, .button{
 font-size: 20px;
-font-family: bold;
+font-weight: bold;
 font-family: "Open Sans",sans-serif;
 /*font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;*/
 }
@@ -78,18 +76,23 @@ font-family: "Open Sans",sans-serif;
 
 
 	.button {
-	/*width: 600px;*/
-	height: 300px:;
+  	width: 140px;
+  	height: 80px;
   	margin-bottom: 20px;
-	position: absolute;
-	float:right;
+    position: relative;
+    cursor: pointer;
+  	/*position: absolute;
+  	float:right;
     left: 580px;
-    top: 95px;
+    top: 95px;*/
     background-color: Transparent;
     color: white;
-    border: Transparent;
+    border: none;
     display: block;
+    text-align: center;
     /*top: 1px;*/
+    /* svg background */
+    background: url('../../img/btn.svg') no-repeat center center;
 	}
 
 	.info{
