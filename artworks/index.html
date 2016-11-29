@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Cinekid Unfold - Artworks</title>
+	<!-- structure files -->
+	<link href="../assets/css/reset.css" rel="stylesheet" />
+	<link href="../assets/css/games.css" rel="stylesheet" />
+	<link href="../assets/css/font-awesome.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+	<!-- structure -->
+	<div id="sidebar">
+	  <a href="../index.html"><img id="logo" alt="Cinekid logo" src="../assets/icons/cinekid-logo.svg"> </a>
+	  <div id="info">
+	    <p>Discover information about some of the artworks presented in the Cinekid Medialab 2016, to get more familiarised with their functionalities and technologies embedded within them.</p>
+	  </div><!-- end #info -->
+
+	</div><!-- end sideBar -->
+	<div id="mainFrame">
+		<div id="content">
+
+			<button id="animaBtn">ANIMAiki</button>
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+			  <!-- Modal content -->
+			  <div class="modal-content">
+			    <span class="close">Back to the Map</span>
+			    <img src="ANIMAiki.jpg">
+			    <img src="ANIMAiki2.jpg">
+			    <video width="250" height="300" controls>
+			    	<source src="ANIMAiki.mp4" type="video/mp4">
+			    </video>
+			  </div>
+			</div>
+
+			<!--<button id="animaBtn">ANIMAiki</button>
+			<div id="myModal" class="modal">
+			  <div class="modal-content">
+			    <span class="close">Back to the Map</span>
+			    <img src="ANIMAiki.jpg">
+			    <img src="ANIMAiki2.jpg">
+			    <video width="250" height="300" controls>
+			    	<source src="ANIMAiki.mp4" type="video/mp4">
+			    </video>
+			  </div>
+			</div> -->
+
+	</div><!-- #content -->
+
+		<a id="aTop" class="gameNav" href="../Enter_The_Writers/enterthewriters.html" data-anim="top-bottom"><img src="../assets/icons/arrow-top.svg" ></a>
+		<a id="aRight" class="gameNav" href="../What_If/whatif.html" data-anim="right-left"><img src="../assets/icons/arrow-right.svg" ></a>
+		<a id="aBottom" class="gameNav" href="../Enter_The_Writers/enterthewriters.html" data-anim="bottom-top"><img src="../assets/icons/arrow-bottom.svg" ></a>
+		<a id="aLeft" class="gameNav" href="../Video_KIDS/Video_children.html" data-anim="left-right"><img src="../assets/icons/arrow-left.svg" ></a>
+
+	</div><!-- #mainFrame -->
+
+<script>
+	// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("animaBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<!-- structure -->
+<script src="../js/games.js"></script>
+
+</body>
+</html>

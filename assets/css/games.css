@@ -1,0 +1,70 @@
+/* relevant to all games */
+
+@font-face {
+    font-family: 'prater_sans_oneregular';
+    src: url("../fonts/PraterSansOne-Reg.otf") format("opentype");
+    }
+@font-face {
+    font-family:'prater_sans_onebold';
+    src: url("../fonts/PraterSansOne-Bd.otf") format("opentype");
+}
+@font-face {
+    font-family:'test';
+    src: url("../fonts/Almendra-Bold.otf") format("opentype");
+}
+
+
+body,html{height:100%;}
+body{display: flex;}
+
+/* sidebar */
+#sidebar{
+  width: 15%;
+  height: 100%;
+  z-index: 12;
+  background-color: white;
+  font-color: black;
+  padding: .45em;
+/*  text-shadow: 1px 1px 0 #000;*/
+  /* to display all text, if needed */
+  overflow-y: auto;
+}
+#sidebar a{color: #fff;}
+
+#logo{ }
+#info{
+  padding-top: 1em;
+}
+#info p{
+  font-size: 13px;
+  font-variant: normal;
+  font-family: "Open Sans",sans-serif !important;
+  color: black;
+  text-align: left;
+  padding: 5px;
+}
+/*main content frame */
+#mainFrame{position: relative;width: 85%;}
+
+/* arrows */
+.gameNav{
+  z-index: 999; /* all arrows on top of everything */
+}
+
+#aTop{position: absolute; top: 0.5em; left: calc(50% - 0.5em); width: 30px;}
+#aBottom{position: absolute; bottom: 0.5em; left: calc(50% - 0.5em); width: 30px;}
+#aLeft{position: absolute; left: 0.5em; top: calc(50% - 0.5em); width: 30px;}
+#aRight{position: absolute; right: 0.5em; top: calc(50% - 0.5em); width: 30px;}
+
+.gameNav img{width: 100%;}
+
+/* content */
+#content{
+  z-index: 9;
+  background-color: #fff;
+  overflow: hidden;
+  padding-top: 3em;
+  height:  calc(100% - 3em);
+  padding-left: 3em;
+  width: calc(100% - 3em);
+}
