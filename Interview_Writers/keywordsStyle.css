@@ -26,6 +26,8 @@ p {
 .pageLinks{
   line-height: 2em;
   margin: 2em 0;
+  background: url('../assets/icons/btn.svg') no-repeat center center;
+  background-size: 300px 300px;
 }
 
 span {
@@ -34,12 +36,17 @@ span {
     font-family: 'prater_sans_onebold', helvetica, serif;
 }
 
-#virtualReality, #bodyScanning {
+a {
+    color: white;
+}
+
+/*#virtualReality, #bodyScanning {
     border: 2px solid #a1a1a1;
     padding: 10px 40px;
     background: #dddddd;
     width: 100px;
     border-radius: 25px;
+
 }
 
 #artIntel {
