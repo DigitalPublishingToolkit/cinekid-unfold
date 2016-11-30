@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+	<meta charset="utf-8" />
 	<title>Cinekid Unfold - Artworks</title>
 	<!-- structure files -->
 	<link href="../css/reset.css" rel="stylesheet" />
@@ -24,9 +24,33 @@
 	<div id="mainFrame">
 		<div id="content">
 
-			<button id="btn0" data-modal="modal0">ANIMAiki</button>
+			<div class="myButton" id="btn0">Fiet</div>
+			<div class="myButton" id="btn1">Eye Catcher</div>
+			<div class="myButton" id="btn2">Dear Deer</div>
+			<div class="myButton" id="btn3">Anima</div>
+			<div class="myButton" id="btn4">Diorama</div>
+			<div class="myButton" id="btn5">Tree Hugger</div>
 
-			<button id="btn1" data-modal="modal1">ANIMAiki 2</button>
+			<!-- if using svg (example) -->
+			<!-- <div class="myButton" id="btn6" style="width: 143px; height: 86px; background-color: transparent;">
+				<svg id="svg6" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="120" width="120" viewBox="0 0 120 120">
+				 <g id="layer1" transform="translate(0 -932.36)">
+				  <ellipse id="path3382" fill-rule="evenodd" rx="47.842" ry="48.842" stroke="#000" cy="991.36" cx="56" stroke-width="1.3155px" />
+				 </g>
+				 <text
+			      xml:space="preserve"
+			      style="font-style:normal;font-weight:normal;font-size:22.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+			      x="39.065552"
+			      y="68.388062"
+			      id="text3337"
+			      sodipodi:linespacing="125%"><tspan
+			        sodipodi:role="line"
+			        id="tspan3339"
+			        x="39.065552"
+			        y="68.388062">Fiet</tspan></text>
+				</svg>
+			</div> -->
+
 			<!-- The Modal -->
 			<div id="myModal" class="modal">
 			  <!-- Modal content -->
@@ -69,31 +93,11 @@
 <script>
 $(document).ready(function(){
 
-	// Get the modal
-	//var modal = document.getElementById('myModal');
+	//declare variables
 
-	// Get the button that opens the modal
-	//var btn = document.getElementById("btn1");
-
-	// Get the <span> element that closes the modal
-	//var span = document.getElementsByClassName("close")[0];
-
-	// When the user clicks on the button, open the modal
-	// btn.onclick = function() {
-	// 	modal.style.display = "block";
-	// }
-
-	// When the user clicks on <span> (x), close the modal
-	// span.onclick = function() {
-	// 	modal.style.display = "none";
-	// }
-
-	// When the user clicks anywhere outside of the modal, close it
-	// window.onclick = function(event) {
-	// 	if (event.target == modal) {
-	// 			modal.style.display = "none";
-	// 	}
-	// }
+	var selModal;
+	var totalMedia;
+	var curMedia;
 
 	//media
 	var content = [
@@ -112,12 +116,16 @@ $(document).ready(function(){
 			'https://www.youtube.com/embed/emRALwNltYA'
 		]
 	];
+	/* initial state */
 
-  var selModal;
-	var totalMedia;
-	var curMedia;
+	$('.media ul li').css({
+		'display': 'none'
+	});
 
-	$('button').on('click', function(){
+	/* events */
+
+	$('.myButton').on('click', function(){
+		  $(this).addClass('clicked');
 		  $('#myModal').css('display', 'block');
 			selModal = $(this).index(); //0, 1, etc
 			selectModal(selModal);
@@ -139,11 +147,7 @@ $(document).ready(function(){
 		}
 	});
 
-	$('.media ul li').css({
-		'display': 'none'
-	});
-
-
+  /* functions */
 
 	function selectModal(selModal){
 
@@ -195,7 +199,7 @@ $(document).ready(function(){
 			$('.media ul li').eq(curMedia).addClass('curMedia');
 		});
 
-	}
+	}// end selectModal function
 
 
 });

@@ -92,8 +92,12 @@ font-family: "Open Sans",sans-serif;
     text-align: center;
     /*top: 1px;*/
     /* svg background */
-    background: url('../../img/btn.svg') no-repeat center center;
+    background: url('../../img/btn-red.svg') no-repeat center center;
 	}
+
+  .button:active, .button:hover{
+      background: url('../../img/btn-blue.svg') no-repeat center center;
+  }
 
 	.info{
 	width: 300px;
