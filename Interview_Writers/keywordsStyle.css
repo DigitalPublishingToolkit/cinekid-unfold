@@ -1,15 +1,15 @@
 
 @font-face {
     font-family: 'prater_sans_oneregular';
-    src: url("../fonts/PraterSansOne-Reg.otf") format("opentype");
+    src: url("../assets/fonts/PraterSansOne-Reg.otf") format("opentype");
     }
 @font-face {
     font-family:'prater_sans_onebold';
-    src: url("../fonts/PraterSansOne-Bd.otf") format("opentype");
+    src: url("../assets/fonts/PraterSansOne-Bd.otf") format("opentype");
 }
 @font-face {
     font-family:'test';
-    src: url("../fonts/Almendra-Bold.otf") format("opentype");
+    src: url("../assets/fonts/Almendra-Bold.otf") format("opentype");
 }
 
 #container{
@@ -26,6 +26,8 @@ p {
 .pageLinks{
   line-height: 2em;
   margin: 2em 0;
+  background: url('../assets/icons/btn.svg') no-repeat center center;
+  background-size: 300px 250px;
 }
 
 span {
@@ -34,12 +36,18 @@ span {
     font-family: 'prater_sans_onebold', helvetica, serif;
 }
 
-#virtualReality, #bodyScanning {
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/*#virtualReality, #bodyScanning {
     border: 2px solid #a1a1a1;
     padding: 10px 40px;
     background: #dddddd;
     width: 100px;
     border-radius: 25px;
+
 }
 
 #artIntel {

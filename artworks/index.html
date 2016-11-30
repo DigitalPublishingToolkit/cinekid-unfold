@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Cinekid Unfold - Artworks</title>
+	<!-- structure files -->
+	<link href="../assets/css/reset.css" rel="stylesheet" />
+	<link href="../assets/css/games.css" rel="stylesheet" />
+	<link href="../assets/css/font-awesome.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+	<!-- structure -->
+	<div id="sidebar">
+	  <a href="../index.html"><img id="logo" alt="Cinekid logo" src="../assets/icons/cinekid-logo.svg"> </a>
+	  <div id="info">
+	    <p>Discover information about some of the artworks presented in the Cinekid Medialab 2016, to get more familiarised with their functionalities and technologies embedded within them.</p>
+	  </div><!-- end #info -->
+
+	</div><!-- end sideBar -->
+	<div id="mainFrame">
+		<div id="content">
+
+			<div class="myButton" id="btn0">Fiet</div>
+			<div class="myButton" id="btn1">Eye Catcher</div>
+			<div class="myButton" id="btn2">Dear Deer</div>
+			<div class="myButton" id="btn3">Anima</div>
+			<div class="myButton" id="btn4">Diorama</div>
+			<div class="myButton" id="btn5">Tree Hugger</div>
+
+			<!-- if using svg (example) -->
+			<!-- <div class="myButton" id="btn6" style="width: 143px; height: 86px; background-color: transparent;">
+				<svg id="svg6" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="120" width="120" viewBox="0 0 120 120">
+				 <g id="layer1" transform="translate(0 -932.36)">
+				  <ellipse id="path3382" fill-rule="evenodd" rx="47.842" ry="48.842" stroke="#000" cy="991.36" cx="56" stroke-width="1.3155px" />
+				 </g>
+				 <text
+			      xml:space="preserve"
+			      style="font-style:normal;font-weight:normal;font-size:22.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+			      x="39.065552"
+			      y="68.388062"
+			      id="text3337"
+			      sodipodi:linespacing="125%"><tspan
+			        sodipodi:role="line"
+			        id="tspan3339"
+			        x="39.065552"
+			        y="68.388062">Fiet</tspan></text>
+				</svg>
+			</div> -->
+
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+			  <!-- Modal content -->
+			  <div class="modal-content">
+
+					<div class="media">
+						 <ul>
+							<!--<li>
+				    		<img src="ANIMAiki.jpg">
+							</li>
+							<li>
+				    		<img src="ANIMAiki2.jpg">
+							</li>
+							<li>
+						    <video width="250" height="300" controls>
+						    	<source src="ANIMAiki.mp4" type="video/mp4">
+						    </video>
+							</li>-->
+						</ul>
+					</div><!-- .media -->
+					<div class="mediaNav">
+						<span class="prev">Prev</span> <span class="next">Next</span>
+					</div>
+
+					<span class="close">x</span>
+			  </div><!-- .modal-content -->
+			</div><!-- #myModal -->
+
+
+
+	</div><!-- #content -->
+
+		<a id="aTop" class="gameNav" href="../Enter_The_Writers/enterthewriters.html" data-anim="top-bottom"><img src="../assets/icons/arrow-top.svg" ></a>
+		<a id="aRight" class="gameNav" href="../What_If/whatif.html" data-anim="right-left"><img src="../assets/icons/arrow-right.svg" ></a>
+		<a id="aBottom" class="gameNav" href="../Enter_The_Writers/enterthewriters.html" data-anim="bottom-top"><img src="../assets/icons/arrow-bottom.svg" ></a>
+		<a id="aLeft" class="gameNav" href="../Video_KIDS/Video_children.html" data-anim="left-right"><img src="../assets/icons/arrow-left.svg" ></a>
+
+	</div><!-- #mainFrame -->
+
+<script>
+$(document).ready(function(){
+
+	//declare variables
+
+	var selModal;
+	var totalMedia;
+	var curMedia;
+
+	//media
+	var content = [
+		//modal0
+		[
+			'../img/ANIMAiki.jpg',
+			'../img/ANIMAiki2.jpg',
+			'https://www.youtube.com/embed/emRALwNltYA'
+		],
+		//modal1
+		[
+			'../img/ANIMAiki.jpg',
+			'../img/ANIMAiki2.jpg',
+			'../img/ANIMAiki.jpg',
+			'../img/ANIMAiki2.jpg',
+			'https://www.youtube.com/embed/emRALwNltYA'
+		]
+	];
+	/* initial state */
+
+	$('.media ul li').css({
+		'display': 'none'
+	});
+
+	/* events */
+
+	$('.myButton').on('click', function(){
+		  $(this).addClass('clicked');
+		  $('#myModal').css('display', 'block');
+			selModal = $(this).index(); //0, 1, etc
+			selectModal(selModal);
+	});
+
+	$('.close').on('click', function(){
+		$('#myModal').css('display', 'none');
+		$('.media ul li').eq(curMedia).removeClass('curMedia');
+		//delete existing li items
+		$('.media ul').children().remove();
+	});
+
+	$(window).on('click', function(ev){
+		if (ev.target.id == 'myModal') {
+				$('#myModal').css('display', 'none');
+				$('.media ul li').eq(curMedia).removeClass('curMedia');
+				//delete existing li items
+				$('.media ul').children().remove();
+		}
+	});
+
+  /* functions */
+
+	function selectModal(selModal){
+
+		totalMedia = content[selModal].length;
+		curMedia = 0;
+
+		//loop through the content array and add media files to ul li
+		//$('.media').append('<ul>');
+		for(var m = 0; m < totalMedia; m++){
+			//alert(m);
+			var i = content[selModal][m].indexOf('http');
+			if(i != -1){
+			  //video
+				//https://www.youtube.com/embed/emRALwNltYA
+				$('.media ul').append('<li><iframe title="YouTube video player" width="100%" height="auto" src="'+content[selModal][m]+'" frameborder="0" allowfullscreen></iframe></li>');
+				//$('.media ul').append('<li><video controls><source src="'+content[selModal][m]+'" type="video/mp4"/></video></li>');
+			}else{
+				//img
+				//console.log('img');
+				$('.media ul').append('<li><img src="'+content[selModal][m]+'" /></li>');
+			}
+
+		}
+
+		//display first media item
+		$('.media ul li').eq(curMedia).addClass('curMedia');
+
+		$('.next').on('click', function(){
+			//remove curMedia from original item
+			$('.media ul li').eq(curMedia).removeClass('curMedia');
+			if(curMedia < totalMedia - 1){
+				curMedia++;
+			}else{
+				curMedia = 0;
+			}
+			//add class to new curMedia item
+			$('.media ul li').eq(curMedia).addClass('curMedia');
+		});
+
+		$('.prev').on('click', function(){
+			//remove curMedia from original item
+			$('.media ul li').eq(curMedia).removeClass('curMedia');
+			if(curMedia > 0){
+				curMedia--;
+			}else{
+				curMedia = totalMedia - 1;
+			}
+			//add class to new curMedia item
+			$('.media ul li').eq(curMedia).addClass('curMedia');
+		});
+
+	}// end selectModal function
+
+
+});
+
+</script>
+
+<!-- structure -->
+<script src="../js/games.js"></script>
+
+</body>
+</html>
