@@ -7,10 +7,6 @@
     font-family:'prater_sans_onebold';
     src: url("../assets/fonts/PraterSansOne-Bd.otf") format("opentype");
 }
-@font-face {
-    font-family:'test';
-    src: url("../assets/fonts/Almendra-Bold.otf") format("opentype");
-}
 
 #container{
     font-family: 'prater_sans_onebold', helvetica, serif;
@@ -27,14 +23,15 @@ p {
   line-height: 2em;
   margin: 2em 0;
   background: url('../assets/icons/btn.svg') no-repeat center center;
-  background-size: 300px 250px;
+  background-size: 250px 250px;
+  font-family: 'prater_sans_onebold', helvetica, serif;
 }
 
-span {
+/*span {
     position: relative;
     left: 394.99;
     font-family: 'prater_sans_onebold', helvetica, serif;
-}
+} OLD CODE OF NOT STYLED BUTTONS*/
 
 a {
     color: white;
@@ -65,3 +62,5 @@ a {
     width: 100px;
     border-radius: 25px;
 }
+
+>> OLD STYLED BUTTONS, USELESS NOW <<
