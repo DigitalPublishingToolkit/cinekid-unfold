@@ -9,11 +9,23 @@
 
 
 #content{
-	padding-right: 3em;
-	width: 75%;
+	/*padding-right: 3em;*/
+	/*width: 75%;*/
+  overflow: auto;
 }
 
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6, #content p{
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  /* try working with paddings, margins, instead of adding <br> in the html :) */
+}
 
+/* NO padding in the first H1 */
+#content h1:first-of-type{
+  padding-top: 0;
+}
 
 h1{
 font-size: 50px;
@@ -24,21 +36,24 @@ font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
 
 h2{
 font-size: 25px;
-font-variant: bold;
+/*font-variant: bold;*/
+font-weight: bold;
 font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
 font-color: #cc3300;
 }
 
 h3{
 font-size: 1px;
-font-variant: bold;
+/*font-variant: bold;*/
+font-weight: bold;
 font-family: "Open Sans",sans-serif;
 font-color: #cc3300;
 }
 
 h4{
 font-size: 25px;
-font-variant: bold;
+/*font-variant: bold;*/
+font-weight: bold;
 font-family: "Open Sans",sans-serif;
 }
 
@@ -46,7 +61,9 @@ font-family: "Open Sans",sans-serif;
 
 p{
 font-size: 18px;
-font-variant: normal;
+line-height: 1.2em;
+/*font-variant: bold;*/
+font-weight: normal;
 font-family: "Open Sans",sans-serif;
 }
 
