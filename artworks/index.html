@@ -98,22 +98,44 @@ $(document).ready(function(){
 	var selModal;
 	var totalMedia;
 	var curMedia;
+	var mediaWidth = $(window).width() * 0.36;
+	var mediaHeight = $(window).height() * 0.54;
 
 	//media
 	var content = [
-		//modal0
+		//modal0 (fiet)
 		[
-			'../img/ANIMAiki.jpg',
-			'../img/ANIMAiki2.jpg',
-			'https://www.youtube.com/embed/emRALwNltYA'
+			'imgs/fiet1.jpg',
+			'imgs/fiet2.jpg',
+			'imgs/fiet3.jpg'
 		],
-		//modal1
+		//modal1 (eye catcher)
 		[
-			'../img/ANIMAiki.jpg',
-			'../img/ANIMAiki2.jpg',
-			'../img/ANIMAiki.jpg',
-			'../img/ANIMAiki2.jpg',
-			'https://www.youtube.com/embed/emRALwNltYA'
+			'imgs/eyecatcher1.jpg',
+			'imgs/eyecatcher2.jpg',
+			'imgs/eyecatcher3.jpg'//,
+			//'https://www.youtube.com/embed/emRALwNltYA'
+		],
+		//modal2 (dear deer)
+		[
+			'imgs/deardeer1.jpg',
+			'imgs/deardeer2.jpg'//,
+			//'https://www.youtube.com/embed/emRALwNltYA'
+		],
+		//modal3 (anima)
+		[
+			'imgs/anima1.jpg',
+			'imgs/anima2.jpg'
+		],
+		//modal4 (diorama)
+		[
+			'imgs/anima1.jpg',
+			'imgs/anima2.jpg'
+		],
+		//modal5 (tree hugger)
+		[
+			'imgs/anima1.jpg',
+			'imgs/anima2.jpg'
 		]
 	];
 	/* initial state */
@@ -172,6 +194,9 @@ $(document).ready(function(){
 
 		}
 
+		//adjust media size before displaying it
+		$('.media ul li').eq(curMedia).css('height',mediaHeight);
+
 		//display first media item
 		$('.media ul li').eq(curMedia).addClass('curMedia');
 
@@ -185,6 +210,9 @@ $(document).ready(function(){
 			}
 			//add class to new curMedia item
 			$('.media ul li').eq(curMedia).addClass('curMedia');
+
+			//adjust media size before displaying it
+			$('.media ul li').eq(curMedia).css('height',mediaHeight);
 		});
 
 		$('.prev').on('click', function(){
@@ -197,6 +225,9 @@ $(document).ready(function(){
 			}
 			//add class to new curMedia item
 			$('.media ul li').eq(curMedia).addClass('curMedia');
+
+			//adjust media size before displaying it
+			$('.media ul li').eq(curMedia).css('height',mediaHeight);
 		});
 
 	}// end selectModal function
@@ -207,7 +238,7 @@ $(document).ready(function(){
 </script>
 
 <!-- structure -->
-<script src="../js/games.js"></script>
+<script src="../assets/js/games.js"></script>
 
 </body>
 </html>
