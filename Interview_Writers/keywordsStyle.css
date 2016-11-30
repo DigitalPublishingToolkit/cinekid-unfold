@@ -27,7 +27,7 @@ p {
   line-height: 2em;
   margin: 2em 0;
   background: url('../assets/icons/btn.svg') no-repeat center center;
-  background-size: 300px 300px;
+  background-size: 300px 250px;
 }
 
 span {
@@ -38,6 +38,7 @@ span {
 
 a {
     color: white;
+    text-decoration: none;
 }
 
 /*#virtualReality, #bodyScanning {
