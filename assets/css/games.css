@@ -8,10 +8,6 @@
     font-family:'prater_sans_onebold';
     src: url("../fonts/PraterSansOne-Bd.otf") format("opentype");
 }
-@font-face {
-    font-family:'test';
-    src: url("../fonts/Almendra-Bold.otf") format("opentype");
-}
 
 
 body,html{height:100%;}
