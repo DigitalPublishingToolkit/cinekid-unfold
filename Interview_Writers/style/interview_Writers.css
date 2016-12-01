@@ -39,7 +39,6 @@
 	position: fixed;
 	bottom: 0;
 	font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
-	/*background: red;*/
 }
 
 .gameNav {position: fixed !important;}
@@ -49,43 +48,25 @@
 
 #pause {
 	position: absolute;
-	color: red;
+	color: white;
 	text-align: center;
-	width: 60px;
-	height: 20px;
+	width: 100px;
+	height: 40px;
 	left: 10px;
   	top: 2em;
-  		background: url('../../assets/icons/btn.svg') no-repeat;
-  	background-width: 80px;
-  	background-height: 20px;
+  	background: url('../../assets/icons/btn.svg') no-repeat center center;
 }
 
 #restart {
 	position: absolute;
-	color: red;
+	color: white;
 	text-align: center;
-	width: 80px;
-	height: 20px;
-	left: 100px;
+	width: 100px;
+	height: 40px;
+	left: 150px;
   	top: 2em;
-  	background: url('../../assets/icons/btn.svg') no-repeat;
-  	background-width: 80px;
-  	background-height: 20px;
+  	background: url('../../assets/icons/btn.svg') no-repeat center center;
 }
-
-/*#imgPause {
-	width: 90px;
-	height: 30px;
-	left: 10px;
-  	top: 2em;
-}
-
-#imgRestart {
-	width: 90px;
-	height: 30px;
-	left: 100px;
-  	top: 2em;
-}*/
 
 h1, h2, h3, h4{margin: 2em 0 1em 0;}
 
