@@ -25,7 +25,10 @@ body{display: flex;}
   /* to display all text, if needed */
   overflow-y: auto;
 }
-#sidebar a{color: #fff;}
+#sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
 
 #logo{ }
 #info{
