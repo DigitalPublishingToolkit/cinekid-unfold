@@ -23,23 +23,27 @@ p {
   line-height: 2em;
   margin: 2em 0;
   background: url('../assets/icons/btn.svg') no-repeat center center;
-  font-family: 'prater_sans_onebold', helvetica, serif;
+  font-family: 'prater_sans_onebold', helvetica, serif; 
 }
 /* same color for all on hover */
 .pageLinks:hover{
   background: url('../assets/icons/btn-red.svg') no-repeat center center;
 }
 .pageLinks:nth-of-type(n){
-  background-size: 310px 250px;
+  background-size: 170px 250px;
+  text-align: center;
 }
 .pageLinks:nth-of-type(2n){
-  background-size: 280px 250px;
+  background-size: 150px 250px;
+  text-align: center;
 }
 .pageLinks:nth-of-type(3n){
-  background-size: 390px 250px;
+  background-size: 220px 250px;
+  text-align: center;
 }
 .pageLinks:nth-of-type(4n){
-  background-size: 340px 250px;
+  background-size: 190px 250px;
+  text-align: center;
 }
 /* or if you want to have different colors */
 .pageLinks:nth-of-type(4n):hover{
@@ -47,16 +51,14 @@ p {
   background-size: 340px 250px;
 }
 
-/*span {
-    position: relative;
-    left: 394.99;
-    font-family: 'prater_sans_onebold', helvetica, serif;
-} OLD CODE OF NOT STYLED BUTTONS*/
+#VR {
+  color: white;
+}
 
-a {
+/*a {
     color: white;
     text-decoration: none;
-}
+}*/
 
 /*#virtualReality, #bodyScanning {
     border: 2px solid #a1a1a1;
