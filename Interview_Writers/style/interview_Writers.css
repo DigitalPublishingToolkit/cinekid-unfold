@@ -28,9 +28,9 @@
    text-align: left !important;
 }
 
-p {
+/*span {
 	text-align: center;
-}
+}*/
 
 #bar {
 	background-color: rgba(255, 255, 255, 1);
@@ -39,6 +39,7 @@ p {
 	position: fixed;
 	bottom: 0;
 	font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
+	/*background: red;*/
 }
 
 .gameNav {position: fixed !important;}
@@ -48,25 +49,43 @@ p {
 
 #pause {
 	position: absolute;
-	color: white;
+	color: red;
+	text-align: center;
 	width: 60px;
 	height: 20px;
-	text-align: center;
-	background-color: #0099cc;
 	left: 10px;
-  top: 2em;
+  	top: 2em;
+  		background: url('../../assets/icons/btn.svg') no-repeat;
+  	background-width: 80px;
+  	background-height: 20px;
 }
 
 #restart {
 	position: absolute;
-	color: white;
+	color: red;
 	text-align: center;
 	width: 80px;
 	height: 20px;
-	background-color: #0099cc;
 	left: 100px;
-  top: 2em;
+  	top: 2em;
+  	background: url('../../assets/icons/btn.svg') no-repeat;
+  	background-width: 80px;
+  	background-height: 20px;
 }
+
+/*#imgPause {
+	width: 90px;
+	height: 30px;
+	left: 10px;
+  	top: 2em;
+}
+
+#imgRestart {
+	width: 90px;
+	height: 30px;
+	left: 100px;
+  	top: 2em;
+}*/
 
 h1, h2, h3, h4{margin: 2em 0 1em 0;}
 
