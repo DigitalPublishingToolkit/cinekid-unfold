@@ -58,8 +58,8 @@ font-family: "Open Sans",sans-serif;
 
 	button {
 	text-align: left;
-	border-style: solid;
-	border-color: #0099cc;
+	/*border-style: solid;
+	border-color: #0099cc;*/
 	padding: 10px;
 	/*font-size: 20px;*/
 	position: relative;
@@ -85,7 +85,7 @@ font-family: "Open Sans",sans-serif;
   	float:right;
     left: 580px;
     top: 95px;*/
-    background-color: Transparent;
+    background-color: transparent;
     color: white;
     border: none;
     display: block;
@@ -96,8 +96,10 @@ font-family: "Open Sans",sans-serif;
 	}
 
   .button:active, .button:hover{
+      outline:0;
       background: url('../../img/btn-blue.svg') no-repeat center center;
   }
+  .button:focus {outline:0;}
 
 	.info{
 	width: 300px;
@@ -135,8 +137,8 @@ font-family: "Open Sans",sans-serif;
 	width: 400px;
 	height: 500px;
 	background-color: white;
-	border-style: solid;
-	border-color: #0099cc;
+	/*border-style: solid;
+	border-color: #0099cc;*/
 }
 
 #randImage img{

@@ -21,7 +21,7 @@ var theImages = [{
  }, {
          src: "./images/whatif004.png",
      width: "350",
-     height: "450/"
+     height: "450"
  }, {
          src: "./images/whatif005.png",
      width: "350",
@@ -251,7 +251,7 @@ var theImages = [{
 
  var numImages = theImages.length;
 
- / functions */
+ /* functions */
 
  // generates a random number between 0 and the number of images in the array (theImages)
  function randomNumberFromRange(min,max){

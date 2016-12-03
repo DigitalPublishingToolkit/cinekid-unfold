@@ -24,33 +24,15 @@
 	</div><!-- end sideBar -->
 	<div id="mainFrame">
 		<div id="content">
-
-			<div class="myButton" id="btn0">Fiet</div>
-			<div class="myButton" id="btn1">Eye Catcher</div>
-			<div class="myButton" id="btn2">Dear Deer</div>
-			<div class="myButton" id="btn3">Anima</div>
-			<div class="myButton" id="btn4">Diorama</div>
-			<div class="myButton" id="btn5">Tree Hugger</div>
-
-			<!-- if using svg (example) -->
-			<!-- <div class="myButton" id="btn6" style="width: 143px; height: 86px; background-color: transparent;">
-				<svg id="svg6" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="120" width="120" viewBox="0 0 120 120">
-				 <g id="layer1" transform="translate(0 -932.36)">
-				  <ellipse id="path3382" fill-rule="evenodd" rx="47.842" ry="48.842" stroke="#000" cy="991.36" cx="56" stroke-width="1.3155px" />
-				 </g>
-				 <text
-			      xml:space="preserve"
-			      style="font-style:normal;font-weight:normal;font-size:22.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-			      x="39.065552"
-			      y="68.388062"
-			      id="text3337"
-			      sodipodi:linespacing="125%"><tspan
-			        sodipodi:role="line"
-			        id="tspan3339"
-			        x="39.065552"
-			        y="68.388062">Fiet</tspan></text>
-				</svg>
-			</div> -->
+			<h1>Artworks</h1>
+			<div id="btnWrapper">
+				<div class="myButton" id="btn0" data-content="m0">Fiet</div>
+				<div class="myButton" id="btn1" data-content="m1">Eye Catcher</div>
+				<div class="myButton" id="btn2" data-content="m2">Dear Deer</div>
+				<div class="myButton" id="btn3" data-content="m3">Anima</div>
+				<div class="myButton" id="btn4" data-content="m4">Diorama</div>
+				<div class="myButton" id="btn5" data-content="m5">Tree Hugger</div>
+			</div>
 
 			<!-- The Modal -->
 			<div id="myModal" class="modal">
@@ -58,22 +40,86 @@
 			  <div class="modal-content">
 
 					<div class="media">
-						 <ul>
-							<!--<li>
-				    		<img src="ANIMAiki.jpg">
+						 <ul id="m0">
+							<li>
+				    		<img src="imgs/fiet1.jpg">
 							</li>
 							<li>
-				    		<img src="ANIMAiki2.jpg">
+				    		<img src="imgs/fiet2.jpg">
 							</li>
 							<li>
-						    <video width="250" height="300" controls>
-						    	<source src="ANIMAiki.mp4" type="video/mp4">
-						    </video>
-							</li>-->
+				    		<img src="imgs/fiet3.jpg">
+							</li>
+							<li>
+								<iframe src="https://www.youtube.com/embed/emRALwNltYA" width="100%" height="100%"></iframe>
+							</li>
 						</ul>
+
+						<ul id="m1">
+						 <li>
+							 <img src="imgs/eyecatcher1.jpg">
+						 </li>
+						 <li>
+							 <img src="imgs/eyecatcher2.jpg">
+						 </li>
+						 <li>
+							 <img src="imgs/eyecatcher3.jpg">
+						 </li>
+						 <!-- <li>
+							 <iframe src="https://www.youtube.com/embed/emRALwNltYA" width="100%" height="100%"></iframe>
+						 </li> -->
+					 </ul>
+
+					 <ul id="m2">
+						<li>
+							<img src="imgs/deardeer1.jpg">
+						</li>
+						<li>
+							<img src="imgs/deardeer2.jpg">
+						</li>
+						<!-- <li>
+							<iframe src="https://www.youtube.com/embed/emRALwNltYA" width="100%" height="100%"></iframe>
+						</li> -->
+					</ul>
+
+					<ul id="m3">
+					 <li>
+						 <img src="imgs/anima1.jpg">
+					 </li>
+					 <li>
+						 <img src="imgs/anima2.jpg">
+					 </li>
+					 <!-- <li>
+						 <iframe src="https://www.youtube.com/embed/emRALwNltYA" width="100%" height="100%"></iframe>
+					 </li> -->
+				 </ul>
+
+				 <ul id="m4">
+					<li>
+						<img src="imgs/diorama1.jpg">
+					</li>
+					<li>
+						<img src="imgs/diorama2.jpg">
+					</li>
+					<!-- <li>
+						<iframe src="https://www.youtube.com/embed/emRALwNltYA" width="100%" height="100%"></iframe>
+					</li> -->
+				</ul>
+
+				<ul id="m5">
+				 <li>
+					 <img src="imgs/treehugger1.jpg">
+				 </li>
+
+				 <!-- <li>
+					 <iframe src="https://www.youtube.com/embed/emRALwNltYA" width="100%" height="100%"></iframe>
+				 </li> -->
+			 </ul>
+
 					</div><!-- .media -->
 					<div class="mediaNav">
 						<span class="prev">Prev</span> <span class="next">Next</span>
+						<span id="numbers"><span class="curItem">1</span>/<span class="totalItems">5</span></span>
 					</div>
 
 					<span class="close">x</span>
@@ -101,44 +147,9 @@ $(document).ready(function(){
 	var curMedia;
 	var mediaWidth = $(window).width() * 0.36;
 	var mediaHeight = $(window).height() * 0.54;
+	//var curItem, totalItems;
 
-	//media
-	var content = [
-		//modal0 (fiet)
-		[
-			'imgs/fiet1.jpg',
-			'imgs/fiet2.jpg',
-			'imgs/fiet3.jpg'
-		],
-		//modal1 (eye catcher)
-		[
-			'imgs/eyecatcher1.jpg',
-			'imgs/eyecatcher2.jpg',
-			'imgs/eyecatcher3.jpg'//,
-			//'https://www.youtube.com/embed/emRALwNltYA'
-		],
-		//modal2 (dear deer)
-		[
-			'imgs/deardeer1.jpg',
-			'imgs/deardeer2.jpg'//,
-			//'https://www.youtube.com/embed/emRALwNltYA'
-		],
-		//modal3 (anima)
-		[
-			'imgs/anima1.jpg',
-			'imgs/anima2.jpg'
-		],
-		//modal4 (diorama)
-		[
-			'imgs/anima1.jpg',
-			'imgs/anima2.jpg'
-		],
-		//modal5 (tree hugger)
-		[
-			'imgs/anima1.jpg',
-			'imgs/anima2.jpg'
-		]
-	];
+
 	/* initial state */
 
 	$('.media ul li').css({
@@ -148,88 +159,98 @@ $(document).ready(function(){
 	/* events */
 
 	$('.myButton').on('click', function(){
+		  //$('.media ul li').removeClass('curMedia');
 		  $(this).addClass('clicked');
 		  $('#myModal').css('display', 'block');
-			selModal = $(this).index(); //0, 1, etc
+			// selModal = $(this).index(); //0, 1, etc
+			selModal = $(this).data('content');
 			selectModal(selModal);
 	});
 
 	$('.close').on('click', function(){
+		//$('.media ul li').removeClass('curMedia');
+		$('#'+selModal + ' li').removeClass('curMedia');
 		$('#myModal').css('display', 'none');
-		$('.media ul li').eq(curMedia).removeClass('curMedia');
+
 		//delete existing li items
-		$('.media ul').children().remove();
+		// $('.media ul').children().remove();
+		//$('.media ul').css('display', 'none');
 	});
 
 	$(window).on('click', function(ev){
 		if (ev.target.id == 'myModal') {
-				$('#myModal').css('display', 'none');
-				$('.media ul li').eq(curMedia).removeClass('curMedia');
+			//$('.media ul li').removeClass('curMedia');
+			$('#'+selModal + ' li').removeClass('curMedia');
+			$('#myModal').css('display', 'none');
 				//delete existing li items
-				$('.media ul').children().remove();
+				// $('.media ul').children().remove();
+				//$('.media ul').css('display', 'none');
 		}
 	});
 
-  /* functions */
+
+	$('.next').on('click', function(){
+		//remove curMedia from original item
+		$('#'+selModal + ' li').eq(curMedia).removeClass('curMedia');
+
+		//update curMedia value
+		if(curMedia < totalMedia - 1){
+			curMedia++;
+		}else{
+			curMedia = 0;
+		}
+
+		//update curItem text
+		$('.curItem').text(curMedia+1);
+
+		//add class to new curMedia item
+		$('#'+selModal + ' li').eq(curMedia).addClass('curMedia');
+
+		//adjust media size before displaying it
+		$('#'+selModal + ' li').eq(curMedia).css('height',mediaHeight);
+
+	});//end next
+
+	$('.prev').on('click', function(){
+
+		//remove curMedia from original item
+		$('#'+selModal + ' li').eq(curMedia).removeClass('curMedia');
+
+			//update curMedia value
+		if(curMedia > 0){
+			curMedia--;
+		}else{
+			curMedia = totalMedia - 1;
+		}
+
+		//update curItem text
+		$('.curItem').text(curMedia+1);
+
+		//add class to new curMedia item
+		$('#'+selModal + ' li').eq(curMedia).addClass('curMedia');
+
+		//adjust media size before displaying it
+		$('#'+selModal + ' li').eq(curMedia).css('height',mediaHeight);
+
+	});//end prev
+
+	/* functions */
 
 	function selectModal(selModal){
 
-		totalMedia = content[selModal].length;
+		var selUL = $('#'+selModal);
+		totalMedia = $(selUL).children().length;
 		curMedia = 0;
 
-		//loop through the content array and add media files to ul li
-		//$('.media').append('<ul>');
-		for(var m = 0; m < totalMedia; m++){
-			//alert(m);
-			var i = content[selModal][m].indexOf('http');
-			if(i != -1){
-			  //video
-				//https://www.youtube.com/embed/emRALwNltYA
-				$('.media ul').append('<li><iframe title="YouTube video player" width="100%" height="auto" src="'+content[selModal][m]+'" frameborder="0" allowfullscreen></iframe></li>');
-				//$('.media ul').append('<li><video controls><source src="'+content[selModal][m]+'" type="video/mp4"/></video></li>');
-			}else{
-				//img
-				//console.log('img');
-				$('.media ul').append('<li><img src="'+content[selModal][m]+'" /></li>');
-			}
-
-		}
+		//initial text curItem and totalItems
+		$('.curItem').text(curMedia+1);
+		$('.totalItems').text(totalMedia);
 
 		//adjust media size before displaying it
-		$('.media ul li').eq(curMedia).css('height',mediaHeight);
+		$('#'+selModal + ' li').eq(curMedia).css('height',mediaHeight);
 
 		//display first media item
-		$('.media ul li').eq(curMedia).addClass('curMedia');
-
-		$('.next').on('click', function(){
-			//remove curMedia from original item
-			$('.media ul li').eq(curMedia).removeClass('curMedia');
-			if(curMedia < totalMedia - 1){
-				curMedia++;
-			}else{
-				curMedia = 0;
-			}
-			//add class to new curMedia item
-			$('.media ul li').eq(curMedia).addClass('curMedia');
-
-			//adjust media size before displaying it
-			$('.media ul li').eq(curMedia).css('height',mediaHeight);
-		});
-
-		$('.prev').on('click', function(){
-			//remove curMedia from original item
-			$('.media ul li').eq(curMedia).removeClass('curMedia');
-			if(curMedia > 0){
-				curMedia--;
-			}else{
-				curMedia = totalMedia - 1;
-			}
-			//add class to new curMedia item
-			$('.media ul li').eq(curMedia).addClass('curMedia');
-
-			//adjust media size before displaying it
-			$('.media ul li').eq(curMedia).css('height',mediaHeight);
-		});
+		$('#'+selModal + ' li').eq(curMedia).addClass('curMedia');
 
 	}// end selectModal function
 

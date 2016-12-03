@@ -9,15 +9,15 @@
 }
 
 #container{
-    font-family: 'prater_sans_onebold', helvetica, serif;
+    font-family: 'prater_sans_oneregular', Arial, Helvetica, sans-serif;
     font-size: 50px;
     text-align: center;
     height: 2em;
 }
 
-p {
+/*p {
 	text-align: center;
-}
+}*/
 
 a {
   color: #fff;
@@ -26,51 +26,66 @@ a {
 
 .pageLinks{
   line-height: 2em;
-  margin: 2em 0;
-  background: url('../assets/icons/btn.svg') no-repeat center center;
-  font-family: 'prater_sans_onebold', helvetica, serif; 
+  text-align: center;
+  display: block;
+  /*width: 50%;
+  margin: 2em auto;*/
+  /*background: url('../assets/icons/btn.svg') no-repeat center center;*/
+  font-family: 'prater_sans_onebold',  Arial, Helvetica, sans-serif;
 }
 /* same color for all on hover */
-.pageLinks:hover{
+/*.pageLinks:hover{
   background: url('../assets/icons/btn-red.svg') no-repeat center center;
-}
+}*/
 .pageLinks:nth-of-type(n){
-  background-size: 170px 250px;
-  text-align: center;
+  width: 340px; /* 2x bg size */
+  margin: 2em auto;
+  background: url('../assets/icons/btn.svg') no-repeat center center;
+  /*background-size: 170px 250px;*/
+  background-size: cover;
 }
 .pageLinks:nth-of-type(2n){
-  background-size: 150px 250px;
-  text-align: center;
+  width: 300px;
+  margin: 2em auto;
+  background: url('../assets/icons/btn.svg') no-repeat center center;
+  /*background-size: 150px 250px;*/
+  background-size: cover;
 }
 .pageLinks:nth-of-type(3n){
-  background-size: 220px 250px;
-  text-align: center;
+  width: 440px;
+  background: url('../assets/icons/btn.svg') no-repeat center center;
+  /*background-size: 220px 250px;*/
+    background-size: cover;
 }
 .pageLinks:nth-of-type(4n){
-  background-size: 190px 250px;
-  text-align: center;
+  width: 380px;
+  background: url('../assets/icons/btn.svg') no-repeat center center;
+  /*background-size: 190px 250px;*/
+    background-size: cover;
 }
 /* or if you want to have different colors */
+.pageLinks:nth-of-type(n):hover{
+  background: url('../assets/icons/btn-blue.svg') no-repeat center center;
+  /*background-size: 340px 250px;*/
+    background-size: cover;
+}
+.pageLinks:nth-of-type(2n):hover{
+  background: url('../assets/icons/btn-red.svg') no-repeat center center;
+  /*background-size: 340px 250px;*/
+    background-size: cover;
+}
+.pageLinks:nth-of-type(3n):hover{
+  background: url('../assets/icons/btn-green.svg') no-repeat center center;
+  /*background-size: 340px 250px;*/
+    background-size: cover;
+}
 .pageLinks:nth-of-type(4n):hover{
   background: url('../assets/icons/btn-blue.svg') no-repeat center center;
-  background-size: 340px 250px;
+  /*background-size: 340px 250px;*/
+    background-size: cover;
 }
 
-#VR {
-  color: white;
-}
 
-#BS {
-  color: white;
-}
-
-#AI {
-  color: white;
-}
-
-#IOT {
-  color: white;
-}
 
 /*#virtualReality, #bodyScanning {
     border: 2px solid #a1a1a1;
@@ -98,3 +113,4 @@ a {
 }
 
 >> OLD STYLED BUTTONS, USELESS NOW <<
+*/

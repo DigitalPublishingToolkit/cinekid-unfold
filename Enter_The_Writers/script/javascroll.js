@@ -40,6 +40,8 @@
 
       console.log('max ' + maxPosition );
       console.log('maxOther ' + maxPositionOther );
+      console.log('perc ' + currPosition / maxPosition * 100);
+      //console.log('other perc ' +  (currPosition / maxPositionOther * 100) / factor);
 
       if(positionDiff === 0) { return; }
 
