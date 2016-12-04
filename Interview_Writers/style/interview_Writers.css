@@ -23,8 +23,6 @@
   overflow: visible;
   background-color: white;
   padding: 0 3em;
-}
-#content {
    text-align: left !important;
 }
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6, #content p{

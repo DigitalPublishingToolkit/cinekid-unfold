@@ -2,53 +2,19 @@
 
 @font-face {
     font-family: 'prater_sans_oneregular';
-    src: url("font/PraterSansOne-Reg.otf") format("opentype");
+    src: url("../../assets/fonts/PraterSansOne-Reg.otf") format("opentype");
     }
 @font-face {
     font-family:'prater_sans_onebold';
-    src: url("font/PraterSansOne-Bd.otf") format("opentype");
-}
-@font-face {
-    font-family:'test';
-    src: url("font/Almendra-Bold.otf") format("opentype");
+    src: url("../../assets/fonts/PraterSansOne-Bd.otf") format("opentype");
 }
 
-
-
-img.apendixphoto {
-  width: 100%;
+.header {
+	margin-left:  30px;
+	margin-bottom: 30px;
+	width: 100%;
 }
 
-
-div.scroll2 {
-  width: 60%;
-  height: 400px;
-  position: center;
-  float: left;
-  margin-left:  30px;
-  /*margin-top: 5px;*/
-  overflow-y: scroll;
-  padding: 5px;
-  background-color: white;
-  border-style: solid;
-  border-color: #0099cc;
-}
-
-div.dirkblue {
-margin-top:1px;
-margin-left:1px;
-background-color: #0099cc;
-
-
-}
-
-div.dirkred {
-margin-top:1px;
-margin-left:1px;
-/*background-color: #cc3300;*/
-
-
-}
 
 h1{
 font-size: 25px;
@@ -57,55 +23,20 @@ font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
 
 h2{
 font-size: 18px;
-font-variant: bold;
+font-weight: bold;
 font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
 }
 
 h3{
 font-size: 14px;
-font-variant: bold;
+font-weight: bold;
 font-family: "Open Sans",sans-serif;
 }
 
-q{
-  font-style: italic;
-}
+
 
 h4{
 font-size: 35px;
-/*font-variant: bold;*/
-  font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
 }
-
-
-body{
-	/*width: 90%*/
-	/*background-color: red;*/
-}
-
-p{
-font-size: 13px;
-font-variant: normal;
-font-family: "Open Sans",sans-serif;
-
-}
-
-div.header {
-	margin-left:  30px;
-	margin-bottom: 30px;
-	width: 100%;
-	height: 10px;
-}
-/*div.nav {
-	margin-left:  10px;
-	margin-bottom: 5px;
-	margin-top: 10px;
-	width: 100%;
-	height: 30px;*/
-}
-
-
-
-/*HTML*/
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-

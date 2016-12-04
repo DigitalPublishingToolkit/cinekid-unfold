@@ -72,71 +72,7 @@
 <a id="aLeft" class="gameNav" href="../Enter_The_Writers/enterthewriters.html" data-anim="left-right"><img src="../assets/icons/arrow-left.svg" ></a>
 
 <script src="../assets/js/games.js"></script>
-<script type="text/javascript">
-	$(document).ready(function textScrollStop(){
-		var wHeight = $(window).height();
-		var bHeight = $('#bar').height();
-		var tMargin = wHeight - bHeight + 16;
-		var maxScroll;
-		var scrollLoopId;
-		var scrolling = false;
-
-		$('#content').css('margin-top', tMargin);
-		$('#content').css('margin-bottom', bHeight + 12);
-
-		maxScroll = $('#content').outerHeight(true) - wHeight ;
-	//	console.log(maxScroll);
-
-		var tPos = $(window).scrollTop();
-
-		function incrementScroll() {
-
-			tPos = $(window).scrollTop();
-			//console.log('scrolling... ' +tPos + ' until ' + maxScroll + 'scrolling ' +scrolling);
-			 if(tPos < maxScroll ){
-				 scrolling = true;
-				 window.scrollBy(0, 3) ;
-			 }else{
-				 scrolling = false;
-				 stopScrollLoop();
-			 }
-		 }
-
-
-		 function startScrollLoop() {
-				 scrollLoopId = setInterval( incrementScroll, 100) ;
-		 }
-
-		 function stopScrollLoop() {
-			   scrolling = false;
-				 clearInterval( scrollLoopId ) ;
-				 scrollLoopId = false;
-				 //console.log('paused...')
-		 }
-
-		 //start scrolling when page is ready
-		 if(scrolling == false){
-			 startScrollLoop();
-		 }
-
-
-		 $('#restart').on('mouseover', function(){
-		 	//startScrollLoop();
-				if(scrolling == false){
-	 			 startScrollLoop();
-	 		 }
-		 });
-
-		 $('#pause').on('mouseover', function(){
-		 	stopScrollLoop();
-		 });
-
-
-
-		});
-
-
-</script>
+<script type="text/javascript" src="txtScroll.js"></script>
 
 </body>
 </html>
