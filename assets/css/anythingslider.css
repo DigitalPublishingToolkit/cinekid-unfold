@@ -95,12 +95,12 @@ font-family: "Open Sans",sans-serif;
 */
 /* slider window - top & bottom borders, active state */
 .anythingSlider-default.activeSlider .anythingWindow {
-	border-color: #0099cc;
+	border-color: black;
 }
 /* Navigation buttons, active state */
 .anythingSlider-default.activeSlider .anythingControls a {
 	/* background image = top shadow */
-	background-color: #cc3300;
+	background-color: black;
 }
 /* Navigation current & hovered button, active state */
 .anythingSlider-default.activeSlider .anythingControls a.cur,
