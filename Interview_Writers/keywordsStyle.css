@@ -85,18 +85,24 @@ a {
     background-size: cover;
 }
 
+#pdfBtn {
+  display: flex;
+  margin-top: 50px;
+}
+
 #kBtn {
   display: inline-block;
   font-family: 'prater_sans_oneregular', Arial, Helvetica, sans-serif;
   font-size: 100%;
   text-align: center;
   color: #fff;
-  width: 300px;
+  /*width: 300px;*/
+  width: 33.3%;
   line-height: 2em;
   background: url('../assets/icons/btn.svg') no-repeat center center;
   background-size: cover;
-  position: relative; bottom: 5em; /*left: calc(50% - 10em);*/
-  left: 300px;
+  /*position: relative; bottom: 5em; left: calc(100% - 30%);
+  left: 300px;*/
 }
 
 #mBtn {
@@ -105,38 +111,26 @@ a {
   font-size: 100%;
   text-align: center;
   color: #fff;
-  width: 350px;
+ /* width: 350px;*/
+ width: 33.3%;
   line-height: 2em;
   background: url('../assets/icons/btn.svg') no-repeat center center;
   background-size: cover;
-  position: relative; bottom: 5em; /*left: calc(50% - 5em);*/
-  left: 200px;
+  /*position: relative; bottom: 5em; left: calc(100% - 60%);
+  left: 200px;*/
 }
 
-/*#virtualReality, #bodyScanning {
-    border: 2px solid #a1a1a1;
-    padding: 10px 40px;
-    background: #dddddd;
-    width: 100px;
-    border-radius: 25px;
-
+#dBtn {
+  display: inline-block;
+  font-family: 'prater_sans_oneregular', Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  text-align: center;
+  color: #fff;
+  /*width: 240px;*/
+  width: 33.3%;
+  line-height: 2em;
+  background: url('../assets/icons/btn.svg') no-repeat center center;
+  background-size: cover;
+  /*position: relative; bottom: 5em; left: calc(100% - 60%);
+  left: 50px;*/
 }
-
-#artIntel {
-    border: 2px solid #a1a1a1;
-    padding: 10px 22px;
-    background: #dddddd;
-    width: 100px;
-    border-radius: 25px;
-}
-
-#intThings {
-    border: 2px solid #a1a1a1;
-    padding: 10px 32px;
-    background: #dddddd;
-    width: 100px;
-    border-radius: 25px;
-}
-
->> OLD STYLED BUTTONS, USELESS NOW <<
-*/
