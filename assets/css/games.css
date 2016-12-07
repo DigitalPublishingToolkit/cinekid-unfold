@@ -79,7 +79,8 @@ height: 165px;
   width: calc(100% - 3em);
 }
 
-.apendixphoto {
-  width: 130px;
-
+.infophoto {
+  width: 100px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
