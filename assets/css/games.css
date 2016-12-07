@@ -25,7 +25,7 @@ body{display: flex;}
   border-color: #cccccc;
 /*  text-shadow: 1px 1px 0 #000;*/
   /* to display all text, if needed */
-  overflow-y: auto;
+  /*overflow-y: auto;*/
 }
 #sidebar a {
   color: #fff;
@@ -48,7 +48,9 @@ height: 165px;
   font-family: "Open Sans",sans-serif !important;
   color: black;
   text-align: left;
-  padding: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+   padding-top: 1px;
 }
 /*main content frame */
 #mainFrame{position: relative;width: 85%;}
@@ -74,4 +76,9 @@ height: 165px;
   height:  calc(100% - 3em);
   padding-left: 3em;
   width: calc(100% - 3em);
+}
+
+.apendixphoto {
+width: 130px;
+
 }
