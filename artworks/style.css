@@ -15,8 +15,8 @@ h1{
 .myButton{
   display: inline-block;
   cursor: pointer;
-  background-color: #000;
-  color: #fff;
+  background-color: #cc3300;
+    color: #fff;
   font-family: 'prater_sans_onebold', Helvetica, Arial, sans-serif;
   padding: .5em;
 }
