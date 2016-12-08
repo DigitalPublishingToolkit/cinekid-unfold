@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Cinekid Unfold</title>
+	<!-- structure files -->
+	<link href="../assets/css/reset.css" rel="stylesheet" />
+	<link href="../assets/css/games.css" rel="stylesheet" />
+	<!-- <link href="../assets/css/font-awesome.min.css" rel="stylesheet" /> -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+	<!-- structure -->
+	<div id="sidebar">
+	  <a href="../index.html"><img id="logo" alt="Cinekid logo" src="../assets/icons/cinekid-logo.svg"> </a>
+	  <div id="info">
+	    <p>Discover information about some of the artworks presented in the Cinekid Medialab 2016, to get more familiarised with their functionalities and technologies embedded within them.</p>
+	  </div><!-- end #info -->
+
+	</div><!-- end sideBar -->
+	<div id="mainFrame">
+		<div id="content">
+			<h1>Media Lab</h1>
+			<div id="btnWrapper">
+				<div class="myButton" id="btn0" data-content="m0">Fiet</div>
+				<div class="myButton" id="btn1" data-content="m1">Eye Catcher</div>
+				<div class="myButton" id="btn2" data-content="m2">Dear Deer</div>
+				<div class="myButton" id="btn3" data-content="m3">Anima</div>
+				<div class="myButton" id="btn4" data-content="m4">Diorama</div>
+				<div class="myButton" id="btn5" data-content="m5">Tree Hugger</div>
+			</div>
+
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+			  <!-- Modal content -->
+			  <div class="modal-content">
+
+					<div class="media">
+						 <ul id="m0">
+							<li>
+				    		<img src="imgs/fiet1.jpg">
+							</li>
+							<li>
+				    		<img src="imgs/fiet2.jpg">
+							</li>
+							<li>
+				    		<img src="imgs/fiet3.jpg">
+							</li>
+							<li>
+								<iframe src="https://www.youtube.com/embed/emRALwNltYA" width="100%" height="100%"></iframe>
+							</li>
+						</ul>
+
+						<ul id="m1">
+						 <li>
+							 <img src="imgs/eyecatcher1.jpg">
+						 </li>
+						 <li>
+							 <img src="imgs/eyecatcher2.jpg">
+						 </li>
+						 <li>
+							 <img src="imgs/eyecatcher3.jpg">
+						 </li>
+						 <!-- <li>
+							 <iframe src="https://www.youtube.com/embed/emRALwNltYA" width="100%" height="100%"></iframe>
+						 </li> -->
+					 </ul>
+
+					 <ul id="m2">
+						<li>
+							<img src="imgs/deardeer1.jpg">
+						</li>
+						<li>
+							<img src="imgs/deardeer2.jpg">
+						</li>
+						<!-- <li>
+							<iframe src="https://www.youtube.com/embed/emRALwNltYA" width="100%" height="100%"></iframe>
+						</li> -->
+					</ul>
+
+					<ul id="m3">
+					 <li>
+						 <img src="imgs/anima1.jpg">
+					 </li>
+					 <li>
+						 <img src="imgs/anima2.jpg">
+					 </li>
+					 <!-- <li>
+						 <iframe src="https://www.youtube.com/embed/emRALwNltYA" width="100%" height="100%"></iframe>
+					 </li> -->
+				 </ul>
+
+				 <ul id="m4">
+					<li>
+						<img src="imgs/diorama1.jpg">
+					</li>
+					<li>
+						<img src="imgs/diorama2.jpg">
+					</li>
+					<!-- <li>
+						<iframe src="https://www.youtube.com/embed/emRALwNltYA" width="100%" height="100%"></iframe>
+					</li> -->
+				</ul>
+
+				<ul id="m5">
+				 <li>
+					 <img src="imgs/treehugger1.jpg">
+				 </li>
+
+				 <!-- <li>
+					 <iframe src="https://www.youtube.com/embed/emRALwNltYA" width="100%" height="100%"></iframe>
+				 </li> -->
+			 </ul>
+
+					</div><!-- .media -->
+					<div class="mediaNav">
+						<span class="prev">Prev</span> <span class="next">Next</span>
+						<span id="numbers"><span class="curItem">1</span>/<span class="totalItems">5</span></span>
+					</div>
+
+					<span class="close">x</span>
+			  </div><!-- .modal-content -->
+			</div><!-- #myModal -->
+
+
+
+	</div><!-- #content -->
+
+		<a id="aTop" class="gameNav" href="../Enter_The_Writers/enterthewriters.html" data-anim="top-bottom"><img src="../assets/icons/arrow-top.svg" ></a>
+		<a id="aRight" class="gameNav" href="../What_If/whatif.html" data-anim="right-left"><img src="../assets/icons/arrow-right.svg" ></a>
+		<a id="aBottom" class="gameNav" href="../Enter_The_Writers/enterthewriters.html" data-anim="bottom-top"><img src="../assets/icons/arrow-bottom.svg" ></a>
+		<a id="aLeft" class="gameNav" href="../Video_KIDS/Video_children.html" data-anim="left-right"><img src="../assets/icons/arrow-left.svg" ></a>
+
+	</div><!-- #mainFrame -->
+
+<script>
+$(document).ready(function(){
+
+	//declare variables
+
+	var selModal;
+	var totalMedia;
+	var curMedia;
+	var mediaWidth = $(window).width() * 0.36;
+	var mediaHeight = $(window).height() * 0.54;
+	//var curItem, totalItems;
+
+
+	/* initial state */
+
+	$('.media ul li').css({
+		'display': 'none'
+	});
+
+	/* events */
+
+	$('.myButton').on('click', function(){
+		  //$('.media ul li').removeClass('curMedia');
+		  $(this).addClass('clicked');
+		  $('#myModal').css('display', 'block');
+			// selModal = $(this).index(); //0, 1, etc
+			selModal = $(this).data('content');
+			selectModal(selModal);
+	});
+
+	$('.close').on('click', function(){
+		//$('.media ul li').removeClass('curMedia');
+		$('#'+selModal + ' li').removeClass('curMedia');
+		$('#myModal').css('display', 'none');
+
+		//delete existing li items
+		// $('.media ul').children().remove();
+		//$('.media ul').css('display', 'none');
+	});
+
+	$(window).on('click', function(ev){
+		if (ev.target.id == 'myModal') {
+			//$('.media ul li').removeClass('curMedia');
+			$('#'+selModal + ' li').removeClass('curMedia');
+			$('#myModal').css('display', 'none');
+				//delete existing li items
+				// $('.media ul').children().remove();
+				//$('.media ul').css('display', 'none');
+		}
+	});
+
+
+	$('.next').on('click', function(){
+		//remove curMedia from original item
+		$('#'+selModal + ' li').eq(curMedia).removeClass('curMedia');
+
+		//update curMedia value
+		if(curMedia < totalMedia - 1){
+			curMedia++;
+		}else{
+			curMedia = 0;
+		}
+
+		//update curItem text
+		$('.curItem').text(curMedia+1);
+
+		//add class to new curMedia item
+		$('#'+selModal + ' li').eq(curMedia).addClass('curMedia');
+
+		//adjust media size before displaying it
+		$('#'+selModal + ' li').eq(curMedia).css('height',mediaHeight);
+
+	});//end next
+
+	$('.prev').on('click', function(){
+
+		//remove curMedia from original item
+		$('#'+selModal + ' li').eq(curMedia).removeClass('curMedia');
+
+			//update curMedia value
+		if(curMedia > 0){
+			curMedia--;
+		}else{
+			curMedia = totalMedia - 1;
+		}
+
+		//update curItem text
+		$('.curItem').text(curMedia+1);
+
+		//add class to new curMedia item
+		$('#'+selModal + ' li').eq(curMedia).addClass('curMedia');
+
+		//adjust media size before displaying it
+		$('#'+selModal + ' li').eq(curMedia).css('height',mediaHeight);
+
+	});//end prev
+
+	/* functions */
+
+	function selectModal(selModal){
+
+		var selUL = $('#'+selModal);
+		totalMedia = $(selUL).children().length;
+		curMedia = 0;
+
+		//initial text curItem and totalItems
+		$('.curItem').text(curMedia+1);
+		$('.totalItems').text(totalMedia);
+
+		//adjust media size before displaying it
+		$('#'+selModal + ' li').eq(curMedia).css('height',mediaHeight);
+
+		//display first media item
+		$('#'+selModal + ' li').eq(curMedia).addClass('curMedia');
+
+	}// end selectModal function
+
+
+});
+
+</script>
+
+<!-- structure -->
+<script src="../assets/js/games.js"></script>
+
+</body>
+</html>
