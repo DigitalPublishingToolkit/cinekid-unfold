@@ -76,7 +76,7 @@ font-family: "Open Sans",sans-serif;
 }
 /* start-stop button, playing, default state */
 .anythingSlider-default .anythingControls a.start-stop.playing {
-	border-color: #0099cc;
+	border-color: #cc3300;
 }
 
 /* start-stop button, default hovered text color (when visible) */
@@ -100,7 +100,7 @@ font-family: "Open Sans",sans-serif;
 /* Navigation buttons, active state */
 .anythingSlider-default.activeSlider .anythingControls a {
 	/* background image = top shadow */
-	background-color: black;
+	background-color: #cc3300;
 }
 /* Navigation current & hovered button, active state */
 .anythingSlider-default.activeSlider .anythingControls a.cur,
