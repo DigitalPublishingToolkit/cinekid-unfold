@@ -85,7 +85,7 @@ a {
     background-size: cover;
 }
 
-#pdfBtn {
+/*#pdfBtn {
   display: flex;
   margin-top: 50px;
 }
@@ -96,13 +96,11 @@ a {
   font-size: 100%;
   text-align: center;
   color: #fff;
-  /*width: 300px;*/
   width: 33.3%;
   line-height: 2em;
   background: url('../assets/icons/btn.svg') no-repeat center center;
   background-size: cover;
-  /*position: relative; bottom: 5em; left: calc(100% - 30%);
-  left: 300px;*/
+
 }
 
 #mBtn {
@@ -111,13 +109,11 @@ a {
   font-size: 100%;
   text-align: center;
   color: #fff;
- /* width: 350px;*/
+
  width: 33.3%;
   line-height: 2em;
   background: url('../assets/icons/btn.svg') no-repeat center center;
   background-size: cover;
-  /*position: relative; bottom: 5em; left: calc(100% - 60%);
-  left: 200px;*/
 }
 
 #dBtn {
@@ -126,11 +122,8 @@ a {
   font-size: 100%;
   text-align: center;
   color: #fff;
-  /*width: 240px;*/
   width: 33.3%;
   line-height: 2em;
   background: url('../assets/icons/btn.svg') no-repeat center center;
   background-size: cover;
-  /*position: relative; bottom: 5em; left: calc(100% - 60%);
-  left: 50px;*/
-}
+}*/
