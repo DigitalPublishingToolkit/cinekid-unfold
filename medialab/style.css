@@ -16,7 +16,7 @@ h1{
   display: inline-block;
   cursor: pointer;
   background-color: #cc3300;
-    color: #fff;
+  color: #fff;
   font-family: 'prater_sans_onebold', Helvetica, Arial, sans-serif;
   padding: .5em;
 }
@@ -105,16 +105,24 @@ h1{
   width:auto;
 }
 .mediaNav{
-  text-align: center;
+  /*text-align: center;*/
+}
+
+.curTitle{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    float: left;
 }
 
 .prev, .next{
   cursor: pointer;
+  /*background: url('../assets/icons/btn.png') no-repeat center center;*/
   background-color: black;
   color: white;
   text-align: center;
   font-family: 'prater_sans_onebold', Helvetica, Arial, sans-serif;
   padding: 0.3em;
+  float: initial;
 }
 
 .prev:hover{
