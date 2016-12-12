@@ -29,8 +29,8 @@
 				<div class="myButton" id="btn0" data-content="m0">Fiet</div>
 				<div class="myButton" id="btn1" data-content="m1">Eye Catcher</div>
 				<div class="myButton" id="btn2" data-content="m2">Dear Deer</div>
-				<div class="myButton" id="btn3" data-content="m3">ANIMA</div>
-				<div class="myButton" id="btn4" data-content="m4">Diorama</div>
+				<div class="myButton" id="btn3" data-content="m3">ANIMA iki</div>
+				<div class="myButton" id="btn4" data-content="m4">Diorama No.4</div>
 				<div class="myButton" id="btn5" data-content="m5">Treehugger</div>
 			</div>
 
@@ -40,7 +40,7 @@
 			  <div class="modal-content">
 
 					<div class="media">
-						 <ul id="m0">
+						 <ul id="m0" data-projtitle="Fiet">
 							<li>
 				    		<img src="imgs/fiet1.jpg">
 							</li>
@@ -55,7 +55,7 @@
 							</li>
 						</ul>
 
-						<ul id="m1">
+						<ul id="m1" data-projtitle="Eye Catcher">
 						 <li>
 							 <img src="imgs/eyecatcher1.jpg">
 						 </li>
@@ -70,7 +70,7 @@
 						 </li> -->
 					 </ul>
 
-					 <ul id="m2">
+					 <ul id="m2" data-projtitle="Dear Deer">
 						<li>
 							<img src="imgs/deardeer1.jpg">
 						</li>
@@ -82,7 +82,7 @@
 						</li> -->
 					</ul>
 
-					<ul id="m3">
+					<ul id="m3" data-projtitle="ANIMA iki">
 					 <li>
 						 <img src="imgs/anima1.jpg">
 					 </li>
@@ -94,7 +94,7 @@
 					 </li> -->
 				 </ul>
 
-				 <ul id="m4">
+				 <ul id="m4" data-projtitle="Diorama No.4">
 					<li>
 						<img src="imgs/diorama1.jpg">
 					</li>
@@ -106,7 +106,7 @@
 					</li> -->
 				</ul>
 
-				<ul id="m5">
+				<ul id="m5" data-projtitle="Treehugger">
 				 <li>
 					 <img src="imgs/treehugger1.jpg">
 				 </li>
@@ -117,10 +117,12 @@
 			 	</ul>
 
 					</div><!-- .media -->
+					
 					<div class="mediaNav">
+						<span class="curTitle"></span>
 						<span class="prev">Prev</span> <span class="next">Next</span>
 						<span id="numbers"><span class="curItem">1</span>/<span class="totalItems">5</span></span>
-					</div>
+					</div><!--end .mediaNav-->
 					
 					<span class="close">x</span>
 			  </div><!-- .modal-content -->
@@ -159,6 +161,8 @@ $(document).ready(function(){
 	/* events */
 
 	$('.myButton').on('click', function(){
+
+			//console.log('title ' +$(this).text());
 		  //$('.media ul li').removeClass('curMedia');
 		  $(this).addClass('clicked');
 		  $('#myModal').css('display', 'block');
@@ -241,6 +245,10 @@ $(document).ready(function(){
 		var selUL = $('#'+selModal);
 		totalMedia = $(selUL).children().length;
 		curMedia = 0;
+
+		var curTitle = $(selUL).data('projtitle');
+
+		$('.curTitle').text(curTitle);
 
 		//initial text curItem and totalItems
 		$('.curItem').text(curMedia+1);
