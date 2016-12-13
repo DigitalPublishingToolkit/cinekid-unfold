@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'prater_sans_oneregular';
-    src: url("../../assets/fonts/PraterSansOne-Reg.otf") format("opentype");
+    src: url("font/PraterSansOne-Reg.otf") format("opentype");
     }
 @font-face {
     font-family:'prater_sans_onebold';
-    src: url("../../assets/fonts/PraterSansOne-Bd.otf") format("opentype");
+    src: url("font/PraterSansOne-Bd.otf") format("opentype");
 }
 
 /* main structure CSS needs to be different IN THIS PAGE ONLY */
