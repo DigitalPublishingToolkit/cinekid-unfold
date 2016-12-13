@@ -250,6 +250,11 @@ var theImages = [{
  }];
 
  var numImages = theImages.length;
+ //var seenImages = [];
+ var counter = 0;
+
+ $('.total').text(numImages);
+ $('.seen').text(counter);
 
  /* functions */
 
@@ -264,11 +269,30 @@ var theImages = [{
  // shows a random image in the #randImage div (as img src)
  function showRandomImage(){
 
-   //n is a random number
-   var n = randomNumberFromRange(0, numImages - 1);
+   var numImagesUpdate = theImages.length;
+   console.log(numImagesUpdate);
 
-   //uses the random number to select an image from the array and use in the src attribute (html)
-    $('#randImage img').attr('src', theImages[n].src);
+   //n is a random number
+   var n = randomNumberFromRange(0, numImagesUpdate - 1);
+
+   if(numImagesUpdate > 0){
+     //uses the random number to select an image from the array and use in the src attribute (html)
+      $('#randImage img').attr('src', theImages[n].src);
+
+      //add to seenImages array
+      //seenImages.push(theImages[n].src);
+
+      //remove it from original array
+      theImages.splice(n, 1);
+
+      //console.log(seenImages.length, theImages.length);
+      //update countdown
+      counter++;
+       $('.seen').text(counter);
+   }else{
+     $('.countdown').text('You have seen all the images!')
+   }
+
 
  }//end function showRandomImage
 
