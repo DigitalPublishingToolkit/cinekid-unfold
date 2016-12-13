@@ -290,7 +290,7 @@ var theImages = [{
       counter++;
        $('.seen').text(counter);
    }else{
-     $('.countdown').text('You have seen all the images!')
+     $('.countdown').text('Finished!')
    }
 
 
