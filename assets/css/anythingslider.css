@@ -42,42 +42,51 @@
 /* Navigation buttons + start/stop button, default state */
 .anythingSlider-default .anythingControls a {
 	/* top shadow */
-	background: #777 url(../images/arrows-minimalist.png) center -288px repeat-x;
+	/*background: #777 url(../images/arrows-minimalist.png) center -288px repeat-x;*/
+	background-color: transparent !important;
 	color: white;
-	border-radius: 0 0 5px 5px;
+	margin: .75em .25em .5em 0;
+	/*border-radius: 0 0 5px 5px;
 	-moz-border-radius: 0 0 5px 5px;
-	-webkit-border-radius: 0 0 5px 5px;
+	-webkit-border-radius: 0 0 5px 5px;*/
 }
 /* Make sure navigation text is visible */
 /*CONTROL MENU*/
 .anythingSlider-default .anythingControls a span {
 	visibility: visible;
 	font-size: 13px;
-font-variant: bold;
-font-family: "Open Sans",sans-serif;
+	font-weight: bold;
+	font-family: "Open Sans",sans-serif;
+	background-color: transparent !important;
+	/*padding: .5em .0005em;*/
 
+	border-radius: 0 !important;
 
 
 }
+.anythingSlider-default .anythingControls a:first{
+	margin-left: 0;
+}
 /* Navigation current button, default state */
 .anythingSlider-default .anythingControls a.cur {
-	background: #cc3300;
-	/*background: pink;*/
-	/*background-color: yellow;*/
+	background-color: transparent !important;
+	background: url('../icons/btn-blue.png') no-repeat center center;
+	background-size: cover;
+	border-radius: 0 !important;
 
 	color: #FFF;
 }
 
 /* start-stop button, stopped, default state */
-.anythingSlider-default .anythingControls a.start-stop {
+/*.anythingSlider-default .anythingControls a.start-stop {
 	background-color: blue;
-	color: ß;
+	color: #cc3300;
 
-}
+}*/
 /* start-stop button, playing, default state */
-.anythingSlider-default .anythingControls a.start-stop.playing {
+/*.anythingSlider-default .anythingControls a.start-stop.playing {
 	border-color: #cc3300;
-}
+}*/
 
 /* start-stop button, default hovered text color (when visible) */
 /* hide nav/start-stop background image shadow on hover - makes the button appear to come forward */
@@ -100,13 +109,22 @@ font-family: "Open Sans",sans-serif;
 /* Navigation buttons, active state */
 .anythingSlider-default.activeSlider .anythingControls a {
 	/* background image = top shadow */
-	background-color: #cc3300;
+	/*background-color: #cc3300;*/
+	background-color: transparent !important;
+	background: url('../icons/btn-red.png') no-repeat center center;
+	background-size: cover;
+	/*margin: .75em .25em .5em 0;*/
+	line-height: 2.8em;
+	height: 2.8em;
+	width: 5.6em;
 }
 /* Navigation current & hovered button, active state */
 .anythingSlider-default.activeSlider .anythingControls a.cur,
 .anythingSlider-default.activeSlider .anythingControls a:hover {
 	/* background image removed */
-	background: #0099cc;
+	/*background: #0099cc;*/
+	background: url('../icons/btn-blue.png') no-repeat center center;
+	background-size: cover;
 }
 
 /* start-stop button, stopped, active state */
@@ -159,8 +177,9 @@ font-family: "Open Sans",sans-serif;
 
 /* Navigation Links */
 .anythingSlider-default .anythingControls { outline: 0; display: none; }
-.anythingSlider-default .anythingControls ul { margin: 0; padding: 0; float: left; }
-.anythingSlider-default .anythingControls ul li { display: inline; }
+.anythingSlider-default .anythingControls ul { margin: 0; padding: 0; /*float: left;*/ display: flex;
+padding-top: .5em; justify-content: space-between;}
+.anythingSlider-default .anythingControls ul li { display: inline-flex; }
 .anythingSlider-default .anythingControls ul a {
 	font: 11px/18px Georgia, Serif;
 	display: inline-block;
