@@ -23,7 +23,7 @@
   overflow: visible;
   background-color: white;
   padding: 0 3em;
-   text-align: left !important;
+  text-align: left !important;
 }
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6, #content p{
   padding-left: 12%;
@@ -117,18 +117,23 @@
   background: url('../../assets/icons/btn.png') no-repeat top left;
   background-size: cover;
 }
-#VR:hover a{
-  color: #CC3417; /* red */
+
+/*#VR, #BS, #AI, #IOT:hover {
+  background: url('../../assets/icons/btn-blue.svg') no-repeat top left;
+}    DIDN'T WORK IN THIS WAY*/
+
+/*#VR:hover a{
+  color: #CC3417; red
 }
 #BS:hover a{
-  color: #329137;/* green */
+  color: #329137; green
 }
 #AI:hover a{
-  color: #1899cd;/* blue */
+  color: #1899cd; blue
 }
 #IOT:hover a{
-  color: #CC3417;/* red */
-}
+  color: #CC3417; red
+}*/
 /* end structure elements */
 
 #pause {
