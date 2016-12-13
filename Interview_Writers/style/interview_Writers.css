@@ -62,7 +62,10 @@
 #info{
   text-align: center;
 }
-.cur{opacity: .5;}
+.cur {
+  opacity: .5;
+}
+
 #VR {
   display: inline-block;
   color: #fff;
@@ -73,7 +76,7 @@
   text-align: center;
   /*margin: .2em 2em;*/
   margin: .5em 0;
-  background: url('../../assets/icons/btn.png') no-repeat top left;
+  background: url('../../assets/icons/btn-red.png') no-repeat top left;
   background-size: cover;
 }
 #BS {
@@ -86,7 +89,7 @@
   text-align: center;
   /*margin: .2em 2em;*/
   margin: .5em 0;
-  background: url('../../assets/icons/btn.png') no-repeat top left;
+  background: url('../../assets/icons/btn-red.png') no-repeat top left;
   background-size: cover;
 }
 
@@ -100,7 +103,7 @@
   text-align: center;
   /*margin: .2em 2em;*/
   margin: .5em 0;
-  background: url('../../assets/icons/btn.png') no-repeat top left;
+  background: url('../../assets/icons/btn-red.png') no-repeat top left;
   background-size: cover;
 }
 
@@ -114,13 +117,14 @@
   text-align: center;
   /*margin: .2em 2em;*/
   margin: .5em 0;
-  background: url('../../assets/icons/btn.png') no-repeat top left;
+  background: url('../../assets/icons/btn-red.png') no-repeat top left;
   background-size: cover;
 }
 
-/*#VR, #BS, #AI, #IOT:hover {
-  background: url('../../assets/icons/btn-blue.svg') no-repeat top left;
-}    DIDN'T WORK IN THIS WAY*/
+#VR:hover, #BS:hover, #AI:hover, #IOT:hover, #pause:hover, #restart:hover {
+  background: url('../../assets/icons/btn-blue.png') no-repeat top left;
+  background-size: cover;
+} 
 
 /*#VR:hover a{
   color: #CC3417; red
@@ -149,7 +153,8 @@
   /*position: absolute;
 	left: 10px;
   	top: 2em;*/
-  	background: url('../../assets/icons/btn.png') no-repeat top left;
+  background: url('../../assets/icons/btn-red.png') no-repeat top left;
+  background-size: cover;
 }
 
 #restart {
@@ -164,7 +169,8 @@
   /*position: absolute;
 	left: 150px;
   	top: 2em;*/
-  	background: url('../../assets/icons/btn.png') no-repeat  top left;
+  background: url('../../assets/icons/btn-red.png') no-repeat top left;
+  background-size: cover;
 }
 
 h1, h2, h3, h4{
