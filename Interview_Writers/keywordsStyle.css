@@ -40,26 +40,26 @@ a {
 .pageLinks:nth-of-type(n){
   width: 340px; /* 2x bg size */
   margin: 2em auto;
-  background: url('../assets/icons/btn.svg') no-repeat center center;
+  background: url('../assets/icons/btn-red.svg') no-repeat center center;
   /*background-size: 170px 250px;*/
   background-size: cover;
 }
 .pageLinks:nth-of-type(2n){
   width: 300px;
   margin: 2em auto;
-  background: url('../assets/icons/btn.svg') no-repeat center center;
+  background: url('../assets/icons/btn-red.svg') no-repeat center center;
   /*background-size: 150px 250px;*/
   background-size: cover;
 }
 .pageLinks:nth-of-type(3n){
   width: 440px;
-  background: url('../assets/icons/btn.svg') no-repeat center center;
+  background: url('../assets/icons/btn-red.svg') no-repeat center center;
   /*background-size: 220px 250px;*/
     background-size: cover;
 }
 .pageLinks:nth-of-type(4n){
   width: 380px;
-  background: url('../assets/icons/btn.svg') no-repeat center center;
+  background: url('../assets/icons/btn-red.svg') no-repeat center center;
   /*background-size: 190px 250px;*/
     background-size: cover;
 }
@@ -70,12 +70,12 @@ a {
     background-size: cover;
 }
 .pageLinks:nth-of-type(2n):hover{
-  background: url('../assets/icons/btn-red.svg') no-repeat center center;
+  background: url('../assets/icons/btn-blue.svg') no-repeat center center;
   /*background-size: 340px 250px;*/
     background-size: cover;
 }
 .pageLinks:nth-of-type(3n):hover{
-  background: url('../assets/icons/btn-green.svg') no-repeat center center;
+  background: url('../assets/icons/btn-blue.svg') no-repeat center center;
   /*background-size: 340px 250px;*/
     background-size: cover;
 }
