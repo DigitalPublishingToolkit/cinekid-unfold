@@ -117,7 +117,7 @@ h1{
 .prev, .next{
   cursor: pointer;
   /*background: url('../assets/icons/btn.png') no-repeat center center;*/
-  background-color: black;
+  background-color: #CC3300;
   color: white;
   text-align: center;
   font-family: 'prater_sans_onebold', Helvetica, Arial, sans-serif;
@@ -126,10 +126,10 @@ h1{
 }
 
 .prev:hover{
-  background-color: #CC3417; /* red */
+  background-color: #0099CC; /* blue */
 }
 .next:hover{
-  background-color: #329A37; /* green */
+  background-color: #0099CC; /* blue */
 }
 
 /* The Close Button */
