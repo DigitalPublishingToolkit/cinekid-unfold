@@ -29,11 +29,11 @@ body{display: flex;}
 }
 
 #sidebar a {
-  color: green;
+  color: #329A37;
   text-decoration: none;
 }
 
-#logo{ 
+#logo{
  padding: 10px;
 width: 165px;
 height: 165px;

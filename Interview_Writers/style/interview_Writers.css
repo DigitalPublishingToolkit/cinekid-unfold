@@ -23,7 +23,7 @@
   overflow: visible;
   background-color: white;
   padding: 0 3em;
-   text-align: left !important;
+  text-align: left !important;
 }
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6, #content p{
   padding-left: 12%;
@@ -62,7 +62,10 @@
 #info{
   text-align: center;
 }
-.cur{opacity: .5;}
+.cur {
+  opacity: .5;
+}
+
 #VR {
   display: inline-block;
   color: #fff;
@@ -73,7 +76,7 @@
   text-align: center;
   /*margin: .2em 2em;*/
   margin: .5em 0;
-  background: url('../../assets/icons/btn.png') no-repeat top left;
+  background: url('../../assets/icons/btn-red.png') no-repeat top left;
   background-size: cover;
 }
 #BS {
@@ -86,7 +89,7 @@
   text-align: center;
   /*margin: .2em 2em;*/
   margin: .5em 0;
-  background: url('../../assets/icons/btn.png') no-repeat top left;
+  background: url('../../assets/icons/btn-red.png') no-repeat top left;
   background-size: cover;
 }
 
@@ -100,7 +103,7 @@
   text-align: center;
   /*margin: .2em 2em;*/
   margin: .5em 0;
-  background: url('../../assets/icons/btn.png') no-repeat top left;
+  background: url('../../assets/icons/btn-red.png') no-repeat top left;
   background-size: cover;
 }
 
@@ -114,21 +117,27 @@
   text-align: center;
   /*margin: .2em 2em;*/
   margin: .5em 0;
-  background: url('../../assets/icons/btn.png') no-repeat top left;
+  background: url('../../assets/icons/btn-red.png') no-repeat top left;
   background-size: cover;
 }
-#VR:hover a{
-  color: #CC3417; /* red */
+
+#VR:hover, #BS:hover, #AI:hover, #IOT:hover, #pause:hover, #restart:hover {
+  background: url('../../assets/icons/btn-blue.png') no-repeat top left;
+  background-size: cover;
+} 
+
+/*#VR:hover a{
+  color: #CC3417; red
 }
 #BS:hover a{
-  color: #329137;/* green */
+  color: #329137; green
 }
 #AI:hover a{
-  color: #1899cd;/* blue */
+  color: #1899cd; blue
 }
 #IOT:hover a{
-  color: #CC3417;/* red */
-}
+  color: #CC3417; red
+}*/
 /* end structure elements */
 
 #pause {
@@ -144,7 +153,8 @@
   /*position: absolute;
 	left: 10px;
   	top: 2em;*/
-  	background: url('../../assets/icons/btn.png') no-repeat top left;
+  background: url('../../assets/icons/btn-red.png') no-repeat top left;
+  background-size: cover;
 }
 
 #restart {
@@ -159,7 +169,8 @@
   /*position: absolute;
 	left: 150px;
   	top: 2em;*/
-  	background: url('../../assets/icons/btn.png') no-repeat  top left;
+  background: url('../../assets/icons/btn-red.png') no-repeat top left;
+  background-size: cover;
 }
 
 h1, h2, h3, h4{
