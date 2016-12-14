@@ -135,7 +135,8 @@ h1{
   width:auto;
 }
 .mediaNav{
-  /*text-align: center;*/
+  text-align: center;
+  padding: 5px;
 }
 
 .curTitle{
@@ -156,7 +157,7 @@ h1{
 }
 
 .prev:hover, .next:hover{
-  background: url('../assets/icons/btn-blue.png') no-repeat top left;
+  background: url('../assets/icons/btn-blue.png') no-repeat;
   background-size: cover;
 }
 
