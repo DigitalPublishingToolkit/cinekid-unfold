@@ -17,7 +17,7 @@ h1{
   display: inline-block;
   cursor: pointer;
   /*color: #fff;
-  font-family: 'prater_sans_onebold', Helvetica, Arial, sans-serif;*/
+  font-family: 'prater_sans_onebold', Helvetica, Arial, sans-serif;  OLD BUTTONS*/
   padding: .5em;
 }
 
@@ -146,8 +146,8 @@ h1{
 
 .prev, .next{
   cursor: pointer;
-  /*background: url('../assets/icons/btn.png') no-repeat center center;*/
-  background-color: #CC3300;
+  background: url('../assets/icons/btn-red.png') no-repeat;
+  background-size: cover;
   color: white;
   text-align: center;
   font-family: 'prater_sans_onebold', Helvetica, Arial, sans-serif;
@@ -155,11 +155,9 @@ h1{
   float: initial;
 }
 
-.prev:hover{
-  background-color: #0099CC; /* blue */
-}
-.next:hover{
-  background-color: #0099CC; /* blue */
+.prev:hover, .next:hover{
+  background: url('../assets/icons/btn-blue.png') no-repeat top left;
+  background-size: cover;
 }
 
 /* The Close Button */
