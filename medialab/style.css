@@ -12,18 +12,18 @@ h1{
   font-size: 35px;
   padding-left: 10px;
 }
+
 .myButton{
   display: inline-block;
   cursor: pointer;
-  background-color: #cc3300;
-  color: #fff;
-  font-family: 'prater_sans_onebold', Helvetica, Arial, sans-serif;
+  /*color: #fff;
+  font-family: 'prater_sans_onebold', Helvetica, Arial, sans-serif;  OLD BUTTONS*/
   padding: .5em;
 }
 
-.myButton.clicked{
+/*.myButton.clicked{
   background-color: #1899CD;
-}
+}   OLD BUTTONS*/
 
 #numbers{
   float: right;
@@ -49,6 +49,36 @@ h1{
 }
 #btn2, #btn3{
   align-self: flex-start;
+}
+
+#btn0 {
+  background: url(../assets/icons/m0.png) no-repeat ;
+  background-size: cover;
+}
+
+#btn1 {
+  background: url(../assets/icons/m1.png) no-repeat ;
+  background-size: cover;
+}
+
+#btn2 {
+  background: url(../assets/icons/m2.png) no-repeat ;
+  background-size: cover;
+}
+
+#btn3 {
+  background: url(../assets/icons/m3.png) no-repeat ;
+  background-size: cover;
+}
+
+#btn4 {
+  background: url(../assets/icons/m4.png) no-repeat ;
+  background-size: cover;
+}
+
+#btn5 {
+  background: url(../assets/icons/m5.png) no-repeat ;
+  background-size: cover;
 }
 
 /* The Modal (background) */
@@ -105,7 +135,8 @@ h1{
   width:auto;
 }
 .mediaNav{
-  /*text-align: center;*/
+  text-align: center;
+  padding: 5px;
 }
 
 .curTitle{
@@ -116,8 +147,8 @@ h1{
 
 .prev, .next{
   cursor: pointer;
-  /*background: url('../assets/icons/btn.png') no-repeat center center;*/
-  background-color: #CC3300;
+  background: url('../assets/icons/btn-red.png') no-repeat;
+  background-size: cover;
   color: white;
   text-align: center;
   font-family: 'prater_sans_onebold', Helvetica, Arial, sans-serif;
@@ -125,11 +156,9 @@ h1{
   float: initial;
 }
 
-.prev:hover{
-  background-color: #0099CC; /* blue */
-}
-.next:hover{
-  background-color: #0099CC; /* blue */
+.prev:hover, .next:hover{
+  background: url('../assets/icons/btn-blue.png') no-repeat;
+  background-size: cover;
 }
 
 /* The Close Button */
