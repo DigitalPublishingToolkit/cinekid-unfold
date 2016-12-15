@@ -33,6 +33,10 @@ body{display: flex;}
   text-decoration: none;
 }
 
+#sidebar .introsidebar a{
+  color: #329A37;
+}
+
 #logo{
  padding: 10px;
 width: 165px;
