@@ -1,0 +1,58 @@
+/*ENTER THE WRITERS*/
+
+@font-face {
+    font-family: 'prater_sans_oneregular';
+    src: url("font/PraterSansOne-Reg.otf") format("opentype");
+    }
+@font-face {
+    font-family:'prater_sans_onebold';
+    src: url("font/PraterSansOne-Bd.otf") format("opentype");
+}
+@font-face {
+    font-family:'test';
+    src: url("font/Almendra-Bold.otf") format("opentype");
+}
+
+body{
+	padding: 10px;
+}
+
+h1{
+font-size: 35px;
+font-family: bold;
+font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif
+}
+
+
+h2{
+font-size: 25px;
+font-variant: bold;
+font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif
+}
+
+h3{
+font-size: 14px;
+font-variant: bold;
+font-family: "Open Sans",sans-serif;
+}
+
+h4{
+font-size: 25px;
+font-variant: bold;
+font-family: "Open Sans",sans-serif;
+}
+
+
+
+p{
+font-size: 14px;
+font-variant: normal;
+font-family: "Open Sans",sans-serif;
+}
+
+q{
+
+
+}
+
+
