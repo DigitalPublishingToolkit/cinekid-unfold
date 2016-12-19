@@ -1,0 +1,71 @@
+/*ENTER THE WRITERS*/
+
+@font-face {
+    font-family: 'prater_sans_oneregular';
+    src: url("font/PraterSansOne-Reg.otf") format("opentype");
+    }
+@font-face {
+    font-family:'prater_sans_onebold';
+    src: url("font/PraterSansOne-Bd.otf") format("opentype");
+}
+@font-face {
+    font-family:'test';
+    src: url("font/Almendra-Bold.otf") format("opentype");
+}
+
+body{
+  padding: 20px;
+}
+
+div.dirkred {
+margin-top:1px;
+margin-left:1px;
+/*background-color: #cc3300;*/
+}
+
+h1{
+font-size: 50px;
+font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
+}
+
+#headerTitle{
+  margin-bottom: 1em !important;
+  font-weight: bold;
+}
+
+h2{
+font-size: 18px;
+font-variant: bold;
+font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif ;
+}
+
+h3{
+font-size: 25px;
+font-weight: bold;
+font-family: "Open Sans",sans-serif ;
+/*margin-top: 1em;*/
+}
+
+q{
+  font-style: italic;
+}
+
+h4{
+font-size: 50px;
+/*font-variant: bold;*/
+  font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif ;
+}
+
+p{
+font-size: 13px;
+font-weight: normal;
+font-family: "Open Sans",sans-serif ;
+line-height: 1.2em;
+/*padding-top: 1em;*/
+padding-left: 25px;
+
+
+}
+
+
+
