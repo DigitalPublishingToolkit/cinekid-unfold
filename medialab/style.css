@@ -87,13 +87,13 @@ h1{
   background-size: cover;
 }
 
+/*BUTTONS HOVER*/
+
 #btn0:hover {
   background: url(imgs/fiet1.jpg) no-repeat ;
   background-size: cover;
   border-radius: 100%;
 }
-
-/*BUTTONS HOVER*/
 
 #btn1:hover {
   background: url(imgs/eyecatcher1.jpg) no-repeat ;

@@ -42,7 +42,7 @@
 					<div class="media">
 						 <ul id="m0" data-projtitle="Fiet">
 						 	<li>
-								<iframe src="https://www.youtube.com/embed/xrGrdq7-Fe0" class="video" width="100%" height="100%"></iframe>
+								<iframe id="player" type="text/html" src="https://www.youtube.com/embed/xrGrdq7-Fe0" class="video" width="100%" height="100%"></iframe>
 							</li>
 							<li>
 				    		<img src="imgs/fiet1.jpg">
@@ -322,7 +322,41 @@ $(document).ready(function(){
 
 });
 
+</script>
 
+<!-- javaScript for make the video stop when the modal is closed -->
+<script type="text/javascript" src="https://www.youtube.com/iframe_api">
+
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          // height: '360',
+          // width: '640',
+          // videoId: 'M7lc1UVf-VE',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
 
 </script>
 
