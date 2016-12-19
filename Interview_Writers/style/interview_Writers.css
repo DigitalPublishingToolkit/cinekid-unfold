@@ -25,6 +25,7 @@
   padding: 0 3em;
   text-align: left !important;
 }
+
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6, #content p{
   padding-left: 12%;
   padding-right: 30%;
@@ -139,6 +140,11 @@
   color: #CC3417; red
 }*/
 /* end structure elements */
+
+.download {
+  color: #CC3300;
+  text-decoration: underline;
+}
 
 #pause {
   cursor: pointer;
