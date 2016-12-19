@@ -19,8 +19,8 @@ h1{
   /*color: #fff;
   font-family: 'prater_sans_onebold', Helvetica, Arial, sans-serif;  OLD BUTTONS*/
   padding: .5em;
-  width: 3em;
-  height: 3em;
+  width: 5.5em;
+  height: 5.5em;
 }
 
 /*.myButton.clicked{
@@ -42,6 +42,8 @@ h1{
   justify-content: space-around;
 }
 
+/*BUTTONS POSITION*/
+
 #btn0, #btn5{
   align-self: flex-end;
 }
@@ -52,6 +54,8 @@ h1{
 #btn2, #btn3{
   align-self: flex-start;
 }
+
+/*BUTTONS ICONS*/
 
 #btn0 {
   background: url(../assets/icons/m0.png) no-repeat ;
@@ -81,6 +85,44 @@ h1{
 #btn5 {
   background: url(../assets/icons/m5.png) no-repeat ;
   background-size: cover;
+}
+
+#btn0:hover {
+  background: url(imgs/fiet1.jpg) no-repeat ;
+  background-size: cover;
+  border-radius: 100%;
+}
+
+/*BUTTONS HOVER*/
+
+#btn1:hover {
+  background: url(imgs/eyecatcher1.jpg) no-repeat ;
+  background-size: cover;
+  border-radius: 100%;
+}
+
+#btn2:hover {
+  background: url(imgs/deardeer1.jpg) no-repeat ;
+  background-size: cover;
+  border-radius: 100%;
+}
+
+#btn3:hover {
+  background: url(imgs/anima01.jpg) no-repeat ;
+  background-size: cover;
+  border-radius: 100%;
+}
+
+#btn4:hover {
+  background: url(imgs/diorama1.jpg) no-repeat ;
+  background-size: cover;
+  border-radius: 100%;
+}
+
+#btn5:hover {
+  background: url(imgs/treehugger1.jpg) no-repeat ;
+  background-size: cover;
+  border-radius: 100%;
 }
 
 /* The Modal (background) */
