@@ -39,7 +39,7 @@ h1{
   min-height: 400px;
   margin: 3em auto 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #btn0, #btn5{
@@ -47,7 +47,7 @@ h1{
 }
 #btn1, #btn4{
   align-self: flex-start;
-  margin-top: 30%;
+  margin-top: 20%;
 }
 #btn2, #btn3{
   align-self: flex-start;
