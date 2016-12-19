@@ -103,3 +103,21 @@ line-height: 1.2em;
 #secondList{
   margin-left: 0.5em;
 }
+
+.back{
+  clear: both;
+  color: #fff;
+  background: url('../../assets/icons/btn-red.png') no-repeat;
+  background-size: contain;
+  height: 30px;
+  padding: .5em .8em;
+  width: 30px;
+  font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif ;
+  position: relative;
+  top: 1em;
+}
+.back:hover{
+  background: url('../../assets/icons/btn-blue.png') no-repeat;
+  background-size: contain;
+}
+.nodecor{text-decoration: none;}
