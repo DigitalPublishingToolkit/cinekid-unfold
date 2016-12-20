@@ -105,7 +105,7 @@ h1{
 }
 
 #btn3:hover {
-  background: url(imgs/animaM.png) no-repeat center;
+  background: url(imgs/animaH.png) no-repeat /*center*/;
   background-size: cover;
 }
 
