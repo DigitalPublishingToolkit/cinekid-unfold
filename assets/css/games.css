@@ -39,9 +39,8 @@ body{display: flex;}
 
 #logo{
  padding: 10px;
- display: flex;
- max-width: 165px;
- max-height: 165px;
+ max-width: 90%;
+ max-height: 90%;
 
  }
 #info{
