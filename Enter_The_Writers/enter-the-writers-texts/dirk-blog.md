@@ -1,8 +1,8 @@
-Blog: Intro: Dirk Vis
-=====================
+Intro: Writing with a chainsaw
+==============================
 
-Writing with a chainsaw
-=======================
+Blog: Dirk Vis
+--------------
 
 My name is Dirk Vis, and I write. I usually write with a pencil or with
 my laptop. But it’s interesting to note that you can write with all
