@@ -1,13 +1,13 @@
 /*WHAT IF */
 
-@font-face {
+/*@font-face {
     font-family: 'prater_sans_oneregular';
     src: url("font/PraterSansOne-Reg.otf") format("opentype");
     }
 @font-face {
     font-family:' prater_sans_onebold';
     src: url("font/PraterSansOne-Bd.otf") format("opentype");
-}
+}*/
 
 
 /*body {
@@ -25,19 +25,19 @@ font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
 
 h2{
 font-size: 18px;
-font-variant: bold;
+font-weight: bold;
 font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
 }
 
 h3{
 font-size: 1px;
-font-variant: bold;
+font-weight: bold;
 /*font-family: "Open Sans",sans-serif;*/
 }
 
 h4{
 font-size: 35px;
-font-variant: bold;
+font-weight: bold;
 padding-left: 10px;
 font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
 }
@@ -45,7 +45,7 @@ font-family: "prater_sans_oneregular", Arial, Helvetica, sans-serif;
 
 p{
 font-size: 13px;
-font-variant: bold;
+font-weight: bold;
 font-family: "Open Sans",sans-serif;
 }
 
