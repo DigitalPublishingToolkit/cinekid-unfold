@@ -90,39 +90,33 @@ h1{
 /*BUTTONS HOVER*/
 
 #btn0:hover {
-  background: url(imgs/fiet1.jpg) no-repeat ;
+  background: url(imgs/fietH.png) no-repeat /*center*/;
   background-size: cover;
-  border-radius: 100%;
 }
 
 #btn1:hover {
-  background: url(imgs/eyecatcher1.jpg) no-repeat ;
+  background: url(imgs/eyecatcherM.png) no-repeat center;
   background-size: cover;
-  border-radius: 100%;
 }
 
 #btn2:hover {
-  background: url(imgs/deardeer1.jpg) no-repeat ;
+  background: url(imgs/deardeerM.png) no-repeat center;
   background-size: cover;
-  border-radius: 100%;
 }
 
 #btn3:hover {
-  background: url(imgs/anima01.jpg) no-repeat ;
+  background: url(imgs/animaH.png) no-repeat /*center*/;
   background-size: cover;
-  border-radius: 100%;
 }
 
 #btn4:hover {
-  background: url(imgs/diorama1.jpg) no-repeat ;
+  background: url(imgs/dioramaM.png) no-repeat center;
   background-size: cover;
-  border-radius: 100%;
 }
 
 #btn5:hover {
-  background: url(imgs/treehugger1.jpg) no-repeat ;
+  background: url(imgs/treehuggerM.png) no-repeat center;
   background-size: cover;
-  border-radius: 100%;
 }
 
 /* The Modal (background) */

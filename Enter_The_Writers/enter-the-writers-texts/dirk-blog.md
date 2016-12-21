@@ -1,0 +1,201 @@
+Intro: Writing with a chainsaw
+==============================
+
+Blog: Dirk Vis
+--------------
+
+My name is Dirk Vis, and I write. I usually write with a pencil or with
+my laptop. But it’s interesting to note that you can write with all
+kinds of tools. I love tools like hammers, saws and cars. And I like
+lenses, cameras, typewriters and computer programs just as much. I am
+fascinated by artists who make their own tools; artists who put energy
+and time into the development and selection of the right equipment. It
+is the work of these artists that especially deserves your time, above
+other things screaming for your attention.
+
+We can point to artists from thousands of years ago; ones who brought
+their depictions of wild animals to life by skillfully manipulating the
+3D surface of a cave wall. They saw the cave as a tool for their
+drawings. [I'm talking about the Lascaux cave
+paintings](https://en.wikipedia.org/wiki/Lascaux#Interpretation_of_images),
+of course. Then there is the tale of a film director who wanted to
+capture the appearance of light from 300 years ago in a film, and could
+only do by using the lens used in telescopes built for space
+observation. Who other than [Stanley
+Kubrick](https://en.wikipedia.org/wiki/Barry_Lyndon#Cinematography)? And
+what about the artist who could only make art by programming his own
+social network, and finding images through it that were unimaginable
+elsewhere? That artist is [Harm van den
+Dorpel](http://metropolism.com/features/harm-van-den-dorpel).
+Personally, I get excited by the idea of merging my stories with the
+possibilities offered by the smart AI, AlphaGo; the most advanced
+computer brain of our time. I want to use the neural networks of this
+artificial intelligence to give my work an extra dimension, and explore
+senses that we all believe to exist, but are unable to hold, see, or
+prove.
+
+For me there is nothing more beautiful than someone writing a poem on
+their iPhone which proves that animals can talk. Or using a cloud-based
+collaboration tool to show my friends that the afterlife is at your
+fingertips. I write stories with pen and paper, but I also write travel
+stories with that flashing blue dot in Google Maps. I write fables with
+hatchets, or with the LED screens of Times Square. And I would like to
+write poems using my portable typewriter or the gyroscope that’s in your
+phone.
+
+------------------------------------------------------------------------
+
+\#3 It's not a fantasy, it's a goal
+===================================
+
+Technology that we don’t understand, or that is new, can appear magical
+to us. But it isn’t, actually. In my [previous
+blog](https://www.cinekid.nl/node/1877) I went in search of people who
+created their own tools to make their art.
+
+I met the same kind of people face to face at [A MAZE
+2016](http://amaze-berlin.de/) in Berlin. A MAZE is a gaming conference,
+a festival and an exhibition for indie game developers from around the
+world. What unites them is that they make computer games primarily for
+fun. I felt an atmosphere there that I would like to have around me at
+all times. People knew each other, challenged each other or marvelled at
+each other's’ work, and understood what projects the other was busy
+with.
+
+Thorsten S. Wiedemann, the director, is the uncrowned king of the
+festival and someone who is widely spoken about and admired there. When
+I asked him for his motives for the festival, he stated that he saw the
+event as a gathering of like-minded authors, something that I
+sometimes - but not hardly enough - experience at literary festivals.
+The comparison went further. Thorsten likened computer games and related
+small-scale multimedia productions with poetry. Adopting his point of
+view I looked around.
+
+We walked past the work that won the A MAZE 2016 award, Diorama \#3 from
+the Dutchman Daniël Ernst (for sale at
+[Steam](http://store.steampowered.com/app/431370/)). For this work (in
+my opinion it can be considered as an artwork as well as a game) you
+need to wear a VR headset. You are immediately placed in a dark world
+where it rains. You notice a tollhouse. You can go through the house,
+walk a little bit up and down, twitch the curtains in the house, and
+that's retty much it. Nothing more.
+
+But you feel in your bones that this piece works. If you don’t watch out
+you can walk through a wall of the house and you realise that it is an
+intermediate world, one that you can only view.  Other VR works use
+impermeable, impassable walls in an attempt to make the virtual world
+real as possible, but here the idea of virtuality is emphasised, and
+that has an immediate effect. Is this the place where I died without
+knowing it? Is this a place where I have experienced something tragic,
+and where I always return to in a dream?
+
+The strength of Ernst’s work is in its apparent simplicity; there are no
+complicated interactions, no goals to reach. Only a concentration for
+what there is; and that is something that you feel through your whole
+body. At one moment all the important moments in my life ran through my
+head; and whether they turn out triumphantly or tragically, or both, I
+can’t yet say. Under the bridge on the outskirts of the village. In the
+dunes, basking in the sun. It's like I'm looking from a distance at my
+own history.
+
+In fact Diorama \# 3 is a contemporary version of the story Le
+Passe-Muraille from 20th-century writer, Marcel Aymé. In it the main
+character can pass through walls, but it brings more stress than
+benefits. Aymé’s stories have the same physical effect on me as the
+poems of Emily Dickinson, which sometimes make you feel more like a
+spirit than a human. Ernst's work also has something very cinematic
+about it; a camera that can move through a wall seems to me to be an
+image that would have an immediate effect in a film.
+
+I spoke with Daniël Ernst. He calls those who look at his work a
+visitor, not a player, and he’s right, that’s how it feels. Diorama \# 3
+is a way to do something that could not be done before. Walking through
+walls, you feel like a ghost. Ernst told me he makes his work by putting
+on the VR headset, and drawing in the virtual space. I think that's
+crucial. Other game makers first draw out their entire virtual reality
+on the computer and go into the virtual world when they are ready. But
+whilst Ernst is engaged in creating his own virtual space, he is using
+his artwork as a tool. Perhaps that's the thing that enables him to get
+you to experience something extraordinary. The technique is not the
+magic element in Ernst’s work. He uses his technique to create an even
+greater feeling of mystery.
+
+While I had his headset on, I wondered what would happen if I met
+someone else in this in-between world. I wondered what new things have
+been made more tangible by games and apps, things I've never felt
+before. Are there people who have used their tools to create
+interactions for situations we’ve not yet experienced? Is it possible to
+visit someone in his or her dream? I hope to find an answer to these
+questions next week.
+
+------------------------------------------------------------------------
+
+\#5 Seance App
+==============
+
+Are there any apps that allow you to summon up spirits as well as the
+right train times? I have looked [at this question
+before](http://www.de-gids.nl/artikel/lijst-de-beste-nutteloze-apps).
+What I'm specifically looking for is whether there are app builders who
+developed using the interactions of the users themselves.
+
+With that question in mind, I went to the App Store. The first app I
+downloaded was the one [from
+Cinekid](https://www.cinekid.nl/projects/nieuws/cinekid-tipt-nieuwe-apps-het-applab).
+This app acts as a filter. The editors of Cinekid have fished out some
+gems from the gigantic reservoir of questionable content in the App
+Store, despite Apple’s own strict requirements.
+
+Using the Cinekid app, I also downloaded
+[Bounden](http://playbounden.com/), which is a very cute initiative.
+This app turns your phone into a “tool for dancing” by way of customised
+navigation, choreography, music and - of course - your dancing partner.
+This dance initiative, using both a partner and an iPhone is in my
+opinion a true work of art. It shows how much we need technology to
+communicate, and it highlights the relationship we have with the thing.
+Because, as one of the dancing partners, you pay continual attention to
+this dancing tool; moreso than your actual partner.
+
+There are thousands and thousands of apps available, but there are only
+a couple of makers that I have followed for years. Scott Snibbe is one
+of them. He made a series of visual apps, including the app LP by Björk.
+I downloaded his [Motion
+Phone](http://www.snibbe.com/apps#/motionphone-app/). This app allows
+you to create abstract animations. The real magic of this app happens
+when you contact, or place your device near someone else's iPhone. Then
+you see the drawings from one phone merge with those from the other. In
+my opinion, this is a beautiful depiction of the endless amount of
+invisible things that happen when two people meet. Chemistry,
+pheromones, energy, dark matter. Snibbe presented this particular work
+twenty years ago, as a work of art. Now it is an app that everyone can
+use.
+
+Still, the question remains; what is all of this actually for? What can
+you do or develop now, that you couldn’t do before? Dancing and drawing;
+regardless of how beautiful these apps are, are things that I like to do
+and often do; with or without an app. What images, memories, or dreams
+can we capture with these apps that we couldn’t capture before? And what
+are the incentives for artists to make their tools? I'm going to ask a
+tool maker himself. The one who, as far as I am concerned, always
+managed to conjure up the most advanced tools for his artistic goals.
+I'm going to try to get in touch with Stanley Kubrick.
+
+Bio
+---
+
+**Dirk Vis (1981)** is a writer and editor of the literary magazine De
+Gids and teacher at de Koninklijke Academie van Beeldende Kunsten (the
+Royal Academy of Arts). He studied Image & Language at the Rietveld
+Academy, and Design at the Sandberg Institute. Vis has published essays,
+stories and poems in publications such as De Gids, De Groene
+Amsterdammer and De Correspondent.
+
+Colophon
+--------
+
+This publication is part of the project "Cinekid Unfold", realized for
+the dutch new media festival Cinekid, and created in collaboration with
+PublishingLab (Amsterdam) and Domein voor Kunstkritiek. The
+PublishingLab team is composed of Fabiola Fortuna (IT), Janne van Hooff
+(NL), Latika Meelu (IN) and Thomas Walskaar (NO).
+
