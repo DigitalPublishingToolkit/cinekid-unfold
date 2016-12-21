@@ -6,6 +6,8 @@
   <link href="assets/css/reset.css" rel="stylesheet" />
   <link href="assets/css/grid.css" rel="stylesheet" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- detect mobile -->
+  <script src="assets/js/mobiledetect.js"></script>
 </head>
 <body>
 <div id="grid">
@@ -27,7 +29,11 @@
 <script>
 $(document).ready(function(){
 
-  //jquery code goes here
+  if(isMobile){
+    //'redirect'
+    window.location.href="info.html";
+  }
+
 
 });//end document.ready()
 </script>

@@ -33,8 +33,13 @@ div.scroll2 {
   background-color: white;
   border-style: solid;
   border-color: #0099cc;
+
+  /*background: url(../images/grid.png) repeat;
+  background-attachment:local;
+  opacity: .4;*/
 }
 
+.scroll2 img{width: 100%;}
 
 div.dirkblue {
 margin-top:1px;
