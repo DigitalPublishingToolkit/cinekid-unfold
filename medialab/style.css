@@ -18,7 +18,7 @@ h1{
   cursor: pointer;
   /*color: #fff;
   font-family: 'prater_sans_onebold', Helvetica, Arial, sans-serif;  OLD BUTTONS*/
-  padding: .5em;
+  /*padding: .5em;*/
   width: 5em;
   height: 5em;
 }
@@ -91,32 +91,32 @@ h1{
 
 #btn0:hover {
   background: url(imgs/fietH.png) no-repeat center;
-  background-size: cover;
+  background-size: 185%;
 }
 
 #btn1:hover {
   background: url(imgs/eyecatcherH.png) no-repeat center;
-  background-size: cover;
+  background-size: 185%;
 }
 
 #btn2:hover {
-  background: url(imgs/deardeerM.png) no-repeat center;
-  background-size: cover;
+  background: url(imgs/deardeerH.png) no-repeat center;
+  background-size: 185%;
 }
 
 #btn3:hover {
-  background: url(imgs/animaM.png) no-repeat center;
-  background-size: cover;
+  background: url(imgs/animaH.png) no-repeat center;
+  background-size: 185%;
 }
 
 #btn4:hover {
-  background: url(imgs/dioramaM.png) no-repeat center;
-  background-size: cover;
+  background: url(imgs/dioramaH.png) no-repeat center;
+  background-size: 185%;
 }
 
 #btn5:hover {
   background: url(imgs/treehuggerH.png) no-repeat center;
-  background-size: cover;
+  background-size: 185%;
 }
 
 /* The Modal (background) */
