@@ -91,32 +91,38 @@ h1{
 
 #btn0:hover {
   background: url(imgs/fietH.png) no-repeat center;
-  background-size: 185%;
+  background-size: cover;
 }
 
 #btn1:hover {
   background: url(imgs/eyecatcherH.png) no-repeat center;
-  background-size: 185%;
+  background-size: cover;
 }
 
 #btn2:hover {
   background: url(imgs/deardeerH.png) no-repeat center;
-  background-size: 185%;
+  background-size: cover;
 }
 
 #btn3:hover {
   background: url(imgs/animaH.png) no-repeat center;
-  background-size: 185%;
+  background-size: cover;
 }
 
 #btn4:hover {
   background: url(imgs/dioramaH.png) no-repeat center;
-  background-size: 185%;
+  background-size: cover;
 }
 
 #btn5:hover {
   background: url(imgs/treehuggerH.png) no-repeat center;
-  background-size: 185%;
+  background-size: cover;
+}
+
+/* preloading hover images */
+body:after{
+ display:none;
+ content: url(imgs/treehuggerH.png) url(imgs/dioramaH.png) url(imgs/animaH.png) url(imgs/deardeerH.png) url(imgs/eyecatcherH.png);
 }
 
 /* The Modal (background) */
