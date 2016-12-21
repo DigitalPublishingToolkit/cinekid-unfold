@@ -1,13 +1,13 @@
 /*ENTER THE WRITERS*/
 
-@font-face {
+/*@font-face {
     font-family: 'prater_sans_oneregular';
     src: url("../../assets/fonts/PraterSansOne-Reg.otf") format("opentype");
     }
 @font-face {
     font-family:'prater_sans_onebold';
     src: url("../../assets/fonts/PraterSansOne-Bd.otf") format("opentype");
-}
+}*/
 
 .header {
 	margin-left:  30px;
@@ -15,6 +15,7 @@
 	width: 100%;
 }
 
+.hide { display: none; }
 
 h1{
 font-size: 25px;
