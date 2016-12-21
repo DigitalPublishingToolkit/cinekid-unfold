@@ -162,7 +162,7 @@ blogs. Inspired by the works I describe later in this essay, I added a
 more work than I could carry out in the course of writing this essay,
 but some sentences are the first results of working with a bot.
 
-2)This question came to me after reading the bright essay Echt zien (To
+(2)This question came to me after reading the bright essay Echt zien (To
 really see), published in 2011 as a booklet by author Bas Heijne. In his
 perspective, the novel enables to see the reality that is continuously
 presented to us on small and large screens in our cities, automobiles,

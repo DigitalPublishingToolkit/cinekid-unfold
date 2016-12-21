@@ -238,7 +238,7 @@ ik (My Burglar and Me).
 In April 2012 he published his debut novel, Meneer Sadek en de Anderen
 (Mr. Sadek and Others), published by Thomas Rap. His debut feature film
 Bodkin Ras had its world premiere at the Rotterdam International Film
-Festival andwon the FIPRESCI international critics award.
+Festival and won the FIPRESCI international critics award.
 
 Colophon
 --------
