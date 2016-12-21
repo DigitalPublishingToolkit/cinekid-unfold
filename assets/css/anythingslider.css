@@ -199,15 +199,15 @@ padding-top: .5em; justify-content: space-between;}
 
 /*START PLAYLIST BUTTON*/
 /* Autoplay Start/Stop button */
-./*anythingSlider-default .anythingControls .start-stop {
+/*.anythingSlider-default .anythingControls .start-stop {
 	padding: 2px 5px;
 	width: 40px;
 	text-align: center;
 	text-decoration: none;
 	float: right;
 	z-index: 100;
-	outline: 0;*/
-}
+	outline: 0;
+}*/
 
 /***********************
   IE8 AND OLDER STYLING

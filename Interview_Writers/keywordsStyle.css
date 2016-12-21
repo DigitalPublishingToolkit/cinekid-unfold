@@ -1,12 +1,12 @@
 
-@font-face {
+/*@font-face {
     font-family: 'prater_sans_oneregular';
     src: url("font/PraterSansOne-Reg.otf") format("opentype");
     }
 @font-face {
     font-family:'prater_sans_onebold';
     src: url("font/PraterSansOne-Bd.otf") format("opentype");
-}
+}*/
 
 #container{
     font-family: 'prater_sans_oneregular', Arial, Helvetica, sans-serif;
