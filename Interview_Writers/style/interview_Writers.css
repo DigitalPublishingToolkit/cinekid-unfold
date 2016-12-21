@@ -64,10 +64,10 @@
   opacity: .5;
 }
 
-.cur:hover {
+/*.cur:hover {
   background: url('../../assets/icons/btn-red.png') no-repeat top left;
   background-size: cover;
-}
+}*/
 
 #VR {
   display: inline-block;
@@ -126,6 +126,26 @@
 
 #VR:hover, #BS:hover, #AI:hover, #IOT:hover, #pause:hover, #restart:hover {
   background: url('../../assets/icons/btn-blue.png') no-repeat top left;
+  background-size: cover;
+}
+
+#VR.cur:hover{
+   background: url('../../assets/icons/btn-red.png') no-repeat top left;
+  background-size: cover;
+}
+
+#BS.cur:hover{
+   background: url('../../assets/icons/btn-red.png') no-repeat top left;
+  background-size: cover;
+}
+
+#AI.cur:hover{
+   background: url('../../assets/icons/btn-red.png') no-repeat top left;
+  background-size: cover;
+}
+
+#IOT.cur:hover{
+   background: url('../../assets/icons/btn-red.png') no-repeat top left;
   background-size: cover;
 }
 
