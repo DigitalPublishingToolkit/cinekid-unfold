@@ -1,11 +1,11 @@
-@font-face {
+/*@font-face {
     font-family: 'prater_sans_oneregular';
     src: url("font/PraterSansOne-Reg.otf") format("opentype");
     }
 @font-face {
     font-family:'prater_sans_onebold';
     src: url("font/PraterSansOne-Bd.otf") format("opentype");
-}
+}*/
 
 /* main structure CSS needs to be different IN THIS PAGE ONLY */
 #sidebar{
@@ -125,7 +125,7 @@
 #VR:hover, #BS:hover, #AI:hover, #IOT:hover, #pause:hover, #restart:hover {
   background: url('../../assets/icons/btn-blue.png') no-repeat top left;
   background-size: cover;
-} 
+}
 
 /*#VR:hover a{
   color: #CC3417; red
