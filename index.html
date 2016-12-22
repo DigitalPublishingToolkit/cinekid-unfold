@@ -1,41 +1,56 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <title>Cinekid Unfold</title>
-  <link href="assets/css/reset.css" rel="stylesheet" />
-  <link href="assets/css/grid.css" rel="stylesheet" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <!-- detect mobile -->
-  <script src="assets/js/mobiledetect.js"></script>
+    <meta charset="utf-8">
+    <title>Cinekid Unfold</title>
+    <link href="assets/css/reset.css" rel="stylesheet" />
+    <link href="assets/css/grid.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- detect mobile -->
+    <script src="assets/js/mobiledetect.js"></script>
 </head>
+
 <body>
-<div id="grid">
-  <div class="grid-column">
-    <a href="Interview_Writers/keywords.html"><div class="grid-cell" id="c1"></div></a>
-    <a href="What_If/whatif.html"><div class="grid-cell" id="c4"></div></a>
-  </div>
-  <div class="grid-column">
-    <a href="intro/intro.html"><div class="grid-cell small-cell" id="c2"></div></a>
-    <div class="grid-cell small-cell logo"></div>
-    <a href="Video_KIDS/Video_children.html"><div class="grid-cell small-cell" id="c5"></div></a>
+    <div id="grid">
+        <div class="grid-column">
+            <a href="Interview_Writers/keywords.html">
+                <div class="grid-cell" id="c1"></div>
+            </a>
+            <a href="What_If/whatif.html">
+                <div class="grid-cell" id="c4"></div>
+            </a>
+        </div>
+        <div class="grid-column">
+            <a href="intro/intro.html">
+                <div class="grid-cell small-cell" id="c2"></div>
+            </a>
+            <div class="grid-cell small-cell logo"></div>
+            <a href="Video_KIDS/Video_children.html">
+                <div class="grid-cell small-cell" id="c5"></div>
+            </a>
 
-  </div>
-  <div class="grid-column">
-    <a href="Enter_The_Writers/enterthewriters.html"><div class="grid-cell" id="c3"></div></a>
-      <a href="medialab/index.html"><div class="grid-cell" id="c6"></div></a>
-  </div>
-</div>
-<script>
-$(document).ready(function(){
+        </div>
+        <div class="grid-column">
+            <a href="Enter_The_Writers/enterthewriters.html">
+                <div class="grid-cell" id="c3"></div>
+            </a>
+            <a href="medialab/index.html">
+                <div class="grid-cell" id="c6"></div>
+            </a>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
 
-  if(isMobile){
-    //'redirect'
-    window.location.href="info.html";
-  }
+            if (isMobile) {
+                //'redirect'
+                window.location.href = "info.html";
+            }
 
 
-});//end document.ready()
-</script>
+        }); //end document.ready()
+    </script>
 </body>
+
 </html>

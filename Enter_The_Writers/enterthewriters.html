@@ -1,89 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <title>Cinekid Unfold</title>
-      <meta charset="utf-8" />
 
-      <!-- structure files -->
-      <link href="../assets/css/reset.css" rel="stylesheet" />
-      <link href="../assets/css/games.css" rel="stylesheet" />
-      <!-- <link href="../assets/css/font-awesome.min.css" rel="stylesheet" /> -->
+<head>
+    <title>Cinekid Unfold</title>
+    <meta charset="utf-8" />
 
-      <link rel="stylesheet" type="text/css" href="style/style.css" >
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" >
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-      <style>
-      #headerTitle{margin-bottom: 0 !important;}
-      #container{text-align: center;}
+    <!-- structure files -->
+    <link href="../assets/css/reset.css" rel="stylesheet" />
+    <link href="../assets/css/games.css" rel="stylesheet" />
+    <!-- <link href="../assets/css/font-awesome.min.css" rel="stylesheet" /> -->
 
-      /* svg rules */
-      svg{ width: 75%; height: auto; max-width: 100%;}
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- detect mobile -->
+    <script src="../assets/js/mobiledetect.js"></script>
+    <style>
+        #headerTitle {
+            margin-bottom: 0 !important;
+        }
 
-      .red{fill: #CF3F24;}
-      .blue{fill:  #1899CD;}
-      .green{fill: #329A37;}
+        #container {
+            text-align: center;
+        }
+        /* svg rules */
 
-      text{
-        font-style:normal;
-        font-weight:normal;
-        font-size:18px;
-        line-height:125%;
-        font-family:'prater_sans_oneregular', Arial, Helvetica, sans-serif;
-        letter-spacing:0px;
-        word-spacing:0px;
-        fill:#ffffff;
-        fill-opacity:0;
-        text-align: center;
-        text-anchor: middle;
-      }
-      tspan{text-anchor: middle;}
+        svg {
+            width: 75%;
+            height: auto;
+            max-width: 100%;
+        }
 
-      g:hover{cursor: pointer;}
-      g:hover text{fill-opacity: 1;}
-      g:hover image{opacity: 0;}
+        .red {
+            fill: #CF3F24;
+        }
 
-      </style>
+        .blue {
+            fill: #1899CD;
+        }
+
+        .green {
+            fill: #329A37;
+        }
+
+        text {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 125%;
+            font-family: 'prater_sans_oneregular', Arial, Helvetica, sans-serif;
+            letter-spacing: 0px;
+            word-spacing: 0px;
+            fill: #ffffff;
+            fill-opacity: 0;
+            text-align: center;
+            text-anchor: middle;
+        }
+
+        tspan {
+            text-anchor: middle;
+        }
+
+        g:hover {
+            cursor: pointer;
+        }
+
+        g:hover text {
+            fill-opacity: 1;
+        }
+
+        g:hover image {
+            opacity: 0;
+        }
+    </style>
 </head>
+
 <body>
-  <!-- structure -->
+    <!-- structure -->
     <div id="sidebar">
-      <a href="../index.html"><img id="logo" alt="Cinekid logo" src="../assets/icons/cinekid-logo.svg"> </a>
-      <div id="info">
+        <a href="../index.html"><img id="logo" alt="Cinekid logo" src="../assets/icons/cinekid-logo.svg"> </a>
+        <div id="info">
 
-        <p>Do you remember <i>Pong</i> ? It is a virtually simulated table-tennis game, which involves the movement of in-game paddles vertically at the opposite sides of the screen, controlled by players.</p></br>
-<p>Well, click one of the icons in this page to discover its content and how it looks. Inspired <i>Pong</i> design, instead of the paddles, we now have the scrollbar which ables you to access information in a playful manner.</p></br>
-<p>Now you, the users, are the players in our webpage, controlling the stream of information!</p></br>
-<a href="../appendix/appendix.html" ><img src="../assets/icons/indexicon-01.svg" class="appendix"></a>
+            <p>Do you remember <i>Pong</i> ? It is a virtually simulated table-tennis game, which involves the movement of in-game paddles vertically at the opposite sides of the screen, controlled by players.</p>
+            </br>
+            <p>Well, click one of the icons in this page to discover its content and how it looks. Inspired <i>Pong</i> design, instead of the paddles, we now have the scrollbar which ables you to access information in a playful manner.</p>
+            </br>
+            <p>Now you, the users, are the players in our webpage, controlling the stream of information!</p>
+            </br>
+            <a href="../appendix/appendix.html"><img src="../assets/icons/indexicon-01.svg" class="appendix"></a>
 
-     
 
-      </div><!-- end #info -->
 
-    </div><!-- end sideBar -->
+        </div>
+        <!-- end #info -->
+
+    </div>
+    <!-- end sideBar -->
     <div id="mainFrame">
-      <div id="content">
+        <div id="content">
 
 
-        <!-- <div class="header"> -->
-        <h4 id="headerTitle">Enter the Writers</h4>
-        <!-- </div> -->
-        <!-- <div class="nav"> </div> -->
-        <div class="container">
-        <!--   <div id="1"> -->
-        <svg
-           xmlns:dc="http://purl.org/dc/elements/1.1/"
-           xmlns:cc="http://creativecommons.org/ns#"
-           xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-           xmlns:svg="http://www.w3.org/2000/svg"
-           xmlns="http://www.w3.org/2000/svg"
-           xmlns:xlink="http://www.w3.org/1999/xlink"
-           version="1.1"
-           id="Layer_1"
-           x="0px"
-           y="0px"
-           viewBox="0 0 903.8 630.2"
-           style="enable-background:new 0 0 903.8 630.2;"
-           >
+            <!-- <div class="header"> -->
+            <h4 id="headerTitle">Enter the Writers</h4>
+            <!-- </div> -->
+            <!-- <div class="nav"> </div> -->
+            <div class="container">
+                <!--   <div id="1"> -->
+                <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 903.8 630.2" style="enable-background:new 0 0 903.8 630.2;">
            <metadata id="metadata59">
              <rdf:RDF>
                <cc:Work rdf:about="">
@@ -221,7 +245,7 @@
                   id="text1">
                   <tspan dx="0" dy="-4">Toolbox Full </tspan>
                   <tspan dx="-75" dy="20">Of Dreams </tspan>
-              
+
 
 
                 </g>
@@ -264,7 +288,7 @@
                   <text
                      x="656"
                      y="96"
-                     id="text3"> 
+                     id="text3">
                       <tspan dx="0" dy="-4">Online- </tspan>
                   <tspan dx="-50" dy="20">Offline</tspan>
 
@@ -309,7 +333,7 @@
                   <text
                   x="390"
                   y="211"
-                  id="text5"> 
+                  id="text5">
                    <tspan dx="0" dy="-4">Smart </tspan>
                   <tspan dx="-45" dy="20">Illusion </tspan>
 
@@ -360,7 +384,7 @@
 
                  <tspan dx="0" dy="-4">It's not a</tspan>
                   <tspan dx="-60" dy="20">fantasy...</tspan>
-                
+
                      </text>
              </g>
 
@@ -534,32 +558,33 @@
 
              </svg>
 
-      </div><!-- #content -->
+            </div>
+            <!-- #content -->
 
-<a id="aTop" class="gameNav" href="../medialab/index.html" data-anim="top-bottom"><img src="../assets/icons/c6.png" ></a>
-<a id="aRight" class="gameNav" href="../Interview_Writers/keywords.html" data-anim="right-left"><img src="../assets/icons/c1.png" ></a>
-<a id="aBottom" class="gameNav" href="../medialab/index.html" data-anim="bottom-top"><img src="../assets/icons/c6.png" ></a>
-<a id="aLeft" class="gameNav" href="../intro/intro.html" data-anim="left-right"><img src="../assets/icons/c2.png" ></a>
+            <a id="aTop" class="gameNav" href="../medialab/index.html" data-anim="top-bottom"><img src="../assets/icons/c6.png"></a>
+            <a id="aRight" class="gameNav" href="../Interview_Writers/keywords.html" data-anim="right-left"><img src="../assets/icons/c1.png"></a>
+            <a id="aBottom" class="gameNav" href="../medialab/index.html" data-anim="bottom-top"><img src="../assets/icons/c6.png"></a>
+            <a id="aLeft" class="gameNav" href="../intro/intro.html" data-anim="left-right"><img src="../assets/icons/c2.png"></a>
 
-</div><!-- #mainFrame -->
+        </div>
+        <!-- #mainFrame -->
+        <script>
+            $(document).ready(function() {
+
+                if (isMobile) {
+                    //'redirect'
+                    window.location.href = "info.html";
+                }
 
 
-<script type="text/javascript" src='script/javascroll.js'></script>
+            }); //end document.ready()
+        </script>
+
+        <!-- structure -->
+        <script src="../assets/js/games.js"></script>
+        <script type="text/javascript" src='script/javascroll.js'></script>
 
 
-<!-- structure -->
-<script src="../assets/js/games.js"></script>
-<script>
-$(document).ready(function(){
-  //var direction = window.location.hash;
-
-  $('g').on('click', function(){
-    window.location.href = $(this).data('link');
-    //add hash?
-    //window.location.href = $(this).data('link') + direction;
-  });
-
-});
-</script>
 </body>
+
 </html>
