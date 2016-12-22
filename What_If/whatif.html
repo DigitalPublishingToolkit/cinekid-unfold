@@ -14,6 +14,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style/style01.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- detect mobile -->
+    <script src="../assets/js/mobiledetect.js"></script>
+
     <script src="script/display_random_image.js"></script>
 
     <body>
@@ -25,12 +28,11 @@
                 <!-- here starts the sidebar content - edit after this line -->
                 <p>What if the internet went down? Can you imagine such a situation? Well, this question was posed to the kids at the Cinekid Festival, and they did a great job in drawing their creative imaginations of what they would do, if the internet
                     goes down.
-                    <p><br>The kids were given two tasks: to explain how certain online tools work and to make a sketch explaining its workings. Then, the kids had to imagine an offline alternative for this online tool and to sketch
-                        it out.
+                    <p><br>The kids were given two tasks: to explain how certain online tools work and to make a sketch explaining its workings. Then, the kids had to imagine an offline alternative for this online tool and to sketch it out.
                         <p><br>
                             <p>The sketches were archived, and are displayed here!</p>
                             </br>
-                                <a href="../appendix/appendix.html"> <img src="../assets/icons/indexicon-01.svg" class="appendix"></a>
+                            <a href="../appendix/appendix.html"> <img src="../assets/icons/indexicon-01.svg" class="appendix"></a>
 
                             <!-- here ends the sidebar content - no more edits after this line :) -->
 
@@ -74,6 +76,17 @@
         </div>
         <!-- #mainFrame -->
 
+        <script>
+            $(document).ready(function() {
+
+                if (isMobile) {
+                    //'redirect'
+                    window.location.href = "info.html";
+                }
+
+
+            }); //end document.ready()
+        </script>
         <!-- structure -->
         <script src="../assets/js/games.js"></script>
     </body>

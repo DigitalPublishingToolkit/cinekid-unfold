@@ -13,6 +13,10 @@
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- detect mobile -->
+    <script src="../assets/js/mobiledetect.js"></script>
+
     <!-- Anything Slider optional plugins, but needed so the embeded video controls will work in IE -->
     <!-- http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js -->
     <!-- <script src="../assets/js/swfobject.js"></script> -->
@@ -40,7 +44,7 @@
             <p>Along with the interviews with the artists and the essays in the book <i>Enter the Writers</i>, we thought we should also give attention to the kids’ perspective on technology and the artworks.
                 <p> <br> We set out to interview kids in the Cinekid Medialab, hoping to document their creative thoughts, and as a result, created this gallery to them to you.</p>
                 </br>
-                    <a href="../appendix/appendix.html"> <img src="../assets/icons/indexicon-01.svg" class="appendix"></a>
+                <a href="../appendix/appendix.html"> <img src="../assets/icons/indexicon-01.svg" class="appendix"></a>
         </div>
         <!-- end #info -->
 
@@ -94,6 +98,10 @@
         // DOM Ready
         $(function() {
 
+            if (isMobile) {
+                //'redirect'
+                window.location.href = "info.html";
+            }
 
             $('#slider')
                 .anythingSlider({

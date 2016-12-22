@@ -164,7 +164,7 @@ body:after{
   /*border: 1px solid red;*/
 }
 
-.media ul li{display: none; text-align: center;}
+.media ul li{/*display: none;*/ text-align: center;}
 .curMedia{
   display: block !important;
   width: 100%;

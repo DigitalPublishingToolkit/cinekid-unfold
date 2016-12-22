@@ -12,10 +12,10 @@
 
     <title>Cinekid Unfold </title>
 
-    <style>
-        /* relevant to this page only */
-    </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- detect mobile -->
+    <script src="../assets/js/mobiledetect.js"></script>
 </head>
 
 <body>
@@ -43,10 +43,11 @@
             <a href="http://www.domeinvoorkunstkritiek.nl" target="_blank">
                 <img src="../assets/icons/domain.jpg" class="infophoto">
             </a>
-        </p></br>
-            <a href="../appendix/appendix.html">
-                <img src="../assets/icons/indexicon-01.svg" class="appendix">
-            </a>
+        </p>
+        </br>
+        <a href="../appendix/appendix.html">
+            <img src="../assets/icons/indexicon-01.svg" class="appendix">
+        </a>
 
     </div>
     <!-- end sideBar -->
@@ -75,7 +76,17 @@
 
     </div>
     <!-- #mainFrame -->
+    <script>
+        $(document).ready(function() {
 
+            if (isMobile) {
+                //'redirect'
+                window.location.href = "info.html";
+            }
+
+
+        }); //end document.ready()
+    </script>
     <script src="../assets/js/games.js"></script>
 </body>
 

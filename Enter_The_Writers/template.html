@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <title>Cinekid Unfold</title>
-      <meta charset="utf-8" />
 
-      <!-- structure files -->
-      <link href="../assets/css/reset.css" rel="stylesheet" />
-      <link href="../assets/css/games.css" rel="stylesheet" />
-      <!-- <link href="../assets/css/font-awesome.min.css" rel="stylesheet" /> -->
+<head>
+    <title>Cinekid Unfold</title>
+    <meta charset="utf-8" />
 
-      <link rel="stylesheet" type="text/css" href="style/style.css" >
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" >
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- structure files -->
+    <link href="../assets/css/reset.css" rel="stylesheet" />
+    <link href="../assets/css/games.css" rel="stylesheet" />
+    <!-- <link href="../assets/css/font-awesome.min.css" rel="stylesheet" /> -->
+
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- detect mobile -->
+    <script src="../assets/js/mobiledetect.js"></script>
 </head>
+
 <body>
-  <!-- structure -->
+    <!-- structure -->
     <div id="sidebar">
-      <a href="../index.html"><img id="logo" alt="Cinekid logo" src="../assets/icons/cinekid-logo.svg"> </a>
-      <div id="info">
-        <img src="images/kaweh/xxxx.jpg" class="infophoto"> </p>
-        <p><b> bio .</p></br> 
+        <a href="../index.html"><img id="logo" alt="Cinekid logo" src="../assets/icons/cinekid-logo.svg"> </a>
+        <div id="info">
+            <img src="images/kaweh/xxxx.jpg" class="infophoto"> </p>
+            <p><b> bio .</p></br>
       </div><!-- end #info -->
 
     </div><!-- end sideBar -->
@@ -37,9 +41,9 @@
          <h1> Tittel </h1>
         <h3> By NAME </h3>
         <p> Download <a href="pdf/Kaweh.pdf"><strong>PDF</strong> </a> / <a href="pdf/Kaweh_Modiri.epub"><strong>EPUB</strong> </a> </p>
-            
+
             MAIN BODY TEXT
-              <p> CXXXXX</p> 
+              <p> CXXXXX</p>
               <h3> xxxxx </h3>
 
 
@@ -50,7 +54,7 @@
                  <p>  <img src="images/kaweh/xxxx.jpg" class="apendixphoto"> </p> <p>xxxxxxx</p>
               <!-- <br> <h1> Apendix  -  Graceful Degradation  </h1> </br> -->
 
- 
+
         </p>
         </div>
          <a href="enterthewriters.html" title="Back to Enter the Writers" class="nodecor"><p class="back">Back</p></a>
@@ -62,7 +66,17 @@
 <a id="aLeft" class="gameNav" href="../intro/intro.html" data-anim="left-right"><img src="../assets/icons/c2.png" ></a>
 
 </div><!-- #mainFrame -->
+<script>
+    $(document).ready(function() {
 
+        if (isMobile) {
+            //'redirect'
+            window.location.href = "info.html";
+        }
+
+
+    }); //end document.ready()
+</script>
 
 <script type="text/javascript" src='script/javascroll.js'></script>
 
