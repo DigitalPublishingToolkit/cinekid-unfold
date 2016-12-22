@@ -553,8 +553,8 @@
                   id="text15">
                   <tspan dx="0" dy="-4">A living </tspan>
                   <tspan dx="-60" dy="20">triangle</tspan>
-                  </text> -->
-               </g>
+                  </text>
+               </g>-->
 
              </svg>
 
@@ -576,13 +576,18 @@
                     window.location.href = "info.html";
                 }
 
+                $('g').on('click', function() {
+                    window.location.href = $(this).data('link');
+                    //add hash?
+                    //window.location.href = $(this).data('link') + direction;
+                });
 
             }); //end document.ready()
         </script>
 
         <!-- structure -->
         <script src="../assets/js/games.js"></script>
-        <script type="text/javascript" src='script/javascroll.js'></script>
+        <!-- <script type="text/javascript" src='script/javascroll.js'></script> -->
 
 
 </body>
