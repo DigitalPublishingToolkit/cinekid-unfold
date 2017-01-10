@@ -179,7 +179,7 @@ body:after{
   width:auto;
 }
 .mediaNav{
-  text-align: center;
+ /* text-align: center;*/
   padding: 5px;
 }
 
@@ -198,6 +198,10 @@ body:after{
   font-family: 'prater_sans_onebold', Helvetica, Arial, sans-serif;
   padding: 0.3em;
   float: initial;
+}
+
+.prev {
+  margin-left: 12em;
 }
 
 .prev:hover, .next:hover{
