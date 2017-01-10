@@ -29,8 +29,8 @@
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6, #content p{
   padding-left: 12%;
   padding-right: 30%;
-  padding-top: 1em;
-  padding-bottom: 0.5em;
+ /* padding-top: 1em;*/
+  /*padding-bottom: 0.5em;*/
   /* try working with paddings, margins, instead of adding <br> in the html :) */
 }
 #content p{
