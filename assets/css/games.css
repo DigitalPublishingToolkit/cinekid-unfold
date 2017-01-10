@@ -84,7 +84,8 @@ body{display: flex;}
 }
 
 .infophoto {
-  width: 70px;
+  width: 90px;
+  padding-top: 5px;
   padding-right: 15px;
   padding-left: 15px;
 }
