@@ -151,10 +151,22 @@
 
 /* end structure elements */
 
-.download {
-  color: #CC3300;
-  text-decoration: underline;
-}
+.download:link {
+  /*color: #CC3300;
+  text-decoration: underline;*/
+  color: #339933; /*green*/
+  text-decoration: none;
+  }
+
+.download:hover {
+  color: #0099CC; /*blue*/
+  text-decoration: none;
+  }
+
+.download:visited {
+  color: #CC3300; /*red*/
+  text-decoration: none;
+  }
 
 #pause {
   cursor: pointer;
