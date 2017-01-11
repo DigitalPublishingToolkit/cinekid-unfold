@@ -13,6 +13,10 @@ h1{
   padding-left: 10px;
 }
 
+strong, b {
+    font-weight: bold;
+}
+
 .myButton{
   display: inline-block;
   cursor: pointer;

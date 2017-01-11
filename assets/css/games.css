@@ -13,6 +13,17 @@
 body,html{height:100%;}
 body{display: flex;}
 
+strong{ ;
+font-variant: bold !important 
+font-style: bold !important ;
+} 
+
+b{
+font-weight: bold !important ;
+font-variant: bold !important ;
+font-style: bold !important ;
+} 
+
 /* sidebar */
 #sidebar{
   width: 15%;
