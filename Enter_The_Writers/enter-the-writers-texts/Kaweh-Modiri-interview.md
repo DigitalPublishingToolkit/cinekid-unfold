@@ -1,5 +1,7 @@
-Interview with Kaweh Modiri (author of the essay *Graceful Degradation* )
-=========================================================================
+Kaweh Modiri
+============
+
+(author of the essay *Graceful Degradation*)
 
 \#1. What are the possibilities of interaction between the viewers and the artwork (at the Cinekid Medialab) offer? Could it be possible that the narrative of a movie - or any other kind of artwork - change, after the interaction with the artwork?
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
