@@ -1,5 +1,7 @@
-Interview with Marloeke van der Vlugt (author of the essay *Smart illusion* )
-==============================================================================
+Marloeke van der Vlugt
+======================
+
+(author of the essay *Smart illution*)
 
 \#1. We read your essays in the *Enter the Writers*, and we noticed you are interested in the Internet of Things. What was your first experience with Internet of Things?
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
