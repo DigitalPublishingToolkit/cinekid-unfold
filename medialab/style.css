@@ -29,6 +29,7 @@ h1{
 
 #numbers{
   float: right;
+  padding-right: 2.2em;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-size: 12px;
 }
@@ -180,13 +181,14 @@ body:after{
 }
 .mediaNav{
   text-align: center;
-  padding: 5px;
+  /*padding: 5px;*/
 }
 
 .curTitle{
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: 12px;
     float: left;
+    padding-left: 2em;
 }
 
 .prev, .next{
