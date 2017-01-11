@@ -179,7 +179,7 @@ body:after{
   width:auto;
 }
 .mediaNav{
- /* text-align: center;*/
+  text-align: center;
   padding: 5px;
 }
 
@@ -201,7 +201,7 @@ body:after{
 }
 
 .prev {
-  margin-left: 12em;
+  margin-left: -2.7em;
 }
 
 .prev:hover, .next:hover{
