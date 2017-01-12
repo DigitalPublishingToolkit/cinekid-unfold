@@ -1,0 +1,186 @@
+/*	CINEKIDS!!!!!*/
+
+	@font-face {
+		font-family: SuhmoOT;
+			src: url('fonts/SuhmoOT.otf');
+			
+	}
+
+
+	body { 
+	background: #1abc9c;
+	color: black;
+	font-weight: bold;
+		font-family: SuhmoOT;
+
+
+	}
+
+	h1{
+	padding-left: 5px;
+	font-size: 50pt;
+	font-style: bold;
+	/*font-family: SuhmoOTBlack;	*/
+
+	}
+/*	CINEKIDS!!!!!*/
+	/*h2{
+	padding-left: 20px;
+	font-size: 20pt;
+	font-family: SuhmoOT;
+	}*/
+
+	h3{
+	padding-left: 5px;
+	font-weight: normal;
+	font-size: 20pt;
+	list-style-type: none;
+
+	}
+
+	h4{
+	font-size: 10pt;
+	padding-left: 20px;
+	font-weight: lighter;
+
+	}
+
+	h5{
+	padding-left: 5px;
+	padding-right: 5px;
+	font-weight: normal;
+	font-size: 20pt;
+	text-align: center;
+	/*font-family: SuhmoOT;*/
+	}
+
+	p{
+	padding-left: 5px;
+	padding-right: 5px;
+	font-weight: normal;
+	font-size: 20pt;
+	text-align:left;
+	/*font-family: SuhmoOT;*/
+	}
+
+	a{
+		color: black;
+		text-decoration: none;
+		font-size: 
+			}
+
+	a:hover {
+/*		text-decoration: underline;*/
+		/*background: yellow;*/
+/*	CINEKIDS!!!!!*/
+	}
+
+	/*img.logo{
+	width: 100px;
+	padding-left: 20px;
+	}*/
+
+	img.mainphoto{
+	/*padding-left: 5px;*/	
+	width: 300px;
+	height:  300px;
+	}
+
+
+	/*img.aboutphoto {
+	width: 200px;
+	}
+*/
+/*	img.spacephoto {
+	width: 80%;
+	}*/
+	
+
+	.header {
+	float: none;
+	width: 1000px;
+	height:   20%;
+	}	
+
+	.maine {
+	/*float: left;*/
+	width: 200px;
+	height:   900px;
+	}
+	
+	/*	CINEKIDS!!!!!*/
+	.mainphoto {
+	/*float: left;*/
+	width: 2500px;
+	}
+
+/*	.maintext {*/
+	/*float: left;
+	width: 10%;
+	/*height:   80%;
+	}*/*/
+
+/*	.menu {
+/*	float: left;*/
+	p/*adding-top: 0px;
+	width: 200px;
+	height: 1000px;
+	margin: 10px;
+	/*text-decoration: underline;*/
+/*	background-color: white;*/
+	}*/
+*/
+/*	CINEKIDS!!!!!*/
+@media screen and (max-width: 8900px){
+
+	h1{
+		font-size: 16pt; 
+	}
+	h2{
+	font-size: 20pt;
+	}
+
+	h3{
+	font-size: 20pt;
+	}
+
+	p{
+	font-size: 20pt;
+	
+	}  
+
+	.header {
+	width: 600px;
+	}
+
+	.mainphoto {
+	width: 600px;
+	}
+
+	img.logo{
+	width: 80px;
+	}
+
+	img.mainphoto{
+	width: 500px;
+	height:  500px;
+	}
+
+	img.aboutphoto {
+	width: 300px;
+	}
+/*	CINEKIDS!!!!!*/
+
+
+	img.logo{
+	width: 80px;
+	}
+
+	img.mainphoto{
+	width: 500px;
+	}
+
+	img.aboutphoto {
+	width: 300px;
+	}
+}
